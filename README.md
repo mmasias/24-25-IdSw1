@@ -1,15 +1,18 @@
-# NombreAsignatura
+# Ingeniería de software I
 
-Repo de materiales y proyectos de la asignatura **NombreAsignatura** del [Grado de Ingeniería Informática](https://www.uneatlantico.es/escuela-politecnica-superior/estudios-grado-oficial-en-ingenieria-informatica) la [Universidad Europea del Atlántico](https://www.uneatlantico.es).
+Repo de materiales y proyectos de la asignatura **Ingeniería de software I** del [Grado de Ingeniería Informática](https://www.uneatlantico.es/escuela-politecnica-superior/estudios-grado-oficial-en-ingenieria-informatica) la [Universidad Europea del Atlántico](https://www.uneatlantico.es).
 
-## Curso *[x][x+1]*
+## Curso *[24][25]*
 
-- [Temario](temario/README.md)
+- [Temario](https://github.com/mmasias/IdSw1)
   - [A día de hoy, deberíamos saber...](temario/aDiaDeHoy.md)
   - [Casos de uso](temario/casosDeUso/README.md)
   - [Ejercicios](temario/ejercicios/README.md)
 - Evaluaciones
   - Evaluación continua: [Retos!](evaluaciones/retos/README.md)
+  - Sesiones de requisitado
+    - [Planteamiento](temario/sesionesRequisitado/infoEquipos.md)
+    - [Repo de trabajo](https://github.com/mmasias/24-25-IdSw1-SDR)
   - Exámenes
     - Parcial: [Enunciado](evaluaciones/examenes/examenParcial/README.md) | Repositorio de trabajo y entrega.
     - Final: [Enunciado](evaluaciones/examenes/examenFinal/README.md) | Repositorio de trabajo y entrega.
@@ -34,6 +37,6 @@ Repo de materiales y proyectos de la asignatura **NombreAsignatura** del [Grado 
 
 NOTA: *Algunos enlaces podrían requerir **credenciales de acceso al campus** o a otros espacios colaborativos.*
 
-- Hoja de asistencia et-al
-- Libro de la asignatura
-- Este repo, versión de ediciones pasadas
+- [Hoja de asistencia et-al](https://docs.google.com/spreadsheets/d/1dclgiq33DVVW8bSkJZrwitpPavagW-VHW9p8VctQgkU/edit?usp=sharing)
+- [Libro de la asignatura](https://campus.uneatlantico.es/pluginfile.php/93346/mod_folder/content/0/Impresion-UNEAT-IYA038-Esp_v0r1_20220202.pdf?forcedownload=1)
+- Este repo, versión de ediciones pasadas: [[22][23]](https://github.com/mmasias/IdSw1-22-23), [[23][24]](https://github.com/mmasias/23-24-idsw1)
