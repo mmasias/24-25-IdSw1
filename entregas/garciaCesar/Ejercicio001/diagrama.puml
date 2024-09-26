@@ -1,0 +1,52 @@
+@startuml
+!define RECTANGLE class
+
+RECTANGLE "Federación" as federacion
+RECTANGLE "Directiva" as directiva
+RECTANGLE "Equipos" as equipos
+RECTANGLE "Entrenador" as entrenador
+RECTANGLE "Jugadores" as jugadores
+RECTANGLE "Estadio" as estadio
+RECTANGLE "Aficionados" as aficionados
+RECTANGLE "Mercado Fichajes" as mercado_fichajes
+RECTANGLE "Temporadas" as temporadas
+RECTANGLE "Jornadas" as jornadas
+RECTANGLE "Árbitros" as arbitros
+RECTANGLE "Reglas" as reglas
+RECTANGLE "Ranking" as ranking
+RECTANGLE "Ascensos/Descensos" as ascensos_descensos
+RECTANGLE "VAR" as var
+RECTANGLE "Salario" as salario
+
+federacion -- directiva
+directiva -- equipos
+directiva -- reglas
+equipos -- entrenador
+equipos -- jugadores
+equipos -- jornadas
+equipos .. estadio
+equipos -- aficionados
+equipos -- mercado_fichajes
+equipos -- temporadas
+equipos -- ranking
+equipos -- ascensos_descensos
+temporadas .. ascensos_descensos
+temporadas .. jornadas
+jornadas -- reglas
+jornadas -- arbitros
+jornadas -- estadio
+arbitros -- reglas
+arbitros -- var
+reglas -- var
+mercado_fichajes -- temporadas
+mercado_fichajes -- jugadores
+ranking -- ascensos_descensos
+ranking -- jornadas
+salario -- entrenador
+salario -- jugadores
+salario -- arbitros
+salario -- directiva
+salario -- equipos
+estadio -- aficionados
+jugadores -- entrenador
+@enduml
