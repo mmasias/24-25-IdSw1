@@ -1,0 +1,41 @@
+@startuml
+
+class Sombra {
+  - forma: String
+  - intensidad: Double
+  - posición: Coordenadas
+  - tamaño: Double
+  + calcularForma()
+  + actualizarTamaño()
+  + cambiarIntensidad()
+}
+
+class Objeto {
+  - posición: Coordenadas
+  - tamaño: Double
+  - orientación: Angulo
+  + mover()
+  + rotar()
+  + proyectarSombra()
+}
+
+class Luz {
+  - intensidad: Double
+  - dirección: Angulo
+  - tipo: String
+  + cambiarIntensidad()
+  + cambiarDirección()
+}
+
+class Superficie {
+  - material: String
+  - tamaño: Double
+  - textura: String
+  + recibirSombra()
+  + modificarSombra()
+}
+
+Luz --> Objeto: Enfoca a
+Objeto --> Sombra: Proyecta la
+Sombra ..> Superficie : Sobre la
+@enduml
