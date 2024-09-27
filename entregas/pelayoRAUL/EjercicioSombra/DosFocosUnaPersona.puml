@@ -1,0 +1,28 @@
+@startuml
+class Foco {
+}
+
+class Persona1 {
+}
+
+class Persona2 {
+}
+
+class Sombra1 {
+}
+
+class Sombra2 {
+}
+
+class Superficie {
+}
+
+Foco --> Persona1 : ilumina
+Foco --> Persona2 : ilumina
+
+Persona1 --> Sombra1 : proyecta
+Persona2 --> Sombra2 : proyecta
+
+Sombra1 --> Superficie : se proyecta sobre
+Sombra2 --> Superficie : se proyecta sobre
+@enduml
