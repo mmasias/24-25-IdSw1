@@ -1,36 +1,24 @@
 @startuml
-title Modelo de Sombra UML
 
-class Luz {
- 
-}
 
 class Objeto {
- 
+}
+
+class Foco {
 }
 
 class Sombra {
-
 }
 
 class Superficie {
- 
-}
-
-class Escena {
- 
 }
 
 class Camara {
 }
 
-Luz -- Sombra : "Genera"
-Objeto -- Sombra : "Proyecta"
+Persona -- Sombra : "Proyecta"
+Foco -- Sombra : "Genera"
 Sombra -- Superficie : "Se proyecta sobre"
-Superficie -- Escena : "Pertenece a"
-Objeto -- Escena : "Incluye"
-Luz -- Escena : "Ilumina"
-Sombra -- Escena : "Incluye"
-Camara -- Escena : "Captura"
-Escena -- Camara : "Renderiza"
+Camara -- Superficie : "Captura"
+
 @enduml
