@@ -21,3 +21,10 @@ Objeto <- FuenteDeLuz
 
 
 @enduml
+
+
+,-------------.  ,-----------.   ,-----------.   ,-------------.
+|Superficie   |  |Sombra     |   |Objeto     |   |FuenteDeLuz  |
+|-------------|  |-----------|   |-----------|   |-------------|
+|Sombra sombra|--|int Tamano |---|int Altura |---|int posicion |
+`-------------'  `-----------'   `-----------'   `-------------'
