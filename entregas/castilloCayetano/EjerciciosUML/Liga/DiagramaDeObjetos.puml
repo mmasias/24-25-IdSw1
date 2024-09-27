@@ -30,14 +30,20 @@ Jornadas : Número = 1
 
 object Partido
 Partido : Equipos = 'Equipo1' + 'Equipo2'
-Parido : Resultado = 
+Partido : Resultado = "Gana Equipo1"
+
+object Competicion 
+Competicion : Ranking = (Array de Posiciones)
 
 Jugador -->Equipo
 Entrenador -->Equipo
 Equipo ..>Estadio
 
 Reglas --> Arbitro
-Arbitro --> Jornadas
-Jornadas --> Reglas
-
+Arbitro --> Partido
+Partido --> Reglas
+Jornadas --> Partido
+Estadio ..> Partido
+Equipo --> Partido
+Competicion --> Jornadas
 @enduml
