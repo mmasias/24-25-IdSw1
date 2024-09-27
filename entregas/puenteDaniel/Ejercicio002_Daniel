@@ -1,7 +1,5 @@
 @startuml
-
-
-class Objeto {
+class Persona {
 }
 
 class Foco {
@@ -17,8 +15,7 @@ class Camara {
 }
 
 Persona -- Sombra : "Proyecta"
-Foco -- Sombra : "Genera"
+Foco -- Persona : "Genera luz a"
 Sombra -- Superficie : "Se proyecta sobre"
 Camara -- Superficie : "Captura"
-
 @enduml
