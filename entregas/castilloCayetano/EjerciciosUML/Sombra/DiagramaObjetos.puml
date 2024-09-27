@@ -17,5 +17,5 @@ Sombra : Cantidad = 1
 Foco --> Luz : If  >=1 Emite Luz
 Luz --> Cosa
 Cosa --> Sombra
-
+Sombra ..> Cosa
 @enduml
