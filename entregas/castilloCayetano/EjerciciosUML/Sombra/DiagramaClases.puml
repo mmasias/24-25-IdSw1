@@ -1,0 +1,5 @@
+@startuml
+Foco --> Luz
+Luz --> Cosa
+Cosa --> Sombra
+@enduml
