@@ -1,0 +1,14 @@
+@startuml Caso2
+Foco1 -- Persona1
+Foco1 -- Persona2
+Foco2 -- Persona1
+Foco2 -- Persona2
+Persona1 -- Sombra1
+Persona1 -- Sombra2
+Persona2 -- Sombra3
+Persona2 -- Sombra4
+Sombra1 -- Superficie
+Sombra2 -- Superficie
+Sombra3 -- Superficie
+Sombra4 -- Superficie
+@enduml
