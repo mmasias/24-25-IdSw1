@@ -1,38 +1,28 @@
 @startuml
 
 class Sombra {
-  - forma: String
-  - intensidad: Double
-  - posición: Coordenadas
-  - tamaño: Double
-  + calcularForma()
-  + actualizarTamaño()
-  + cambiarIntensidad()
+  - forma
+  - intensidad
+  - posición
+  - tamaño
 }
 
 class Objeto {
-  - posición: Coordenadas
-  - tamaño: Double
-  - orientación: Angulo
-  + mover()
-  + rotar()
-  + proyectarSombra()
+  - posición
+  - tamaño
+  - orientación
 }
 
 class Luz {
-  - intensidad: Double
-  - dirección: Angulo
-  - tipo: String
-  + cambiarIntensidad()
-  + cambiarDirección()
+  - intensidad
+  - dirección
+  - tipo
 }
 
 class Superficie {
-  - material: String
-  - tamaño: Double
-  - textura: String
-  + recibirSombra()
-  + modificarSombra()
+  - material
+  - tamaño
+  - textura
 }
 
 Luz --> Objeto: Enfoca a
