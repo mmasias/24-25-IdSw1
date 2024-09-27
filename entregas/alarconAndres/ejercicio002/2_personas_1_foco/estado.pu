@@ -1,0 +1,7 @@
+@startuml
+[*] --> Proyectada1 : "Foco1 encendido"
+[*] --> Proyectada2 : "Foco2 encendido"
+Proyectada1 --> Superficie : "Sombra1 creada"
+Proyectada2 --> Superficie : "Sombra2 creada"
+Superficie --> [*] : "Sombras estables"
+@enduml
