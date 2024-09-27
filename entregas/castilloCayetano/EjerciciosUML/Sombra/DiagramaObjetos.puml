@@ -1,0 +1,21 @@
+@startuml
+object Foco
+Foco : estado = "Emite Luz"
+Foco : cantidad = 1
+
+object Luz
+Luz : intensidad = 10
+
+object Cosa
+Cosa : tipo = "Ser", "Objeto "
+Cosa : cantidad = 1
+
+object Sombra
+Sombra : tamaño = "Medio"
+Sombra : Cantidad = 1
+
+Foco --> Luz : If  >=1 Emite Luz
+Luz --> Cosa
+Cosa --> Sombra
+
+@enduml
