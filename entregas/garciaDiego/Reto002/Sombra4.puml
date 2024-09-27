@@ -12,7 +12,7 @@ F ..> S1 : "produce"
 F ..> S2 : "produce"
 O1 --> S1 : "produce"
 O2 --> S2 : "produce"
-S1 --> W : "proyecta"
-S2 --> W : "proyecta"
+S1 ..> W : "proyecta"
+S2 ..> W : "proyecta"
 @enduml
 

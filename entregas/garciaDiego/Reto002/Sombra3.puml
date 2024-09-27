@@ -19,10 +19,10 @@ P1 --> S11 : "produce"
 P1 --> S12 : "produce"
 P2 --> S21 : "produce"
 P2 --> S22 : "produce"
-S11 --> W : "proyecta"
-S12 --> W : "proyecta"
-S21 --> W : "proyecta"
-S22 --> W : "proyecta"
+S11 ..> W : "proyecta"
+S12 ..> W : "proyecta"
+S21 ..> W : "proyecta"
+S22 ..> W : "proyecta"
 @enduml
 
 
