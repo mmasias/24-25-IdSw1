@@ -1,0 +1,23 @@
+@startuml
+
+
+Class Superficie {
+Sombra sombra
+}
+Class FuenteDeLuz { 
+int posicion 
+} 
+Class Objeto { 
+int Altura 
+} 
+
+Class Sombra { 
+int Tamano 
+} 
+
+Superficie <- Sombra
+Sombra <- Objeto 
+Objeto <- FuenteDeLuz 
+
+
+@enduml
