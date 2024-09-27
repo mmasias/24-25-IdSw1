@@ -1,0 +1,12 @@
+@startuml Sombra
+
+class FuenteDeLuz
+class Superficie
+class Objeto
+class Persona
+FuenteDeLuz -- Objeto
+Objeto -- Superficie
+FuenteDeLuz -- Persona
+Persona -- Superficie
+
+@enduml
