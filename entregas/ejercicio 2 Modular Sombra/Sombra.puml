@@ -20,9 +20,6 @@ class Luz {
 }
 
 class Superficie {
-  - material
-  - tamaño
-  - textura
 }
 
 Luz --> Objeto: Enfoca a
