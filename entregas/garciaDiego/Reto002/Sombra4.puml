@@ -1,0 +1,18 @@
+@startuml
+object "foco : Luminaria" as F
+object "objeto_1 : objeto" as O1
+object "objeto_2 : objeto" as O2
+object "sombraDeObjeto_1 : sombra" as S1
+object "sombraDeObjeto_2 : sombra" as S2
+object "pared : objeto" as W
+
+F --> O1 : "ilumina"
+F --> O2 : "también ilumina"
+F ..> S1 : "produce"
+F ..> S2 : "produce"
+O1 --> S1 : "produce"
+O2 --> S2 : "produce"
+S1 --> W : "proyecta"
+S2 --> W : "proyecta"
+@enduml
+

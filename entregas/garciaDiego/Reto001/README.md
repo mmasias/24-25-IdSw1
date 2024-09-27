@@ -54,7 +54,8 @@
 
 ||
 |-:|
-![](/entregas/garciaDiego/Reto001/PUML_LaLiga_IGPWS.png)
+
+![](/entregas/garciaDiego/Imagenes/PUML_LaLiga_IGPWS.png)
 
 
 ## **Clases y Relaciones**
