@@ -1,20 +1,20 @@
 @startuml
-class Foco {
+Object Foco {
 }
 
-class Persona1 {
+Object Persona1 {
 }
 
-class Persona2 {
+Object Persona2 {
 }
 
-class Sombra1 {
+Object Sombra1 {
 }
 
-class Sombra2 {
+Object Sombra2 {
 }
 
-class Superficie {
+Object Superficie {
 }
 
 Foco --> Persona1 : ilumina
