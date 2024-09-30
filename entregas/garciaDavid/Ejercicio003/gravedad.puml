@@ -1,0 +1,34 @@
+@startuml
+class Masas {
+
+}
+
+class Fuerza {
+
+}
+
+class Gravedad {
+
+}
+
+class Coordenada {
+
+}
+
+class Vector {
+
+}
+
+class Tiempo {
+
+}
+
+Masas -- Fuerza : "aplica"
+Masas -- Coordenada : "tiene"
+Masas -- Vector : "tiene"
+Gravedad -- Masas : "calcula fuerza entre"
+Fuerza -- Vector : "usa"
+Masas -- Fuerza : "experimenta"
+Gravedad -- Tiempo : "evoluciona con"
+Gravedad .. Fuerza : "aplicada"
+@enduml
