@@ -9,10 +9,10 @@ El eco es un fenómeno consistente en escuchar un sonido después de haberse ext
 
 ### Conceptos clave:
 - **Fuente de Sonido**: Genera el sonido que causa el eco.
-**Medio**: Es el espacio (aire, agua, etc.) a través del cual viaja el sonido.
-**Superficie Reflectora**: Es la barrera que refleja el sonido, creando el eco.
-**Receptor**: El receptor que percibe tanto el sonido original como el eco.
-**Eco**: El fenómeno que ocurre cuando el sonido rebota y llega de nuevo al receptor.
+- **Medio**: Es el espacio (aire, agua, etc.) a través del cual viaja el sonido.
+- **Superficie Reflectora**: Es la barrera que refleja el sonido, creando el eco.
+- **Receptor**: El receptor que percibe tanto el sonido original como el eco.
+- **Eco**: El fenómeno que ocurre cuando el sonido rebota y llega de nuevo al receptor.
 
 ![Diagrama de Clases](../../../../out/entregas/alarconAndres/ejercicio003/Eco/Clases/Clases.svg)
 
