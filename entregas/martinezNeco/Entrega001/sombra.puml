@@ -31,4 +31,5 @@ Sombra -- Objeto : "proyectada por"
 Sombra -- FuenteLuz : "influenciada por"
 Sombra -- Superficie : "cae sobre"
 
+
 @enduml

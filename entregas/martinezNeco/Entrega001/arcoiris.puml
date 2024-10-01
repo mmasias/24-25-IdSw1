@@ -28,6 +28,7 @@ class Coordenadas {
     +z: float
 }
 
+
 LuzSolar -- Arcoiris : "se refracta en"
 GotasAgua -- Arcoiris : "creado a partir de"
 Arcoiris -- Observador : "es visto por"

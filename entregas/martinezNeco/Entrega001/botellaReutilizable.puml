@@ -44,4 +44,5 @@ CicloUso -- BotellaReutilizable : "involucra"
 BotellaReutilizable -- Reciclaje : "puede reciclarse en"
 BotellaReutilizable -- Desecho : "puede desecharse en"
 
+
 @enduml
