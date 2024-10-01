@@ -1,0 +1,32 @@
+@startuml
+object FuenteDeSonido {
+    nombre = "Campana"
+    generarSonido() = "Sonido agudo"
+}
+
+object Medio {
+    tipo = "Aire"
+    propagarSonido() = "500 m/s"
+}
+
+object SuperficieReflectora {
+    material = "Montaña"
+    reflejarSonido() = "Reflejo fuerte"
+}
+
+object Receptor {
+    sensibilidad = "Alta"
+    percibirEco() = "Sonido percibido con eco"
+}
+
+object Eco {
+    duracion = 2
+    intensidad = 0.8
+}
+
+FuenteDeSonido --> Medio
+Medio --> SuperficieReflectora
+SuperficieReflectora --> Medio
+Medio --> Receptor
+Receptor --> Eco
+@enduml

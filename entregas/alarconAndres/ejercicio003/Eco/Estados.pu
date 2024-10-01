@@ -1,0 +1,11 @@
+@startuml
+[*] --> SinSonido
+SinSonido --> SonidoGenerado : GenerarSonido()
+SonidoGenerado --> SonidoEnViaje : PropagarSonido()
+SonidoEnViaje --> SonidoReflejado : ReflejarSonido()
+SonidoReflejado --> SonidoEnViaje : ViajeDeVuelta()
+SonidoEnViaje --> SonidoPercibido : RecibirSonido()
+SonidoPercibido --> EcoPercibido : PercibirEco()
+
+EcoPercibido --> [*]
+@enduml
