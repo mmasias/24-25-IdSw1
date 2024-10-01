@@ -1,0 +1,36 @@
+@startuml
+
+class Arcoiris {
+    +longitudOnda: List<float>
+    +colores: List<String>
+    +formarse(LuzSolar, GotasAgua): void
+}
+
+class LuzSolar {
+    +intensidad: float
+    +direccion: String
+    +composiciónEspectral(): List<float>
+}
+
+class GotasAgua {
+    +tamaño: float
+    +dispersión(): String
+}
+
+class Observador {
+    +posición: Coordenadas
+    +verArcoiris(Arcoiris): void
+}
+
+class Coordenadas {
+    +x: float
+    +y: float
+    +z: float
+}
+
+LuzSolar -- Arcoiris : "se refracta en"
+GotasAgua -- Arcoiris : "creado a partir de"
+Arcoiris -- Observador : "es visto por"
+Observador -- Coordenadas : "posicionado en"
+
+@enduml

@@ -1,0 +1,47 @@
+@startuml
+
+class BotellaReutilizable {
+    +material: String
+    +capacidad: float
+    +vidaUtil: int
+    +usar(): void
+    +lavar(): void
+    +desechar(): void
+}
+
+class ProcesoProduccion {
+    +material: String
+    +consumoEnergetico: float
+    +fabricar(): BotellaReutilizable
+}
+
+class Usuario {
+    +nombre: String
+    +comprarBotella(ProcesoProduccion): BotellaReutilizable
+    +usarBotella(BotellaReutilizable): void
+    +lavarBotella(BotellaReutilizable): void
+}
+
+class CicloUso {
+    +usarRepetidamente(): void
+    +lavarBotella(BotellaReutilizable): void
+}
+
+class Reciclaje {
+    +reciclarBotella(BotellaReutilizable): void
+    +energiaReciclaje: float
+}
+
+class Desecho {
+    +eliminarBotella(BotellaReutilizable): void
+    +impactoAmbiental: String
+}
+
+BotellaReutilizable -- ProcesoProduccion : "creada en"
+Usuario -- BotellaReutilizable : "utiliza"
+Usuario -- CicloUso : "participa en"
+CicloUso -- BotellaReutilizable : "involucra"
+BotellaReutilizable -- Reciclaje : "puede reciclarse en"
+BotellaReutilizable -- Desecho : "puede desecharse en"
+
+@enduml

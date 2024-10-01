@@ -1,0 +1,34 @@
+@startuml
+
+class Sombra {
+    +origen: Objeto
+    +fuenteLuz: FuenteLuz
+    +tamaño: float
+    +dirección: String
+    +intensidad: float
+    +posición: String
+    +color: String
+}
+
+class Objeto {
+    +forma: String
+    +dimensiones: float
+    +material: String
+}
+
+class FuenteLuz {
+    +tipo: String
+    +intensidad: float
+    +dirección: String
+}
+
+class Superficie {
+    +tipo: String
+    +textura: String
+}
+
+Sombra -- Objeto : "proyectada por"
+Sombra -- FuenteLuz : "influenciada por"
+Sombra -- Superficie : "cae sobre"
+
+@enduml
