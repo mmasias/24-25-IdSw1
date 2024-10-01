@@ -12,3 +12,4 @@ Modelar un elemento de cada columna:
 ||La cadena de suministros
 ||Mejora contínua
 ||La experiencia del cliente
+
