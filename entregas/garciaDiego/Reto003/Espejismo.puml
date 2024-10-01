@@ -1,0 +1,13 @@
+@startuml
+
+    Package "Espejismo"{
+
+        Espejismo -- "Condiciones climaticas" : "es generado por"
+        Espejismo -- Observador : "es observado por"
+        Espejismo -- Luz : "refleja la luz"
+        "Condiciones climaticas" .. Luz : "afecta"
+        "Condiciones climaticas" .. Observador : "afecta"
+        
+    }
+     
+@enduml

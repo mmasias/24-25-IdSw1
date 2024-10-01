@@ -1,0 +1,15 @@
+@startuml
+package "Sombra" {
+
+    FocoDeLuz ..> Sombra : "Genera"
+
+    FocoDeLuz --> Objeto : "Ilumina"
+
+    Objeto --> Sombra : "Proyecta"
+
+    Objeto <-- Sombra 
+
+    Sombra ..> Superficie: "Se proyecta"
+
+}
+@enduml
