@@ -1,0 +1,44 @@
+@startuml
+class "Cuerpo1" {
+  masa : Double
+  forma : String
+  tamaño : Double
+  posicion : (x, y, z) : Tuple
+}
+
+class "CampoGravitacional" {
+  fuerza : Double
+  direccion : (x, y, z) : Tuple
+}
+
+class "Cuerpo2" {
+  textura : String
+  color : String
+}
+
+Cuerpo1 -- CampoGravitacional : es afectado por
+Cuerpo2 -- CampoGravitacional : es afectado por
+Cuerpo1 .. Cuerpo2 : pueden estar en contacto
+
+class "cuerpo1 : Cuerpo1" as cuerpoA{
+  masa : 100
+  forma : "cubo"
+  tamaño : 10
+  posicion : (0, 0, 0)
+}
+class "cuerpo2 : Cuerpo2" as cuerpoB{
+  masa : 500000
+  forma : "esfera"
+  tamaño : 5
+  posicion : (10, 10, 10)
+}
+class "campo1 : CampoGravitacional" as campo1{
+  fuerza : 9.8
+  direccion : (0, -1, 0)
+}
+
+cuerpoA -- campo1 : es afectado por
+cuerpoB -- campo1 : es afectado por
+cuerpoA .. cuerpoB : se apoya
+
+@enduml
