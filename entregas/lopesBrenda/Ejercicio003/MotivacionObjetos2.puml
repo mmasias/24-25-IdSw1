@@ -1,31 +1,31 @@
-@startuml Motivacion para dejar de fumar
+@startuml Motivacion para corrrer un maraton
 
 object persona1 {
     Luis
 }
 
 object meta1 {
-    Dejar de fumar en 3 meses
+    Aprender a correr de la manera correcta
+}
+
+object meta2 {
+    Correr sin cansarse tanto
 }
 
 object accion1 {
-    Reducir cigarrillos a la mitad
+    Entrenar todos los dias
 }
 
 object ganas1 {
-    Dejar de Fumar
+    Correr un maraton
 }
 
 object razon1 {
-    Mejorar la salud
+    Mejora personal
 }
 
 object resultado1 {
-    Se siente mas sano
-}
-
-object resultado2 {
-    Mejora su piel
+    Correr empieza a ser mas facil
 }
 
 object motivacion1 {
@@ -33,13 +33,13 @@ object motivacion1 {
 
 persona1 --> ganas1 
 ganas1 --> meta1  
+ganas1 --> meta2 
 ganas1 --> razon1  
 persona1 -[dashed]-> accion1
 accion1 --> resultado1 
-accion1 --> resultado2
 resultado1 --> motivacion1 
-resultado2 --> motivacion1 
 meta1 --> accion1 
+meta2 --> accion1
 razon1 -[dashed]-> accion1
 
 @enduml

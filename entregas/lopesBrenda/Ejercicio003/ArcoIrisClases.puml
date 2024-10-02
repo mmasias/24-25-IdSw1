@@ -1,19 +1,14 @@
 @startuml
 class LuzDelSol {
-
 }
 
 class GotaAgua {
-
 }
 
-
 class ArcoIris {
-
 }
 
 class Observador {
-
 }
 
 LuzDelSol --> GotaAgua : refracta en

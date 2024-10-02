@@ -3,13 +3,16 @@
 class Persona {
 }
 
-class FuenteDeApoyo {
-}
-
 class Meta {
 }
 
 class Motivacion {
+}
+
+class Ganas {
+}
+
+class Razon {
 }
 
 class Accion {
@@ -18,11 +21,13 @@ class Accion {
 class Resultado {
 }
 
-Persona --> FuenteDeApoyo : recibe
-Persona --> Meta : tiene
-Persona --> Accion : realiza
+Persona --> Ganas 
+Persona -[dashed]-> Accion
+Ganas --> Meta  
+Ganas --> Razon  
 Accion --> Resultado 
-Resultado --> Motivacion : genera
-Meta --> Motivacion : incrementa
+Resultado --> Motivacion 
+Meta --> Accion 
+Razon -[dashed]-> Accion
 
 @enduml
