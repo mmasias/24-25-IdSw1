@@ -1,0 +1,16 @@
+@startuml Arcoiris
+Class Luz{
+
+}
+
+Class Agua{
+
+}
+
+Class Aire{
+
+}
+
+Luz --> Agua
+Agua --> Aire
+@enduml
