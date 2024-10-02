@@ -1,0 +1,17 @@
+@startuml
+object sol {
+}
+
+object lluvia {
+}
+
+object arcoIris1 {
+}
+
+object observador1 {
+}
+
+sol --> lluvia : refracta en
+lluvia --> arcoIris1 : forma
+arcoIris1 --> observador1 : observa
+@enduml

@@ -1,0 +1,30 @@
+@startuml Dos fuentes dos Personas
+
+object persona1 {
+}
+
+object persona2 {
+}
+
+object fuenteDeLuz1 {
+}
+
+object fuenteDeLuz2 {
+}
+
+
+object sombra1 {
+}
+
+object sombra2 {
+}
+
+fuenteDeLuz1 -- persona1
+persona1 -- sombra1
+fuenteDeLuz1 --[dashed]- sombra1
+
+fuenteDeLuz2 -- persona2
+persona2 -- sombra2
+fuenteDeLuz2 -[dashed]- sombra2
+
+@enduml

@@ -1,0 +1,33 @@
+@startuml
+
+class Persona {
+}
+
+class Meta {
+}
+
+class Motivacion {
+}
+
+class Ganas {
+}
+
+class Razon {
+}
+
+class Accion {
+}
+
+class Resultado {
+}
+
+Persona --> Ganas 
+Persona -[dashed]-> Accion
+Ganas --> Meta  
+Ganas --> Razon  
+Accion --> Resultado 
+Resultado --> Motivacion 
+Meta --> Accion 
+Razon -[dashed]-> Accion
+
+@enduml
