@@ -1,0 +1,19 @@
+@startuml
+class FuenteSonido {
+}
+
+class OndaSonora {
+}
+
+class SuperficieReflectante {
+}
+
+class Eco {
+}
+
+FuenteSonido -- OndaSonora: emite >
+OndaSonora --> SuperficieReflectante: impacta >
+SuperficieReflectante -- OndaSonora: refleja >
+OndaSonora -- Eco: percibido como >
+
+@enduml
