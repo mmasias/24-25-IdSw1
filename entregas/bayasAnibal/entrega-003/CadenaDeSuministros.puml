@@ -1,0 +1,21 @@
+@startuml
+class Proveedor{
+}
+
+class Producto{
+}
+
+class Almacen{
+}
+
+class Distribuidor{
+}
+
+class Cliente{
+}
+
+Proveedor --> Producto
+Producto --> Almacen
+Almacen --> Distribuidor
+Distribuidor --> Cliente
+@enduml
