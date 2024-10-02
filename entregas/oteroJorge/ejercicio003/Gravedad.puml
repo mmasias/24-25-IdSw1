@@ -1,0 +1,12 @@
+@startuml Gravedad
+
+class Objeto1
+class FuerzaGravedad
+class Distancia 
+class Objeto2
+
+Objeto1 -- Distancia
+Objeto2 -- Distancia
+Distancia -- FuerzaGravedad
+
+@enduml

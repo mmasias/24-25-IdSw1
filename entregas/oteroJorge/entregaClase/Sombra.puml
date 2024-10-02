@@ -9,4 +9,12 @@ Objeto -- Superficie
 FuenteDeLuz -- Persona
 Persona -- Superficie
 
+Foco1 : FuenteDeLuz
+Foco2 : FuenteDeLuz
+Celia : Persona
+Suelo : Superficie
+Foco1 -- Celia
+Foco2 -- Celia
+Celia -- Suelo
+
 @enduml
