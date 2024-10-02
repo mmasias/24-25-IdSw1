@@ -1,16 +1,34 @@
 @startuml Arcoiris
 Class Luz{
-
+	-intensidad: int
+	-color: String
+	+emitirLuz(): void
 }
 
-Class Agua{
-
+Class GotaAgua{
+	-pureza: float
+	-temperatura: float
+	+reflejarLuz():
 }
 
-Class Aire{
-
+Class LuzReflejada{
+	-anguloReflexion: float
+	-intensidad: int
+	+refractarLuz(): Luz
 }
 
-Luz --> Agua
-Agua --> Aire
+Class Atmosfera{
+	-humedad: float
+	-temperatura: float
+	+dispersarLuz():
+}
+
+Class Arcoiris{
+	+mostrarArcoiris(): void
+}
+
+Luz --> GotaAgua : Incide
+GotaAgua --> LuzReflejada : Refleja
+LuzReflejada --> Atmosfera : Refracta
+Atmosfera --> Arcoiris : Dispersa
 @enduml
