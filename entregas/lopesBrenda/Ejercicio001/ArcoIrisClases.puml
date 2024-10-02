@@ -1,0 +1,22 @@
+@startuml
+class LuzDelSol {
+
+}
+
+class GotaAgua {
+
+}
+
+
+class ArcoIris {
+
+}
+
+class Observador {
+
+}
+
+LuzDelSol --> GotaAgua : refracta en
+GotaAgua --> ArcoIris : forma
+ArcoIris --> Observador : percibe
+@enduml
