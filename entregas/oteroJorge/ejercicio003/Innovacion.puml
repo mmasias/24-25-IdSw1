@@ -1,0 +1,15 @@
+@startuml Innovacion
+
+class Idea
+class ProcesoInnovacion
+class Creatividad
+class Resultado
+class Colaboracion
+
+Idea -- ProcesoInnovacion
+ProcesoInnovacion --> Resultado
+Creatividad --> ProcesoInnovacion
+ProcesoInnovacion -- Colaboracion
+Colaboracion -- Idea
+
+@enduml
