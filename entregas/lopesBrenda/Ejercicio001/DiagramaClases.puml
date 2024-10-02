@@ -1,0 +1,17 @@
+@startuml
+
+class Persona{
+}
+
+class FuenteDeLuz{
+}
+
+
+class Sombra{
+}
+
+FuenteDeLuz -- Persona
+Persona -- Sombra
+FuenteDeLuz -- Sombra
+
+@enduml
