@@ -1,0 +1,49 @@
+@startuml
+object Jugador
+Jugador : Nombre = "Cristiano Ronaldo"
+Jugador : Edad = 39
+Jugador : Nacionalidad = "Portugal"
+Jugador : Posicion = "Delantero"
+
+object Entrenador
+Entrenador : Nombre = "Carlletto Ancelloti"
+Entrenador : Nacionalidad = "Italia"
+
+object Equipo
+Equipo : Nombre = "Real Madrid"
+Equipo : Plantilla = (Nombre_Jugadores)
+Equipo : Dinero = xxxx
+Equipo : Personal = 100
+
+object Estadio
+Estadio : Equipo = "Real Madrid"
+
+object Reglas
+Reglas : IdRegla = 1
+Reglas : DescripcionRegla = "Fuera de Juego..."
+
+object Arbitro
+Arbitro : Nombre = "Mateu Laoz"
+
+object Jornadas
+Jornadas : Número = 1
+
+object Partido
+Partido : Equipos = 'Equipo1' + 'Equipo2'
+Partido : Resultado = "Gana Equipo1"
+
+object Competicion 
+Competicion : Ranking = (Array de Posiciones)
+
+Jugador -->Equipo
+Entrenador -->Equipo
+Equipo ..>Estadio
+
+Reglas --> Arbitro
+Arbitro --> Partido
+Partido --> Reglas
+Jornadas --> Partido
+Estadio ..> Partido
+Equipo --> Partido
+Competicion --> Jornadas
+@enduml

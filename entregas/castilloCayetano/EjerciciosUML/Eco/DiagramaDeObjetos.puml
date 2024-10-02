@@ -1,0 +1,16 @@
+@startuml
+
+microfono : Microfono
+altavoz : Altavoz
+procesador : ProcesarSonido
+eco : Eco
+sonido : Sonido
+
+microfono --> sonido : grabar()
+procesador --> sonido : procesar()
+eco --> sonido : aplicarEco()
+procesador --> eco : enviarSonidoProcesado()
+microfono --> procesador : capturarSonido()
+procesador --> altavoz : enviarAltavoz()
+
+@enduml

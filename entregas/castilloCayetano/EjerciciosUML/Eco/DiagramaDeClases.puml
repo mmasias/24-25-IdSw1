@@ -1,0 +1,18 @@
+@startuml
+
+class Microfono
+class Altavoz
+class ProcesarSonido
+class Eco 
+class Sonido
+
+Microfono --> Sonido
+Altavoz --> Sonido
+ProcesarSonido --> Sonido
+Eco --> Sonido
+
+ProcesarSonido <-- Eco
+Microfono  -->  ProcesarSonido
+ProcesarSonido --> Altavoz
+
+@enduml
