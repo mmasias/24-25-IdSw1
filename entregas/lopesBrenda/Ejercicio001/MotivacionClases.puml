@@ -1,0 +1,28 @@
+@startuml
+
+class Persona {
+}
+
+class FuenteDeApoyo {
+}
+
+class Meta {
+}
+
+class Motivacion {
+}
+
+class Accion {
+}
+
+class Resultado {
+}
+
+Persona --> FuenteDeApoyo : recibe
+Persona --> Meta : tiene
+Persona --> Accion : realiza
+Accion --> Resultado 
+Resultado --> Motivacion : genera
+Meta --> Motivacion : incrementa
+
+@enduml
