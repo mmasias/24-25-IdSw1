@@ -1,0 +1,12 @@
+@startuml
+
+class Holograma
+class GeneracionOptica
+class InterfazFisica
+class DatosAProyectar
+
+InterfazFisica -- DatosAProyectar : se convierte en
+DatosAProyectar -- GeneracionOptica : se interpreta en
+GeneracionOptica -- Holograma : genera
+
+@enduml

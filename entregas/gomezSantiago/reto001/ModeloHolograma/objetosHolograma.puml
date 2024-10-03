@@ -1,0 +1,12 @@
+@startuml
+
+object HologramaReal
+object GeneracionOpticaConLaser
+object InterfazFisicaPantalla
+object Datos3D
+
+InterfazFisicaPantalla -- Datos3D : se convierte en
+Datos3D -- GeneracionOpticaConLaser : se interpretan en
+GeneracionOpticaConLaser -- HologramaReal : genera
+
+@enduml

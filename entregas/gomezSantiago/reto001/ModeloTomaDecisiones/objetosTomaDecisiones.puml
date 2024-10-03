@@ -1,0 +1,12 @@
+@startuml
+
+object DecisionCompra
+object PersonaCompradora
+object OpcionesCompra
+object CriteriosPrecio
+
+PersonaCompradora -- OpcionesCompra : evalua
+OpcionesCompra -- CriteriosPrecio : se filtran por
+CriteriosPrecio -- DecisionCompra : produce
+
+@enduml
