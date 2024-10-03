@@ -40,7 +40,7 @@ Arcoiris -- LuzSolar : Causa
 @enduml
 ```
 
-![AcroirisDiagramaClases1](imagenes\AcroirisDiagramaClases1.png)
+![AcroirisDiagramaClases1.png](imagenes\AcroirisDiagramaClases1.png)
 
 
 ### Diagrama de Objetos
@@ -54,7 +54,7 @@ Arcoiris -- GotaDeAgua : "Se forma con"
 Arcoiris -- LuzSolar : "Causa"
 @enduml
 ```
-![AcroirisDiagramaObjetos1](imagenes\AcroirisDiagramaObjetos1.png)
+![AcroirisDiagramaObjetos1.png](imagenes\AcroirisDiagramaObjetos1.png)
 
 
 ### Diagrama de Estados
@@ -72,7 +72,7 @@ Arcoiris --> [*] : Observado por el ojo humano
 @enduml
 ```
 
-![AcroirisDiagramaEstados1](imagenes\AcroirisDiagramaEstados1.png)
+![AcroirisDiagramaEstados1.png](imagenes\AcroirisDiagramaEstados1.png)
 
 **ITERACION 2**
 
@@ -93,7 +93,7 @@ Descomposicion  -->  Observacion : se muestra en
 @enduml
 ```
 
-![AcroirisDiagramaClases1](imagenes\AcroirisDiagramaClases2.png)
+![AcroirisDiagramaClases2.png](imagenes\AcroirisDiagramaClases2.png)
 
 
 ### Diagrama de Objetos
@@ -111,7 +111,7 @@ Reflexion --> Descomposicion : produce
 Descomposicion --> Observacion : muestra
 @enduml
 ```
-![AcroirisDiagramaObjetos1](imagenes\AcroirisDiagramaObjetos2.png)
+![AcroirisDiagramaObjetos2.png](imagenes\AcroirisDiagramaObjetos2.png)
 
 
 ### Diagrama de Estados
@@ -128,7 +128,7 @@ Observacion --> [*]
 
 ```
 
-![AcroirisDiagramaEstados1](imagenes\AcroirisDiagramaEstados2.png)
+![AcroirisDiagramaEstados2.png](imagenes\AcroirisDiagramaEstados2.png)
 </details>
 
 
@@ -158,7 +158,7 @@ Madurez --> Declive : termina en
 
 @enduml
 ```
-![CicloDeVidaProducto](imagenes\CicloDeVidaProductoDiagramaClases1.png)
+![CicloDeVidaProductoDiagramaClases1.png](imagenes\CicloDeVidaProductoDiagramaClases1.png)
 
 ## Diagrama De Objetos
 ```
@@ -177,7 +177,7 @@ FaseMadurez --> FaseDeclive : Pierde valor por falta de innovación; competencia
 @enduml
 ```
 
-![CicloDeVidaProducto](imagenes\CicloDeVidaProductoDiagramaObjetos1.png)
+![CicloDeVidaProductoDiagramaObjetos1.png](imagenes\CicloDeVidaProductoDiagramaObjetos1.png)
 
 
 ## Diagrama De Estados
@@ -192,7 +192,7 @@ Declive --> [*] : Fin del ciclo de vida
 @enduml
 ```
 
-![CicloDeVidaProducto](imagenes\CicloDeVidaProductoDiagramaEstados1.png)
+![CicloDeVidaProductoDiagramaEstados1.png](imagenes\CicloDeVidaProductoDiagramaEstados1.png)
 
 
 </details>

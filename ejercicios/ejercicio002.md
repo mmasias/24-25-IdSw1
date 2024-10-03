@@ -21,7 +21,7 @@ Sombra -- Superficie
 @enduml
 ```
 
-![Diagrama De Clases](imagenes\sombraIteracion1.png)
+![sombraIteracion1.png](imagenes\sombraIteracion1.png)
 
 ```csharp
 @startuml
@@ -69,7 +69,7 @@ Sombra -- Superficie
 @enduml
 ```
 
-![SombraIteracion1](imagenes\sombraIteracion2.png)
+![sombraIteracion2.png](imagenes\sombraIteracion2.png)
 
 
 ## iteracion 3
@@ -91,7 +91,7 @@ FuenteDeLuz .. Superficie
 @enduml
 ```
 
-![SombraIteracion2](imagenes\sombraIteracion3.png)
+![sombraIteracion3.png](imagenes\sombraIteracion3.png)
 
 ### Diagramas de objetos
 
