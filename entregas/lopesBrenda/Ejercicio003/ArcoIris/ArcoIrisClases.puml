@@ -2,7 +2,7 @@
 class LuzDelSol {
 }
 
-class GotaAgua {
+class Agua {
 }
 
 class ArcoIris {
@@ -11,7 +11,7 @@ class ArcoIris {
 class Observador {
 }
 
-LuzDelSol --> GotaAgua : refracta en
-GotaAgua --> ArcoIris : forma
+LuzDelSol --> Agua : refracta en
+Agua --> ArcoIris : forma
 ArcoIris --> Observador : percibe
 @enduml

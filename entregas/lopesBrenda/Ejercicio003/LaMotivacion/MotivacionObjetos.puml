@@ -34,12 +34,12 @@ object motivacion1 {
 persona1 --> ganas1 
 ganas1 --> meta1  
 ganas1 --> razon1  
-persona1 -[dashed]-> accion1
+persona1 -[dashed]- accion1
 accion1 --> resultado1 
 accion1 --> resultado2
 resultado1 --> motivacion1 
 resultado2 --> motivacion1 
 meta1 --> accion1 
-razon1 -[dashed]-> accion1
+razon1 -[dashed]- accion1
 
 @enduml
