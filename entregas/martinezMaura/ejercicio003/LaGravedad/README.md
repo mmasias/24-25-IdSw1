@@ -8,5 +8,16 @@ La gravedad es una relación entre entidades con masa que determina la atracció
 
 - **SistemaGravitacional**: Es la entidad que agrupa y gestiona múltiples objetos físicos. Contiene la constante gravitacional y una lista de objetos. Su función principal es calcular las interacciones gravitacionales entre los objetos y actualizar sus estados con el paso del tiempo.
 ---
-![](./images/LaGravedad/DiagramaDeClases.png)
+### Diagrama de Clases 
+---
+![](/images/LaGravedad/DiagramaDeClases.png)
+---
+### Diagrama de Estados
+---
+![](/images/LaGravedad/DiagramadeEstados.png)
+---
+### Diagrama de Objetos
+---
+![](/images/LaGravedad/DiagramaDeObjetos.png)
+
 
