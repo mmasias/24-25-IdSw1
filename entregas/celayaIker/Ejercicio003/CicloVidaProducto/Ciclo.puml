@@ -1,0 +1,40 @@
+@startuml CicloVidaProductoLineal
+
+Class Producto {
+    +lanzarProducto(): void
+    +actualizarVersion(): void
+    +retirarProducto(): void
+}
+
+Class Desarrollo {
+    +desarrollarPrototipo(): void
+    +realizarPruebas(): void
+}
+
+Class Introduccion {
+    +planificarLanzamiento(): void
+    +lanzarProducto(): void
+}
+
+Class Crecimiento {
+    +aumentarProduccion(): void
+    +expandirMercado(): void
+}
+
+Class Madurez {
+    +optimizarCostos(): void
+    +mantenerPosicion(): void
+}
+
+Class Declive {
+    +reducirCostos(): void
+    +retirarDelMercado(): void
+}
+
+Producto --> Desarrollo : Comienza en
+Desarrollo --> Introduccion : Se lanza en
+Introduccion --> Crecimiento : Crece en
+Crecimiento --> Madurez : Estabiliza en
+Madurez --> Declive : Declina en
+
+@enduml
