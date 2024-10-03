@@ -1,0 +1,12 @@
+@startuml
+
+class Decision
+class Decisor
+class Opciones
+class Criterios
+
+Decisor -- Opciones : evalúa
+Opciones -- Criterios : se filtran por
+Criterios -- Decision : produce
+
+@enduml
