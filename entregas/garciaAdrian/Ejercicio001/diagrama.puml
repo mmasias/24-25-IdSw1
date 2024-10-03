@@ -1,0 +1,135 @@
+@startuml
+class Liga {
+    - nombre : String
+    - año : int
+    + getEquipos() : List<Equipo>
+    + getJornadas() : List<Jornada>
+    + getReglas() : List<Regla>
+}
+
+class Competicion {
+    - tipo : String
+    - nombre : String
+    + getLigas() : List<Liga>
+}
+
+class Jornada {
+    - numero : int
+    - fecha : Date
+    + getEncuentros() : List<Encuentro>
+}
+
+class Encuentro {
+    - fecha : Date
+    - resultado : String
+    - puntosLocal : int
+    - puntosVisitante : int
+    + getLocal() : Equipo
+    + getVisitante() : Equipo
+    + getEstadio() : Estadio
+    + getJugadores() : List<Jugador>
+    + getArbitro() : Arbitro
+    + getSanciones() : List<Sancion>
+}
+
+class Equipo {
+    - nombre : String
+    - ciudad : String
+    - presupuesto : double
+    - puntos : int
+    + getJugadores() : List<Jugador>
+    + getEntrenador() : Entrenador
+    + comprarJugador(jugador : Jugador)
+    + venderJugador(jugador : Jugador)
+}
+
+class Jugador {
+    - nombre : String
+    - numero : int
+    - posicion : String
+    - valor : double
+    + getEstadisticas() : Estadisticas
+}
+
+class Estadisticas {
+    - goles : int
+    - tarjetasAmarillas : int
+    - tarjetasRojas : int
+    - minutosJugados : int
+}
+
+class Entrenador {
+    - nombre : String
+    - experiencia : int
+}
+
+class Estadio {
+    - nombre : String
+    - ciudad : String
+    - capacidad : int
+}
+
+class Arbitro {
+    - nombre : String
+    - experiencia : int
+    - categoria : String
+}
+
+class Sancion {
+    - tipo : String
+    - descripcion : String
+    - duracion : int
+}
+
+class Regla {
+    - nombre : String
+    - descripcion : String
+}
+
+class Puntos {
+    - victorias : int
+    - empates : int
+    - derrotas : int
+}
+
+class MercadoFichajes {
+    - periodoInicio : Date
+    - periodoFin : Date
+    - limitePresupuesto : double
+    + getTransferencias() : List<Transferencia>
+}
+
+class Transferencia {
+    - fecha : Date
+    - valor : double
+    + getJugador() : Jugador
+    + getEquipoComprador() : Equipo
+    + getEquipoVendedor() : Equipo
+}
+
+
+Competicion -- Liga : organiza >
+Liga -- Jornada : contiene >
+Jornada -- Encuentro : contiene >
+Encuentro -- Equipo : local >
+Encuentro -- Equipo : visitante >
+Encuentro -- Jugador : participan >
+Encuentro -- Estadio : se juega en >
+Encuentro -- Arbitro : arbitrado por >
+Encuentro -- Sancion : puede tener >
+Equipo -- Jugador : tiene >
+Equipo -- Entrenador : dirigido por >
+Jugador -- Estadisticas : tiene >
+Liga -- Regla : regida por >
+Encuentro -- Puntos : asigna >
+
+Equipo -- Transferencia : realiza >
+Transferencia -- Jugador : incluye >
+Transferencia -- Equipo : vendedor >
+Transferencia -- Equipo : comprador >
+MercadoFichajes -- Transferencia : contiene >
+Jugador -- MercadoFichajes : transfiere >
+MercadoFichajes -- Equipo : afecta presupuesto >
+Sancion -- Jugador : impuesta a >
+Sancion -- Arbitro : asignada por >
+@enduml
