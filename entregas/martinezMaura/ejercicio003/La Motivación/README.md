@@ -28,4 +28,12 @@ Acciones específicas que pueden influir directamente en los niveles de motivaci
 ---
 ### Diagrama de Clases
 ---
-./images/LaMotivación/DiagramaDeClases.png
+![](/images/LaMotivación/DiagramaDeClases.png)
+---
+### Diagrama de Estados
+---
+![](/images/LaMotivación/DiagramaDeEstados.png)
+---
+### Diagrama de Objetos
+---
+![](/images/LaMotivación/DiagramaDeObjetos.png)
