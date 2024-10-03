@@ -1,0 +1,6 @@
+@startuml EcoClases
+Sonido -- Vibraciones : genera
+Vibraciones --> Barrera : se reflejan
+Barrera -- Eco : produce
+Eco .. Sonido : influye
+@enduml

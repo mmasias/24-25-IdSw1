@@ -1,0 +1,14 @@
+@startuml TomaDeDecisionesClases
+class Decisor
+class Conflicto
+class Idea
+class Analisis
+class Decision
+
+Decisor -- Conflicto : enfrenta
+Conflicto --> Idea : deriva
+Idea --> Analisis : evalúa
+Analisis --> Idea : rechaza si no es válida
+Analisis -- Decision : acepta si es válida
+Decision ..> Decisor : impacta
+@enduml

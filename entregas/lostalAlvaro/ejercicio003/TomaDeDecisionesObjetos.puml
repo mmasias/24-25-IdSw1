@@ -1,0 +1,8 @@
+@startuml TomaDeDecisionesObjetos
+Persona -- Dilema : enfrenta
+Dilema --> IdeaSolucion : genera
+IdeaSolucion --> AnalisisSolucion : revisa
+AnalisisSolucion --> IdeaSolucion : rechaza si es incorrecta
+AnalisisSolucion -- Eleccion : acepta si es correcta
+Eleccion .. Persona : afecta
+@enduml
