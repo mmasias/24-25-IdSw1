@@ -1,11 +1,9 @@
 # La Innovación
 
 ## Descripción
-
+La innovación, como proceso por el que se transforma una idea en un producto o servicio novedoso en el mercado, o por el que se incorpora un novedoso proceso de fabricación o nuevos métodos de organización o de comercialización en la empresa
 
 ## Diagrama de Clases
-
-
 ### Conceptos clave:
 
 - **Inventor**: Persona o entidad que realiza innovaciones.

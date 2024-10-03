@@ -3,9 +3,7 @@
 ## Descripción
 El eco es un fenómeno consistente en escuchar un sonido después de haberse extinguido la sensación producida por la onda sonora. Se produce eco cuando la onda sonora se refleja perpendicularmente en una superficie.
 
-
 ## Diagrama de Clases
-
 
 ### Conceptos clave:
 - **Fuente de Sonido**: Genera el sonido que causa el eco.
