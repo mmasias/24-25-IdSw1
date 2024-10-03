@@ -1,0 +1,28 @@
+@startuml
+
+class Sombra {
+  - forma
+  - intensidad
+  - posición
+  - tamaño
+}
+
+class Objeto {
+  - posición
+  - tamaño
+  - orientación
+}
+
+class Luz {
+  - intensidad
+  - dirección
+  - tipo
+}
+
+class Superficie {
+}
+
+Luz --> Objeto: Enfoca a
+Objeto --> Sombra: Proyecta la
+Sombra ..> Superficie : Sobre la
+@enduml
