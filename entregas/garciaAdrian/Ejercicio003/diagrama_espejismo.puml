@@ -1,0 +1,40 @@
+@startuml
+title Diagrama de un Espejismo
+
+class Espejismo {
+    +Tipo: Superior o Inferior
+    +Aparece como: Agua o Cielo
+}
+
+class Luz {
+    +Rayo de luz
+    +Se refracta
+}
+
+class Calor {
+    +Aumento de temperatura
+    +Capa de aire caliente
+}
+
+class Aire {
+    +Diferentes capas de temperatura
+    +Cambio de densidad
+}
+
+class Refracción {
+    +Desviación de la luz
+}
+
+class DistorsiónVisual {
+    +Percepción de objetos que no están allí
+}
+
+Espejismo -- Luz : "Es generado por"
+Espejismo -- Calor : "Se forma en"
+Espejismo -- Aire : "Depende de"
+Luz -- Refracción : "Es afectada por"
+Refracción -- Aire : "Sucede en"
+Espejismo -- DistorsiónVisual : "Produce"
+Refracción -- DistorsiónVisual : "Causa"
+
+@enduml
