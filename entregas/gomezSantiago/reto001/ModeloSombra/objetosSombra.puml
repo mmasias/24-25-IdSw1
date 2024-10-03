@@ -1,0 +1,15 @@
+@startuml
+
+object Persona
+object Foco1
+object Foco2
+object SombraFoco1
+object SombraFoco2
+
+Foco1 -- Persona : ilumina
+Foco2 -- Persona : ilumina
+Persona -- SombraFoco1 : genera
+Persona -- SombraFoco2 : genera
+
+
+@enduml
