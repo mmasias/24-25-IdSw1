@@ -1,0 +1,24 @@
+@startuml
+
+Class Foco{
+}
+Class Objeto{
+} 
+Class Superficie{
+}
+
+Foco1 : Foco
+Foco2 : Foco 
+Persona : Objeto
+Suelo : Superficie
+Sombra1 : Sombra
+
+Foco1 -- Persona
+Foco2 -- Persona
+Persona -- Sombra1
+Persona -- Sombra2
+Persona -- Suelo
+Foco1 -- Sombra1
+Foco2 -- Sombra2
+
+@enduml
