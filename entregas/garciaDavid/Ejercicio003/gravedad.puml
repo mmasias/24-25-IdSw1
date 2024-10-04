@@ -1,34 +1,32 @@
 @startuml
-class Masas {
+package Gravedad {
 
+  class Masas {
+
+  }
+
+  class Fuerza {
+
+  }
+
+  class Coordenada {
+
+  }
+
+  class Vector {
+
+  }
+
+  class Tiempo {
+
+  }
+  
+  Fuerza -- Tiempo : "aplica"
+  Masas -- Coordenada : "tiene"
+  Masas -- Vector : "tiene"
+  Masas -- Masas : "atraccion"
+  Fuerza -- Masas : "experimenta"
+  Fuerza -- Vector : "tiene"
+  
 }
-
-class Fuerza {
-
-}
-
-class Gravedad {
-
-}
-
-class Coordenada {
-
-}
-
-class Vector {
-
-}
-
-class Tiempo {
-
-}
-
-Masas -- Fuerza : "aplica"
-Masas -- Coordenada : "tiene"
-Masas -- Vector : "tiene"
-Gravedad -- Masas : "calcula fuerza entre"
-Fuerza -- Vector : "usa"
-Masas -- Fuerza : "experimenta"
-Gravedad -- Tiempo : "evoluciona con"
-Gravedad .. Fuerza : "aplicada"
 @enduml
