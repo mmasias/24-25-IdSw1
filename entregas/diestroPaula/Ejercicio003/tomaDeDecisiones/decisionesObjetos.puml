@@ -1,0 +1,38 @@
+@startuml
+object Persona {
+  nombre: Paula
+}
+
+object Conflicto {
+  nombre: Aburrimiento
+}
+
+object Opciones{
+ nombre: Leer
+ nombre: Ver una serie
+}
+object Opcion1{
+  nombre: Leer
+}
+
+object Opcion2{
+  nombre: Ver una serie
+}
+
+object Análisis {
+  nombre: Pros y contras
+}
+
+object Decisión{
+  nombre: Ver una serie
+}
+
+Persona --> Conflicto : "se le presenta un"
+Conflicto --> Opciones : "con unas"
+Opciones --> Opcion1 
+Opciones --> Opcion2
+Opcion1 --> Análisis : "realiza un"
+Opcion2 --> Análisis : "realiza un"
+Análisis --> Decisión : "elige la mejor opción y toma una"
+
+@enduml
