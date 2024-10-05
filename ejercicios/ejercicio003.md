@@ -1,19 +1,5 @@
 # Ejercicio 003
 
-Modelar un elemento de cada columna:
-
-|||
-|-|-|
-|El eco|La innovación
-|El espejismo|El liderazgo
-|El arcoriris|La motivación
-|El holograma|La toma de decisiones
-|La gravedad|Ciclo de vida de un producto
-||La cadena de suministros
-||Mejora contínua
-||La experiencia del cliente
-
-
 <details open>
 <summary>El Arcoriris</summary>
 <br>
@@ -23,7 +9,9 @@ Se toma como referencia el siguiente texto:
 
 Para los colores vistos por el ojo humano, la secuencia más comúnmente citada y recordada es la de Isaac Newton, definida por siete colores fundamentales: rojo, naranja, amarillo, verde, azul, índigo y violeta. Una lectura cuidadosa del trabajo de Newton indica que el color que llamó azul es lo que actualmente llamaríamos cian."
 
-**ITERACION 1**
+<details open>
+<summary>ITERACION 1</summary>
+<br>
 
 ### Diagrama de clases
 ```
@@ -73,8 +61,13 @@ Arcoiris --> [*] : Observado por el ojo humano
 ```
 
 ![AcroirisDiagramaEstados1.png](imagenes\AcroirisDiagramaEstados1.png)
+</br>
+</details>
 
-**ITERACION 2**
+
+<details open>
+<summary>ITERACION 2</summary>
+<br>
 
 ### Diagrama de clases
 ```
@@ -94,6 +87,7 @@ Descomposicion  -->  Observacion : se muestra en
 ```
 
 ![AcroirisDiagramaClases2.png](imagenes\AcroirisDiagramaClases2.png)
+
 
 
 ### Diagrama de Objetos
@@ -129,8 +123,120 @@ Observacion --> [*]
 ```
 
 ![AcroirisDiagramaEstados2.png](imagenes\AcroirisDiagramaEstados2.png)
+
+
 </details>
 
+
+<details open>
+<summary>RETO 1</summary>
+<br>
+
+# RETO 1 MEJORAR ITERACIONES
+## ARCOIRIS
+
+### Diagrama de Clases
+
+```
+@startuml
+
+package "Espectro Visible" <<Rectangle>> {
+
+  class Arcoiris
+  class LuzSolar
+  class GotaDeLluvia
+  class Refraccion 
+  class Reflexion 
+  class Descomposicion  
+
+  LuzSolar ..> GotaDeLluvia : atraviesa
+  GotaDeLluvia *-- Refraccion : sufre
+  Refraccion --> Reflexion : causa
+  Reflexion --> Descomposicion : produce
+  Descomposicion --> Arcoiris : forma
+}
+
+class ArcoConcentrico 
+Arcoiris *-- ArcoConcentrico : formado por
+Arcoiris o- GotaDeLluvia: tiene 
+class Observador 
+
+Observador -- Arcoiris : observa
+
+@enduml
+```
+
+![ArcoirisRETO1_DiagramaClases.png](imagenes/ArcoirisRETO1_DiagramaClases.png)
+
+### Diagrama de Objetos
+
+```
+@startuml
+title Diagrama de Objetos del Arcoíris
+
+package "Espectro Visible" <<Rectangle>> {
+
+  object arcoirisPrincipal
+  object rayoDeLuz 
+  object gotaGrande
+  object refraccionInicial
+  object reflexionInterna
+  object descomposicionLuz
+
+  rayoDeLuz ..> gotaGrande : atraviesa
+  gotaGrande *-- refraccionInicial : sufre
+  refraccionInicial --> reflexionInterna : causa
+  reflexionInterna --> descomposicionLuz : produce
+  descomposicionLuz --> arcoirisPrincipal : forma
+  gotaGrande o- arcoirisPrincipal 
+
+}
+
+object arcoRojo
+object arcoNaranja
+object arcoAmarillo
+object arcoVerde
+object arcoAzul
+object arcoVioleta
+
+arcoirisPrincipal *-- arcoRojo 
+arcoirisPrincipal *-- arcoNaranja 
+arcoirisPrincipal *-- arcoAmarillo 
+arcoirisPrincipal *-- arcoVerde 
+arcoirisPrincipal *-- arcoAzul 
+arcoirisPrincipal *-- arcoVioleta 
+
+object pedro
+pedro -- arcoirisPrincipal : observa
+
+@enduml
+
+```
+![ArcoirisRETO1_DiagramaObjetos.png](imagenes/ArcoirisRETO1_DiagramaObjetos.png)
+
+
+### Diagrama de estados
+
+```
+@startuml
+title Condiciones para la Formación del Arcoíris
+
+[*] --> SinAgua : No hay gotas de agua en la atmósfera
+SinAgua --> ConAgua : Comienza la presencia de gotas de agua
+ConAgua --> FormacionArcoiris : La luz interactúa con las gotas
+FormacionArcoiris --> SinAgua : Gotas desaparecen o la lluvia se detiene
+SinAgua --> [*]
+
+@enduml
+```
+![ArcoirisRETO1_DiagramaEstados.png](imagenes\ArcoirisRETO1_DiagramaEstados.png)
+
+</details>
+
+
+</details>
+
+---
 
 <details open>
 <summary>Ciclo de Vida de un Producto</summary>
@@ -138,7 +244,10 @@ Observacion --> [*]
 
 [Articulo de Referencia](https://rockcontent.com/es/blog/ciclo-de-vida-de-un-producto/#:~:text=El%20ciclo%20de%20vida%20de,%2C%20crecimiento%2C%20madurez%20y%20declive)
 
-**ITERACION 1**
+<details open>
+<summary>ITERACION 1</summary>
+<br>
+
 ## Diagrama De Clases
 ```
 @startuml
@@ -194,5 +303,6 @@ Declive --> [*] : Fin del ciclo de vida
 
 ![CicloDeVidaProductoDiagramaEstados1.png](imagenes\CicloDeVidaProductoDiagramaEstados1.png)
 
+</details>
 
 </details>
