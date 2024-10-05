@@ -1,0 +1,25 @@
+@startuml
+class Tierra {
+  + masa
+  + radio
+}
+
+class Objeto {
+  + masa
+}
+
+class Distancia {
+  + valor
+}
+
+class FuerzaGravitatoria {
+  + valor
+}
+
+Tierra  --  FuerzaGravitatoria : "afectado por"
+Objeto  --  FuerzaGravitatoria : "afectado por"
+Tierra  --  Distancia : "distancia de"
+Objeto -- Distancia : "distancia de"
+
+@enduml
+
