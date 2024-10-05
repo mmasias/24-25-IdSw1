@@ -249,6 +249,7 @@ SinAgua --> [*]
 <br>
 
 ## Diagrama De Clases
+
 ```
 @startuml
 class Producto 
@@ -256,17 +257,15 @@ class Desarrollo
 class Introduccion
 class Crecimiento 
 class Madurez 
-
 class Declive
-
 Producto --> Desarrollo : inicia con
 Desarrollo --> Introduccion : pasa a
 Introduccion --> Crecimiento : evoluciona a
 Crecimiento --> Madurez : llega a
 Madurez --> Declive : termina en
-
 @enduml
 ```
+
 ![CicloDeVidaProductoDiagramaClases1.png](imagenes\CicloDeVidaProductoDiagramaClases1.png)
 
 ## Diagrama De Objetos
@@ -278,7 +277,6 @@ object FaseLanzamiento
 object FaseCrecimiento
 object FaseMadurez
 object FaseDeclive
-
 Blackberry --> FaseLanzamiento : Lanza modelos como 5000 y 7100; se enfoca en e-mail.
 FaseLanzamiento --> FaseCrecimiento : Expande su presencia a más de 120 países y alta demanda
 FaseCrecimiento --> FaseMadurez : "Alcanza 3% de cuota de mercado; ventas máximas.
@@ -287,7 +285,6 @@ FaseMadurez --> FaseDeclive : Pierde valor por falta de innovación; competencia
 ```
 
 ![CicloDeVidaProductoDiagramaObjetos1.png](imagenes\CicloDeVidaProductoDiagramaObjetos1.png)
-
 
 ## Diagrama De Estados
 ```
@@ -304,5 +301,102 @@ Declive --> [*] : Fin del ciclo de vida
 ![CicloDeVidaProductoDiagramaEstados1.png](imagenes\CicloDeVidaProductoDiagramaEstados1.png)
 
 </details>
+
+
+<details open>
+<summary>RETO 1</summary>
+<br>
+
+## CICLO DE VIDA DE UN PRODCUCTO
+Nueva referencia(https://www.zendesk.com.mx/blog/ciclo-de-vida-producto/)
+
+### Diagrama De Clases
+```
+@startuml
+class Producto 
+class Desarrollo 
+class Introduccion
+class Crecimiento 
+class Madurez 
+class Declive 
+class EstrategiaMarketing
+
+Producto *-- Desarrollo
+Desarrollo --> Introduccion : lanzamiento al mercado
+Introduccion --> Crecimiento : aceptación del consumidor
+Crecimiento --> Madurez : saturación de mercado
+Madurez --> Declive : caída de ventas
+Declive --> Desarrollo : relanzamiento o\nrenovación del producto
+
+Desarrollo o-- EstrategiaMarketing : utiliza
+Introduccion o-- EstrategiaMarketing : adapta
+Crecimiento o-- EstrategiaMarketing : refuerza
+Madurez o-- EstrategiaMarketing : diferencia
+Declive o-- EstrategiaMarketing : evalúa
+
+@enduml
+```
+![RETO1_CicloDeVidaProductoDiagramaClases.png](imagenes\RETO1_CicloDeVidaProductoDiagramaClases.png)
+
+
+### Diagrama De Objetos
+
+```
+@startuml
+title Blackberry
+
+object Blackberry
+object Desarrollo
+object Introduccion
+object Crecimiento
+object Madurez
+object Declive
+object EstrategiaMarketing
+
+Blackberry *-- Desarrollo 
+Desarrollo --> Introduccion 
+Introduccion --> Crecimiento
+Crecimiento --> Madurez 
+Madurez --> Declive 
+Declive --> Desarrollo
+
+Desarrollo o-- EstrategiaMarketing : utiliza\nfunciones de e-mail
+Introduccion o-- EstrategiaMarketing : adapta\ncampañas de lanzamiento
+Crecimiento o-- EstrategiaMarketing : refuerza\nexpansión global
+Madurez o-- EstrategiaMarketing : diferencia\ncon el teclado físico
+Declive o-- EstrategiaMarketing : evalúa\nposibles relanzamientos
+
+@enduml
+```
+
+![RETO1_CicloDeVidaProductoDiagramaObjetos.png](imagenes\RETO1_CicloDeVidaProductoDiagramaObjetos.png)
+
+
+### Diagrama De Estados
+```
+@startuml
+title Fase de Madurez de un Producto
+
+[*] --> Establecimiento
+Establecimiento --> Diferenciación : Implementa estrategias de\nmarketing y promociones
+Diferenciación --> Fidelización : Desarrolla programas de\nlealtad y calidad de servicio
+Fidelización --> Estabilidad : Mantiene la cuota de mercado
+Fidelización --> Riesgo : Identifica amenazas de\ncompetencia intensa
+
+Estabilidad --> Riesgo : Puede disminuir\ncuota de mercado
+Riesgo --> Reinvención : Evalúa nuevas características\npara revitalizar el producto
+Riesgo --> Declive : Si no se implementan cambios\nsustanciales
+
+Reinvención --> Establecimiento : Redefine el producto\ny reinicia el ciclo
+Declive --> [*] : Producto fuera del mercado
+
+@enduml
+```
+![RETO1_CicloDeVidaProductoDiagramaEstados1.png](imagenes\RETO1_CicloDeVidaProductoDiagramaEstados1.png)
+
+
+
+</details>
+
 
 </details>
