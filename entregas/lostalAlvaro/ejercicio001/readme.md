@@ -6,7 +6,7 @@ Este reto consiste en la creación de un diagrama de clases que define el funcio
 
 ## Diagrama
 
-![Diagrama UML de La Liga](/entregas/lostalAlvaro/reto001/img/LaLigaClases.svg)
+![Diagrama UML de La Liga](/entregas/lostalAlvaro/ejercicio001/img/LaLigaClases.svg)
 
 ## Entidades Principales
 
