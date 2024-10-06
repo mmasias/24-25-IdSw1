@@ -1,0 +1,12 @@
+@startuml
+object Persona
+object Foco1
+object Foco2
+object Sombra
+object Superficie
+
+Persona --> Sombra : "proyecta"
+Foco1 --> Sombra : "genera"
+Foco2 --> Sombra : "genera"
+Sombra --> Superficie : "se proyecta en"
+@enduml

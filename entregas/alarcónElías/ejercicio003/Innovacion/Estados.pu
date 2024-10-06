@@ -1,0 +1,10 @@
+@startuml
+[*] --> IdeaGenerada : CrearIdea()
+IdeaGenerada --> PrototipoDesarrollado : DesarrollarPrototipo()
+PrototipoDesarrollado --> PrototipoEvaluado : PresentarAlMercado()
+PrototipoEvaluado --> InnovacionAceptada : EvaluacionPositiva()
+PrototipoEvaluado --> InnovacionRechazada : EvaluacionNegativa()
+
+InnovacionAceptada --> [*]
+InnovacionRechazada --> [*]
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+class Persona
+class Foco
+class Sombra {
+  - tamaño: float
+  - forma: String
+  - dirección: String
+}
+class Superficie
+
+Persona --> Sombra : "proyecta"
+Foco --> Sombra : "genera"
+Sombra --> Superficie : "se proyecta en"
+@enduml
