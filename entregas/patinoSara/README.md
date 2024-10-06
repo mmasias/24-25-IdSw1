@@ -36,4 +36,4 @@ La toma de decisiones es el proceso mediante el cual un individuo o grupo selecc
 | Nombre                      | Imagen                                                         |
 |-----------------------------|----------------------------------------------------------------|
 | Diagrama de clases  | ![Diagrama de Clases ](/entregas/patinoSara/TomaDecisionesClases.svg)             |
-| Diagrama de objetos | ![Diagrama de Objetos ](/entregas/patinoSara/omaDecisionesObjetos.svg)           |
+| Diagrama de objetos | ![Diagrama de Objetos ](/entregas/patinoSara/TomaDecisionesObjetos.svg)           |
