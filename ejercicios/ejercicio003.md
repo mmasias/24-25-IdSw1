@@ -28,7 +28,7 @@ Arcoiris -- LuzSolar : Causa
 @enduml
 ```
 
-![AcroirisDiagramaClases1.png](imagenes\AcroirisDiagramaClases1.png)
+![AcroirisDiagramaClases1.png](imagenes/AcroirisDiagramaClases1.png)
 
 
 ### Diagrama de Objetos
@@ -42,7 +42,7 @@ Arcoiris -- GotaDeAgua : "Se forma con"
 Arcoiris -- LuzSolar : "Causa"
 @enduml
 ```
-![AcroirisDiagramaObjetos1.png](imagenes\AcroirisDiagramaObjetos1.png)
+![AcroirisDiagramaObjetos1.png](imagenes/AcroirisDiagramaObjetos1.png)
 
 
 ### Diagrama de Estados
@@ -60,7 +60,7 @@ Arcoiris --> [*] : Observado por el ojo humano
 @enduml
 ```
 
-![AcroirisDiagramaEstados1.png](imagenes\AcroirisDiagramaEstados1.png)
+![AcroirisDiagramaEstados1.png](imagenes/AcroirisDiagramaEstados1.png)
 </br>
 </details>
 
@@ -86,7 +86,7 @@ Descomposicion  -->  Observacion : se muestra en
 @enduml
 ```
 
-![AcroirisDiagramaClases2.png](imagenes\AcroirisDiagramaClases2.png)
+![AcroirisDiagramaClases2.png](imagenes/AcroirisDiagramaClases2.png)
 
 
 
@@ -105,7 +105,7 @@ Reflexion --> Descomposicion : produce
 Descomposicion --> Observacion : muestra
 @enduml
 ```
-![AcroirisDiagramaObjetos2.png](imagenes\AcroirisDiagramaObjetos2.png)
+![AcroirisDiagramaObjetos2.png](imagenes/AcroirisDiagramaObjetos2.png)
 
 
 ### Diagrama de Estados
@@ -122,7 +122,7 @@ Observacion --> [*]
 
 ```
 
-![AcroirisDiagramaEstados2.png](imagenes\AcroirisDiagramaEstados2.png)
+![AcroirisDiagramaEstados2.png](imagenes/AcroirisDiagramaEstados2.png)
 
 
 </details>
@@ -229,7 +229,7 @@ SinAgua --> [*]
 
 @enduml
 ```
-![ArcoirisRETO1_DiagramaEstados.png](imagenes\ArcoirisRETO1_DiagramaEstados.png)
+![ArcoirisRETO1_DiagramaEstados.png](imagenes/ArcoirisRETO1_DiagramaEstados.png)
 
 </details>
 
@@ -266,7 +266,7 @@ Madurez --> Declive : termina en
 @enduml
 ```
 
-![CicloDeVidaProductoDiagramaClases1.png](imagenes\CicloDeVidaProductoDiagramaClases1.png)
+![CicloDeVidaProductoDiagramaClases1.png](imagenes/CicloDeVidaProductoDiagramaClases1.png)
 
 ## Diagrama De Objetos
 ```
@@ -284,7 +284,7 @@ FaseMadurez --> FaseDeclive : Pierde valor por falta de innovación; competencia
 @enduml
 ```
 
-![CicloDeVidaProductoDiagramaObjetos1.png](imagenes\CicloDeVidaProductoDiagramaObjetos1.png)
+![CicloDeVidaProductoDiagramaObjetos1.png](imagenes/CicloDeVidaProductoDiagramaObjetos1.png)
 
 ## Diagrama De Estados
 ```
@@ -298,7 +298,7 @@ Declive --> [*] : Fin del ciclo de vida
 @enduml
 ```
 
-![CicloDeVidaProductoDiagramaEstados1.png](imagenes\CicloDeVidaProductoDiagramaEstados1.png)
+![CicloDeVidaProductoDiagramaEstados1.png](imagenes/CicloDeVidaProductoDiagramaEstados1.png)
 
 </details>
 
@@ -336,7 +336,7 @@ Declive o-- EstrategiaMarketing : evalúa
 
 @enduml
 ```
-![RETO1_CicloDeVidaProductoDiagramaClases.png](imagenes\RETO1_CicloDeVidaProductoDiagramaClases.png)
+![RETO1_CicloDeVidaProductoDiagramaClases.png](imagenes/RETO1_CicloDeVidaProductoDiagramaClases.png)
 
 
 ### Diagrama De Objetos
@@ -369,7 +369,7 @@ Declive o-- EstrategiaMarketing : evalúa\nposibles relanzamientos
 @enduml
 ```
 
-![RETO1_CicloDeVidaProductoDiagramaObjetos.png](imagenes\RETO1_CicloDeVidaProductoDiagramaObjetos.png)
+![RETO1_CicloDeVidaProductoDiagramaObjetos.png](imagenes/RETO1_CicloDeVidaProductoDiagramaObjetos.png)
 
 
 ### Diagrama De Estados
@@ -392,7 +392,7 @@ Declive --> [*] : Producto fuera del mercado
 
 @enduml
 ```
-![RETO1_CicloDeVidaProductoDiagramaEstados1.png](imagenes\RETO1_CicloDeVidaProductoDiagramaEstados1.png)
+![RETO1_CicloDeVidaProductoDiagramaEstados1.png](imagenes/RETO1_CicloDeVidaProductoDiagramaEstados1.png)
 
 
 
