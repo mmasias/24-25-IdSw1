@@ -30,3 +30,10 @@ Cada gota de agua refleja la luz de manera similar, pero solo las gotas que est�
 ## Toma de decisiones
 
 La toma de decisiones es el proceso mediante el cual un individuo o grupo selecciona una opción entre varias alternativas. Este proceso puede variar en complejidad y enfoque, dependiendo del contexto y las implicaciones de la decisión que se deba tomar. 
+
+### Diagramas
+
+| Nombre                      | Imagen                                                         |
+|-----------------------------|----------------------------------------------------------------|
+| Diagrama de clases  | ![Diagrama de Clases ](/entregas/patinoSara/TomaDecisionesClases.svg)             |
+| Diagrama de objetos | ![Diagrama de Objetos ](/entregas/patinoSara/omaDecisionesObjetos.svg)           |
