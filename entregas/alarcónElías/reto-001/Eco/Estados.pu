@@ -1,0 +1,27 @@
+@startuml
+
+[*] --> Emisión : Estado inicial
+
+state Emisión {
+    [*] --> GenerarOnda
+    GenerarOnda --> OndaPropagando : "Sonido emitido"
+}
+
+state OndaPropagando {
+    [*] --> Viaje
+    Viaje --> Impacto : "Onda en propagación"
+}
+
+state Impacto {
+    [*] --> Reflejo
+    Reflejo --> OndaRecibida : "Impacta en la superficie"
+}
+
+state OndaRecibida {
+    [*] --> Percepcion : "Onda reflejada"
+    Percepcion --> Eco : "Sonido llega al receptor"
+}
+
+OndaRecibida --> Eco : "Percepción del eco"
+Impacto --> OndaRecibida : "Onda regresa"
+@enduml
