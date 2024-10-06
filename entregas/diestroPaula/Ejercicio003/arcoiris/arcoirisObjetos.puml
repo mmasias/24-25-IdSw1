@@ -1,0 +1,32 @@
+@startuml
+object FuenteDeLuz {
+  nombre: Sol
+}
+
+object GotaAgua {
+  nombre: Lluvia 
+}
+
+object Cristal{
+  nombre: Prisma
+}
+
+object Superficie1 {
+  nombre: Cielo
+}
+
+object Superficie2 {
+  nombre: Pared
+}
+
+object Arcoiris {
+  nombre: colores
+}
+
+FuenteDeLuz --> GotaAgua : "incide sobre"
+FuenteDeLuz --> Cristal : "incide sobre"
+GotaAgua --> Superficie1 : "refracta y refleja"
+Cristal --> Superficie2 : "refracta y refleja"
+Superficie1 --> Arcoiris : "refleja colores"
+Superficie2 --> Arcoiris : "refleja colores"
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+Class Foco{
+}
+Class Objeto{
+} 
+Class Sombra{
+} 
+
+Foco -- Objeto
+Objeto -- Sombra
+Foco -- Sombra
+
+@enduml
