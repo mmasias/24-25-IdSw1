@@ -1,0 +1,27 @@
+@startuml
+object "inventor : Inventor" as inventor {
+}
+
+object "idea : Idea" as idea {
+}
+
+object "tecnologia : Tecnologia" as tecnologia {
+}
+
+object "prototipo : Prototipo" as prototipo {
+}
+
+object "mercado : Mercado" as mercado {
+}
+
+object "innovacion : Innovación" as innovacion {
+}
+
+inventor --> idea : "crea / genera >"
+inventor --> tecnologia : "utiliza >"
+tecnologia --> idea : "desarrolla >"
+idea --> prototipo : "crea >"
+prototipo --> mercado : "presenta a >"
+mercado --> prototipo : "evalúa >"
+mercado --> innovacion : "genera >"
+@enduml

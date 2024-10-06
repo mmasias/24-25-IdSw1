@@ -1,0 +1,23 @@
+@startuml
+[*] --> IdeaGenerada : "Crear Idea"
+
+state IdeaGenerada {
+    [*] --> IdeaDesarrollada : "Desarrollar Idea"
+}
+
+state IdeaDesarrollada {
+    [*] --> PrototipoDesarrollado : "Desarrollar Prototipo"
+}
+
+state PrototipoDesarrollado {
+    [*] --> PrototipoEvaluado : "Presentar al Mercado"
+}
+
+state PrototipoEvaluado {
+    [*] --> InnovacionAceptada : "Evaluación Positiva"
+    [*] --> InnovacionRechazada : "Evaluación Negativa"
+}
+
+InnovacionAceptada --> [*] : "Lanzamiento"
+InnovacionRechazada --> [*] : "Revisar Prototipo"
+@enduml
