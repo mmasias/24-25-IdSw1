@@ -1,6 +1,0 @@
-@startuml EcoObjetos
-Grito -- VibracionesGrito : genera
-VibracionesGrito --> Pared : se reflejan
-Pared -- EcoGrito : produce
-EcoGrito .. Grito : influye
-@enduml

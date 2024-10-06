@@ -1,5 +1,0 @@
-@startuml DiagramaClases
-FuenteDeLuz -- Objeto
-Objeto -- Sombra
-Sombra -- Superficie
-@enduml
