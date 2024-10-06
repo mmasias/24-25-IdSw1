@@ -1,7 +1,7 @@
 @startuml
 
-    object Espejismo1 {
-    tipo = "Espejismo de Agua"
+    object Ilusión1 {
+    tipo = "Ilusión de Agua"
     duracion = 30
     }
 
@@ -22,9 +22,9 @@
     angulo = 45
     }
 
-    Espejismo1 -- CondicionesClimaticas1 : "es generado por"
-    Espejismo1 -- Observador1 : "es observado por"
-    Espejismo1 -- Luz1 : "refleja la luz"
+    Ilusión1 -- CondicionesClimaticas1 : "es generado por"
+    Ilusión1 -- Observador1 : "es observado por"
+    Ilusión1 -- Luz1 : "refleja la luz"
     CondicionesClimaticas1 .. Luz1 : "afecta"
     CondicionesClimaticas1 .. Observador1 : "afecta"
 

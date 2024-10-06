@@ -4,11 +4,11 @@
 
 #### A continuacion dejo los accesos a los diferentes retos solucionados para la asignatura:
 
-- [Reto 001](/entregas/garciaDiego/Reto001/README.md)
+- [Ejercicio 1](/entregas/garciaDiego/Ejercicio1/README.md)
 
-- [Reto 002](/entregas/garciaDiego/Reto002/README.md)
+- [Ejercicio 2](/entregas/garciaDiego/Ejercicio2/README.md)
 
-- [Reto 003](/entregas/garciaDiego/Reto003/README.md)
+- [Ejercicio 3](/entregas/garciaDiego/Ejercicio3/README.md)
 
 
 
