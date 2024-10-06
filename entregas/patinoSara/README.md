@@ -23,8 +23,8 @@ Cada gota de agua refleja la luz de manera similar, pero solo las gotas que est√
 
 | Nombre                      | Imagen                                                         |
 |-----------------------------|----------------------------------------------------------------|
-| Diagrama de clases  | ![Diagrama de Clases ](/entregas/saraPatino/ArcoirisClases.svg)             |
-| Diagrama de objetos | ![Diagrama de Objetos ](/entregas/saraPatino/ArcoirisObjetos.svg)           |
+| Diagrama de clases  | ![Diagrama de Clases ](/entregas/patinoSara/ArcoirisClases.svg)             |
+| Diagrama de objetos | ![Diagrama de Objetos ](/entregas/patinoSara/ArcoirisObjetos.svg)           |
 
 
 ## Toma de decisiones
