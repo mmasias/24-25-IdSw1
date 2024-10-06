@@ -19,6 +19,13 @@ Refracción nuevamente: La luz se refracta una vez más al salir de la gota, lo 
 Cada gota de agua refleja la luz de manera similar, pero solo las gotas que están en el ángulo adecuado en relación con el sol y el observador contribuyen al arcoíris que se ve.
 
 
+### Diagramas
+
+| Nombre                      | Imagen                                                         |
+|-----------------------------|----------------------------------------------------------------|
+| Diagrama de clases  | ![Diagrama de Clases ](/entregas/saraPatino/ArcoirisClases.svg)             |
+| Diagrama de objetos | ![Diagrama de Objetos ](/entregas/saraPatino/ArcoirisObjetos.svg)           |
+
 
 ## Toma de decisiones
 
