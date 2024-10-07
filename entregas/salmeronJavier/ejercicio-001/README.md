@@ -9,7 +9,7 @@ Un holograma es una representación visual tridimensional generada mediante la i
 
 ### Diagrama de Clases
 
-![Diagrama de Clases de Holograma](entregas/salmeronJavier/ejercicio-001/svg/Holograma_Clases.svg)
+![Diagrama de Clases de Holograma](svg/Holograma_Clases.svg)
 
 ### Entidades del Modelo
 
@@ -27,7 +27,7 @@ Un holograma es una representación visual tridimensional generada mediante la i
 
 ### Diagrama de Objetos
 
-![Diagrama de Objetos de Holograma](entregas/salmeronJavier/ejercicio-001/svg/Holograma_Objetos.svg)
+![Diagrama de Objetos de Holograma](svg/Holograma_Objetos.svg)
 
 ---
 
@@ -38,7 +38,7 @@ La motivación es el proceso psicológico detrás de la acción orientada a obje
 
 ### Diagrama de Clases
 
-![Diagrama de Clases de Motivación](entregas/salmeronJavier/ejercicio-001/svg/Motivacion_Clases.svg)
+![Diagrama de Clases de Motivación](svg/Motivacion_Clases.svg)
 
 ### Entidades del Modelo
 
@@ -54,5 +54,5 @@ La motivación es el proceso psicológico detrás de la acción orientada a obje
 
 ### Diagrama de Objetos
 
-![Diagrama de Objetos de Motivación](entregas/salmeronJavier/ejercicio-001/svg/Motivacion_Objetos.svg)
+![Diagrama de Objetos de Motivación](svg/Motivacion_Objetos.svg)
 
