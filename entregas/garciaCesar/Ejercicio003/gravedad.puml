@@ -1,0 +1,49 @@
+@startuml
+class "Objeto" {
+  masa : Double
+  forma : String
+  tamaño : Double
+  posicion : (x, y, z) : Tuple
+}
+
+class "CampoGravitacional" {
+  fuerza : Double
+  direccion : (x, y, z) : Tuple
+}
+
+class "Superficie" {
+  textura : String
+  color : String
+}
+
+Objeto -- CampoGravitacional : es afectado por
+Superficie -- CampoGravitacional : afecta gravedad
+Objeto -- Superficie : se apoya
+
+class "objeto1 : Objeto" as objeto1{
+  masa : 100
+  forma : "cubo"
+  tamaño : 10
+  posicion : (0, 0, 0)
+}
+class "objeto2 : Objeto" as objeto2{
+  masa : 50
+  forma : "esfera"
+  tamaño : 5
+  posicion : (10, 10, 10)
+}
+class "campo1 : CampoGravitacional" as campo1{
+  fuerza : 9.8
+  direccion : (0, -1, 0)
+}
+class "suelo : Superficie" as suelo{
+  textura : "madera"
+  color : "cafe"
+}
+
+objeto1 -- campo1 : es afectado por
+objeto2 -- campo1 : es afectado por
+suelo -- campo1 : afecta
+objeto1 -- suelo : se apoya
+objeto2 -- suelo : se apoya
+@enduml

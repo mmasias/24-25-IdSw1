@@ -1,0 +1,78 @@
+@startuml
+class "Producto" {
+  nombre : String
+  version : String
+  fechaLanzamiento : Date
+  estadoActual : String
+}
+
+class "Desarrollo" {
+  tareas : List
+  fechaInicio : Date
+  fechaFin : Date
+}
+
+class "Crecimiento" {
+  demanda : Double
+  participaciónMercado : Double
+}
+
+class "Madurez" {
+  tasaCrecimiento : Double
+  competencia : List
+}
+
+class "Declive" {
+  reducciónDemanda : Double
+  fechaRetiro : Date
+}
+
+Producto -- Desarrollo : se crea
+Producto -- Crecimiento : se incrementa
+Desarrollo -- Crecimiento : se incrementa
+Producto -- Madurez : se estabiliza
+Crecimiento -- Madurez : se incrementa
+Madurez -- Declive : se reduce
+Producto -- Declive : se reduce
+
+' Instancias de los objetos
+
+Object "producto1 : Producto" as producto1 {
+  nombre : "ProductoX"
+  version : "1.0"
+  fechaLanzamiento : 2022-03-01
+  estadoActual : "Crecimiento"
+}
+
+Object "desarrollo1 : Desarrollo" as desarrollo1 {
+  tareas : ["Diseño", "Desarrollo", "Pruebas"]
+  fechaInicio : 2021-01-01
+  fechaFin : 2021-12-01
+}
+
+Object "faseCrecimiento1 : Crecimiento" as crecimiento1 {
+  demanda : 50000
+  participaciónMercado : 30.0
+}
+
+Object "faseMadurez1 : Madurez" as madurez1 {
+  tasaCrecimiento : 5.0
+  competencia : ["CompetidorA", "CompetidorB"]
+}
+
+Object "faseDeclive1 : Declive" as declive1 {
+  reducciónDemanda : 20.0
+  fechaRetiro : 2026-01-01
+}
+
+' Relaciones entre instancias
+
+producto1 -- desarrollo1 : se crea
+producto1 -- crecimiento1 : se incrementa
+desarrollo1 -- crecimiento1 : se incrementa
+producto1 -- madurez1 : se estabiliza
+crecimiento1 -- madurez1 : se incrementa
+madurez1 -- declive1 : se reduce
+producto1 -- declive1 : se reduce
+
+@enduml
