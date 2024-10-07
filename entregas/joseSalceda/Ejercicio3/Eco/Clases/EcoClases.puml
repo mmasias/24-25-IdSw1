@@ -1,0 +1,18 @@
+@startuml
+
+class Eco
+class Sonido
+class Superficie
+class FuenteSonido
+class Oido
+class Distancia
+class Objeto
+
+Eco -- Sonido
+Eco -- Superficie
+Sonido -- FuenteSonido
+Sonido -- Oido
+Sonido -- Superficie : "rebota"
+Distancia -- Superficie
+Objeto -- Superficie
+@enduml

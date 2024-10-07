@@ -1,0 +1,57 @@
+@startuml
+object decision1 {
+    estado = "En Proceso"
+    nombre = "Cambio de proveedor de equipo"
+}
+
+object alternativa1 {
+    nombre = "Proveedor A"
+    costo = "Bajo"
+    calidad = "Alta"
+}
+
+object alternativa2 {
+    nombre = "Proveedor B"
+    costo = "Medio"
+    calidad = "Media"
+}
+
+object criterio1 {
+    nombre = "Costo"
+    prioridad = "Alta"
+}
+
+object criterio2 {
+    nombre = "Calidad"
+    prioridad = "Media"
+}
+
+object persona1 {
+    nombre = "Gerente de compras"
+}
+
+object objetivo1 {
+    nombre = "Maximizar la relación costo-beneficio"
+}
+
+object restriccion1 {
+    nombre = "Presupuesto Máximo"
+    valor = "$50,000"
+}
+
+object evaluacion1 {
+    resultado = "Proveedor A es el preferido"
+}
+
+decision1 -- alternativa1
+decision1 -- alternativa2
+decision1 -- criterio1
+decision1 -- criterio2
+decision1 -- persona1
+criterio1 -- objetivo1
+criterio2 -- objetivo1
+decision1 -- restriccion1
+evaluacion1 -- decision1
+evaluacion1 -- alternativa1
+evaluacion1 -- alternativa2
+@enduml
