@@ -1,0 +1,40 @@
+@startuml
+object lider1 {
+  nombre = "María"
+  experiencia = 10
+}
+
+object seguidor1 {
+  nombre = "Juan"
+  habilidades = ["programación", "diseño"]
+}
+
+object seguidor2 {
+  nombre = "Lucía"
+  habilidades = ["gestión de proyectos"]
+}
+
+object objetivo1 {
+  descripcion = "Completar el proyecto de software"
+  plazo = "2024-12-31"
+  alcanzado = false
+}
+
+object estrategia1 {
+  descripcion = "Desarrollo iterativo"
+  plazo = "2024-06-30"
+}
+
+object comunicacion1 {
+  mensaje = "La próxima iteración comienza el lunes"
+  medio = "correo electrónico"
+}
+
+lider1 -- estrategia1 : define
+lider1 -- comunicacion1 : utiliza para guiar
+seguidor1 -- lider1 : sigue
+seguidor2 -- lider1 : sigue
+seguidor1 -- objetivo1 : contribuye
+seguidor2 -- objetivo1 : contribuye
+lider1 -- objetivo1 : dirige hacia
+@enduml
