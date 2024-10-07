@@ -14,7 +14,7 @@ El objetivo es realizar un diagrama de clases representando el eco, en este caso
 
 | Nombre                      | Imagen                                                         |
 |-----------------------------|----------------------------------------------------------------|
-| Diagrama de clases de Eco   | ![Diagrama de Clases Eco](/entregas/delrioMario/Ejercicio3/EcoClases.svg)             |
+| Diagrama de clases de Eco   | ![Diagrama de Clases Eco](/entregas/delrioMario/Ejercicio3/PlantUMLeco.png)             |
 | Diagrama de objetos de Eco  | ![Diagrama de Objetos Eco](/entregas/lostalAlvaro/reto001/img/EcoObjetos.svg)           |
 ### Ejemplo de Entrada y Salida
 
