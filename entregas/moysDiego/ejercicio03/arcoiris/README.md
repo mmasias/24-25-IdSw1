@@ -16,4 +16,4 @@ Este fenómeno está gobernado por la interacción de la luz solar y las gotas d
 
 ## 🛠 Diagrama de Estados
 
-![Diagrama de objetos de un arcoiris](../arcoiris/imagenes/diagramaEstadosArcoiris.png)
+![Diagrama de estados de un arcoiris](../arcoiris/imagenes/diagramaEstadosArcoiris.png)
