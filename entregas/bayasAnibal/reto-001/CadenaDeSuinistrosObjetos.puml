@@ -1,1 +1,23 @@
+@startuml
 
+class EmpresaMadedera {
+}
+
+class FabricantePellets {
+}
+
+class LeroyMerlin {
+}
+
+class Cliente {
+}
+
+class Pellets {
+}
+
+EmpresaMadedera  --  FabricantePellets : suministra >
+FabricantePellets --  LeroyMerlin : fabrica >
+LeroyMerlin  --  Cliente : distribuye >
+Cliente  --  Pellets : solicita >
+
+@enduml
