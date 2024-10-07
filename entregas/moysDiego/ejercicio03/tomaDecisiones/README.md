@@ -11,3 +11,7 @@ La **toma de decisiones** es un proceso fundamental en la gestión y resolución
 ## Diagrama de Objetos
 
 ![Diagrama de objetos de una toma de decisiones](../tomaDecisiones/imagenes/diagramaObjetosDecision.png)
+
+## Diagrama de Estados
+
+![Diagrama de estados de una toma de decisiones](../tomaDecisiones/imagenes/diagramaEstadosDecision.png)

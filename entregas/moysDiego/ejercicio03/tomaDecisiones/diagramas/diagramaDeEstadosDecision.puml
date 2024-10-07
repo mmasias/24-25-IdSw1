@@ -1,0 +1,18 @@
+@startuml
+[*] --> IdentificarProblema
+
+IdentificarProblema --> EvaluarOpciones : problema identificado
+EvaluarOpciones --> DefinirCriterios : opciones disponibles
+DefinirCriterios --> AnalizarOpciones : criterios definidos
+AnalizarOpciones --> TomarDecision : análisis completado
+
+TomarDecision --> Resultado : decisión tomada
+Resultado --> EvaluarResultados : resultados obtenidos
+EvaluarResultados --> IncorporarFeedback : retroalimentación recibida
+
+IncorporarFeedback --> RevaluarOpciones : feedback procesado
+RevaluarOpciones --> EvaluarOpciones : nuevas opciones generadas
+RevaluarOpciones --> [*] : proceso finalizado
+
+Resultado --> [*] : proceso finalizado
+@enduml
