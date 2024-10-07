@@ -9,3 +9,7 @@ Este fenómeno está gobernado por la interacción de la luz solar y las gotas d
 ## 🛠 Diagrama de Clases
 
 ![Diagrama de clases de un arcoiris](../ejercicio03/imagenes/diagramaClasesArcoiris.png)
+
+## 🛠 Diagrama de Objetos
+
+![Diagrama de objetos de un arcoiris](../ejercicio03/imagenes/diagramaObjetosArcoiris.png)
