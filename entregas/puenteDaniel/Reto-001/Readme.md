@@ -23,11 +23,11 @@ Es un sistema que abarca todas las actividades relacionadas con la creación, al
 
 | Nombre                      | Imagen                                                         |
 |-----------------------------|----------------------------------------------------------------|
-| Diagrama de clases de Eco   | ![Diagrama de Clases Eco](24-25-IdSw1/entregas/puenteDaniel/Reto-001/DiagramaClasesEco.png at main · danielpuentesaranana/24-25-IdSw1 (github.com))             |
-| Diagrama de objetos de Eco  | ![Diagrama de Objetos Eco](24-25-IdSw1/entregas/puenteDaniel/Reto-001/DiagramaObjetosEco.png at main · danielpuentesaranana/24-25-IdSw1 (github.com))           |
+| Diagrama de clases de Eco   | ![Diagrama de Clases Eco](/entregas/puenteDaniel/Reto-001/DiagramaClasesEco.png)             |
+| Diagrama de objetos de Eco  | ![Diagrama de Objetos Eco](/entregas/puenteDaniel/Reto-001/DiagramaObjetosEco.png)           |
 
 
 | Nombre                             | Imagen                                                                                  |
 |------------------------------------|-----------------------------------------------------------------------------------------|
-| Diagrama de clases de Suministro   | ![Diagrama de Clases Cadena](24-25-IdSw1/entregas/puenteDaniel/Reto-001/DiagramaClasesCadenaSumistros.png at main · danielpuentesaranana/24-25-IdSw1 (github.com))             |
-| Diagrama de objetos de Suministro  | ![Diagrama de Objetos Cadena](24-25-IdSw1/entregas/puenteDaniel/Reto-001/DiagramaObjetosCadenaSuministros.png at main · danielpuentesaranana/24-25-IdSw1 (github.com))           |
+| Diagrama de clases de Suministro   | ![Diagrama de Clases Cadena](/entregas/puenteDaniel/Reto-001/DiagramaClasesCadenaSumistros.png)             |
+| Diagrama de objetos de Suministro  | ![Diagrama de Objetos Cadena](/entregas/puenteDaniel/Reto-001/DiagramaObjetosCadenaSuministros.png)           |
