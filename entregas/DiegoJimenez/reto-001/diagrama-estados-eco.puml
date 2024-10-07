@@ -1,0 +1,8 @@
+@startuml
+[*] --> Emision
+Emision --> Movimiento : onda emitida
+Movimiento --> Impacto : onda alcanza superficie
+Impacto --> Reflejo : onda reflejada
+Reflejo --> EcoPercibido : eco detectado
+EcoPercibido --> [*]
+@enduml
