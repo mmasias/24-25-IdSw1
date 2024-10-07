@@ -1,0 +1,41 @@
+@startuml
+title Diagrama de Objetos - Dos Personas y Dos Focos
+
+object Lostal {
+  
+}
+
+object Anibal {
+  
+}
+
+object Luz1 {
+  
+}
+
+object Luz2 {
+}
+
+object sombraLuz1 {
+}
+
+object sombraLuz2 {
+}
+
+object Plaza {
+}
+
+object camara {
+}
+
+Anibal -- sombraLuz1 : "Proyecta"
+Lostal -- sombraLuz2 : "Proyecta"
+Luz1 -- Anibal : "Da luz a "
+Luz1 -- Lostal : "Da luz a"
+Luz2 -- Anibal : "Da luz a"
+Luz2 -- Lostal : "Da luz a"
+sombraLuz1 -- Plaza : "Se proyecta sobre"
+sombraLuz2 -- Plaza : "Se proyecta sobre"
+camara -- Plaza : "Captura"
+
+@enduml

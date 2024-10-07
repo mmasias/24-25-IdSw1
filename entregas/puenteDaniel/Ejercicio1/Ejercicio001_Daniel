@@ -1,0 +1,52 @@
+@startuml
+
+class Liga {
+}
+
+class Equipo {
+}
+
+class Entrenador {
+}
+
+class Jugador {
+}
+
+class Estadio {
+}
+
+class Jornada {
+}
+
+class Aficion {
+}
+
+class Arbitro {
+}
+
+class Federacion {
+}
+
+class FIFA {
+}
+
+class Reglas {
+}
+
+class Ranking {
+}
+
+Liga --> Equipo : "1 contiene *"
+Equipo --> Entrenador : "1 es dirigido por 1"
+Equipo --> Jugador : "1 tiene *"
+Equipo --> Estadio : "1 juega en 1"
+Equipo --> Aficion : "1 tiene 1"
+Jornada --> Equipo : "* participan en *"
+Jornada --> Estadio : "1 se juega en 1"
+Jornada --> Arbitro : "1 es arbitrado por 1"
+Federacion --> Arbitro : "regula 1"
+Federacion --> Reglas : "supervisa *"
+FIFA --> Federacion : "supervisa 1"
+Ranking --> Equipo : "clasifica *"
+
+@enduml
