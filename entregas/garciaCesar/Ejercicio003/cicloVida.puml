@@ -12,10 +12,6 @@ class "Desarrollo" {
   fechaFin : Date
 }
 
-class "Tiempo" {
-  medida: long
-}
-
 class "Crecimiento" {
   demanda : Double
   participaciónMercado : Double
@@ -32,10 +28,6 @@ class "Declive" {
 }
 
 Producto -- Desarrollo : se crea
-Desarrollo -- Tiempo : a lo largo del tiempo
-Crecimiento -- Tiempo : a lo largo del tiempo
-Madurez -- Tiempo : a lo largo del tiempo
-Declive -- Tiempo : a lo largo del tiempo
 Producto -- Crecimiento : se incrementa
 Desarrollo -- Crecimiento : se incrementa
 Producto -- Madurez : se estabiliza
@@ -45,34 +37,30 @@ Producto -- Declive : se reduce
 
 ' Instancias de los objetos
 
-class "producto1 : Producto" as producto1 {
+Object "producto1 : Producto" as producto1 {
   nombre : "ProductoX"
   version : "1.0"
   fechaLanzamiento : 2022-03-01
   estadoActual : "Crecimiento"
 }
 
-class "desarrollo1 : Desarrollo" as desarrollo1 {
+Object "desarrollo1 : Desarrollo" as desarrollo1 {
   tareas : ["Diseño", "Desarrollo", "Pruebas"]
   fechaInicio : 2021-01-01
   fechaFin : 2021-12-01
 }
 
-class "tiempo1 : Tiempo" as tiempo1 {
-  medida : "1 año"
-}
-
-class "crecimiento1 : Crecimiento" as crecimiento1 {
+Object "faseCrecimiento1 : Crecimiento" as crecimiento1 {
   demanda : 50000
   participaciónMercado : 30.0
 }
 
-class "madurez1 : Madurez" as madurez1 {
+Object "faseMadurez1 : Madurez" as madurez1 {
   tasaCrecimiento : 5.0
   competencia : ["CompetidorA", "CompetidorB"]
 }
 
-class "declive1 : Declive" as declive1 {
+Object "faseDeclive1 : Declive" as declive1 {
   reducciónDemanda : 20.0
   fechaRetiro : 2026-01-01
 }
@@ -80,10 +68,6 @@ class "declive1 : Declive" as declive1 {
 ' Relaciones entre instancias
 
 producto1 -- desarrollo1 : se crea
-desarrollo1 -- tiempo1 : a lo largo del tiempo
-crecimiento1 -- tiempo1 : a lo largo del tiempo
-madurez1 -- tiempo1 : a lo largo del tiempo
-declive1 -- tiempo1 : a lo largo del tiempo
 producto1 -- crecimiento1 : se incrementa
 desarrollo1 -- crecimiento1 : se incrementa
 producto1 -- madurez1 : se estabiliza

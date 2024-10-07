@@ -20,19 +20,19 @@ Cuerpo1 -- CampoGravitacional : es afectado por
 Cuerpo2 -- CampoGravitacional : es afectado por
 Cuerpo1 .. Cuerpo2 : pueden estar en contacto
 
-class "cuerpo1 : Cuerpo1" as cuerpoA{
+Object "cuerpo1 : Cuerpo1" as cuerpoA{
   masa : 100
   forma : "cubo"
   tamaño : 10
   posicion : (0, 0, 0)
 }
-class "cuerpo2 : Cuerpo2" as cuerpoB{
+Object "cuerpo2 : Cuerpo2" as cuerpoB{
   masa : 500000
   forma : "esfera"
   tamaño : 5
   posicion : (10, 10, 10)
 }
-class "campo1 : CampoGravitacional" as campo1{
+Object "campo1 : CampoGravitacional" as campo1{
   fuerza : 9.8
   direccion : (0, -1, 0)
 }
