@@ -1,0 +1,22 @@
+@startuml
+class Arcoiris {
+}
+
+class FuenteDeLuz {
+}
+
+class SuperficieRefractante {
+}
+
+class Color {
+}
+
+class EspectroDeLuz {
+}
+
+Arcoiris "1" *-- "7" Color : contiene
+FuenteDeLuz --> SuperficieRefractante : interactúa con
+SuperficieRefractante --> Arcoiris : genera
+EspectroDeLuz "1" o-- "7" Color : se compone de
+FuenteDeLuz --> EspectroDeLuz : emite
+@enduml

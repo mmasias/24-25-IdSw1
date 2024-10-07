@@ -1,0 +1,71 @@
+@startuml
+' Objetos específicos del diagrama de clases
+
+object arcoiris1 {
+  tipo = "primario"
+}
+
+object fuenteDeLuz1 {
+  tipo = "Luz solar"
+  intensidad = 1.0
+}
+
+object superficieRefractante1 {
+  tipo = "Gota de agua"
+  tamaño = 100.0
+}
+
+object colorRojo {
+  nombre = "Rojo"
+  longitudDeOnda = 650.0
+  intensidad = 0.9
+}
+
+object colorNaranja {
+  nombre = "Naranja"
+  longitudDeOnda = 590.0
+  intensidad = 0.85
+}
+
+object colorAmarillo {
+  nombre = "Amarillo"
+  longitudDeOnda = 570.0
+  intensidad = 0.8
+}
+
+object colorVerde {
+  nombre = "Verde"
+  longitudDeOnda = 510.0
+  intensidad = 0.75
+}
+
+object colorAzul {
+  nombre = "Azul"
+  longitudDeOnda = 475.0
+  intensidad = 0.7
+}
+
+object colorIndigo {
+  nombre = "Índigo"
+  longitudDeOnda = 445.0
+  intensidad = 0.65
+}
+
+object colorVioleta {
+  nombre = "Violeta"
+  longitudDeOnda = 400.0
+  intensidad = 0.6
+}
+
+arcoiris1 *-- colorRojo
+arcoiris1 *-- colorNaranja
+arcoiris1 *-- colorAmarillo
+arcoiris1 *-- colorVerde
+arcoiris1 *-- colorAzul
+arcoiris1 *-- colorIndigo
+arcoiris1 *-- colorVioleta
+
+fuenteDeLuz1 --> superficieRefractante1 : interactúa
+
+superficieRefractante1 --> arcoiris1 : forma
+@enduml
