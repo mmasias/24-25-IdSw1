@@ -1,0 +1,19 @@
+@startuml
+[*] --> Planificacion
+Planificacion : El líder define la estrategia inicial
+
+Planificacion --> Comunicacion : Estrategia definida, lista para comunicar
+Comunicacion : Líder comunica la estrategia a los seguidores
+
+Comunicacion --> Ejecucion : Estrategia implementada por los seguidores
+Ejecucion : Seguidores trabajan en las tareas asignadas
+
+Ejecucion --> Monitoreo : Líder monitorea el progreso hacia el objetivo
+Monitoreo : Evaluación continua del avance
+
+Monitoreo --> Ajuste : Si es necesario, la estrategia se ajusta
+Ajuste --> Comunicacion : Nueva estrategia comunicada
+
+Monitoreo --> Finalizacion : Objetivo alcanzado o proyecto completado
+Finalizacion --> [*] : Proceso de liderazgo finalizado
+@enduml
