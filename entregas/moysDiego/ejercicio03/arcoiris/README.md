@@ -1,4 +1,4 @@
-# Diagrama de Clases: Arcoíris 🌈
+# Modelo de dominio: Arcoíris 🌈
 
 ## 🌍 Contexto General
 
