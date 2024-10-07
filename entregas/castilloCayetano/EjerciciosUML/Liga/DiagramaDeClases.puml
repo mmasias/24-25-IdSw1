@@ -1,0 +1,13 @@
+@startuml
+Entrenador --> Equipo 
+Jugador --> Equipo
+Equipo --> Jornadas
+Jornadas --> Reglas
+Reglas --> Arbitro
+Arbitro --> Jornadas
+Partido --> Estadio
+Equipo ..> Estadio
+
+Jornadas --> Partido
+Partido ..> Equipo
+@enduml
