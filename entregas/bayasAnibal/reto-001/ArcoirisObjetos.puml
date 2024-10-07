@@ -8,7 +8,7 @@ class Agua{
 class Arcoiris{
 }
 
-class Observador{
+class Persona{
 }
 
 LuzSolar --> Agua
