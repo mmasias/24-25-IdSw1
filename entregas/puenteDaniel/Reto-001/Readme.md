@@ -19,4 +19,15 @@ Es un sistema que abarca todas las actividades relacionadas con la creación, al
   -Transportista: Responsable del transporte de productos desde el almacén hasta el cliente. Debe tener en cuenta su capacidad de carga.
   -Cliente: Destinatario final de los productos, quien realiza el pedido y recibe la entrega.
 
+### Diagramas
 
+| Nombre                      | Imagen                                                         |
+|-----------------------------|----------------------------------------------------------------|
+| Diagrama de clases de Eco   | ![Diagrama de Clases Eco]()             |
+| Diagrama de objetos de Eco  | ![Diagrama de Objetos Eco]()           |
+
+
+| Nombre                             | Imagen                                                                                  |
+|------------------------------------|-----------------------------------------------------------------------------------------|
+| Diagrama de clases de Suministro   | ![Diagrama de Clases Eco]()             |
+| Diagrama de objetos de Suministro  | ![Diagrama de Objetos Eco]()           |
