@@ -1,0 +1,34 @@
+@startuml
+title Modelo de Objetos del Eco (sonido)
+
+object FuenteSonido {
+  +nombre: "Guitarra"
+}
+
+object Sonido {
+  +frecuencia: 440Hz
+  +duracion: 2s
+}
+
+object Superficie {
+  +tipo: "Montaña"
+  +coeficienteReflexion: 0.8
+}
+
+object MedioDeTransmision {
+  +nombre: "Aire"
+  +velocidad: 343m/s
+}
+
+object Eco {
+  +intensidad: 0.5
+  +retraso: 2.5s
+}
+
+FuenteSonido --> Sonido: "Produce"
+Sonido --> MedioDeTransmision: "Viaja por"
+Sonido --> Superficie: "Rebota en"
+Superficie --> Eco: "Genera"
+Eco --> MedioDeTransmision: "Eco viaja por"
+
+@enduml

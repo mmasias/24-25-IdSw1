@@ -1,0 +1,18 @@
+@startuml
+title Modelo de Dominio del Eco (sonido)
+
+class FuenteSonido
+
+class Sonido
+
+class Superficie 
+class MedioDeTransmision
+
+class Eco extends Sonido 
+
+FuenteSonido --> Sonido: "Produce"
+Sonido --> Superficie: "Rebota en"
+Sonido --> MedioDeTransmision: "Viaja por"
+Superficie --> Eco: "Refleja"
+Eco --> MedioDeTransmision: "Viaja por"
+@enduml
