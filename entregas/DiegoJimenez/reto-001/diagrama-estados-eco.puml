@@ -1,0 +1,21 @@
+@startuml
+[*] --> EnReposo
+EnReposo : Onda no ha sido emitida
+
+EnReposo --> Emitida : Onda emitida desde FuenteSonido
+Emitida : Onda viaja en el medio
+
+Emitida --> Moviendose : Onda en movimiento a través del aire
+Moviendose : Distancia incrementa, velocidad constante
+
+Moviendose --> ImpactoSuperficie : Onda choca contra SuperficieReflectante
+ImpactoSuperficie : Calculo del ángulo de reflexión
+
+ImpactoSuperficie --> Reflejada : Onda reflejada por SuperficieReflectante
+Reflejada : Direccion de onda cambiada, amplitud ajustada por coeficiente de reflexion
+
+Reflejada --> Percibida : Onda detectada como eco en el receptor
+Percibida : Intensidad y retardo calculados
+
+Percibida --> [*] : Eco completamente percibido
+@enduml
