@@ -19,7 +19,7 @@ he aquí el puml resultante, consta de las clases Holograma (La Superior y que c
 ### Introducción
 La mejora continua es el proceso continuo de analizar el rendimiento, identificar oportunidades y realizar cambios graduales en los procesos, los productos y el personal. Al analizar y ajustar los procesos, tu empresa puede ahorrar tiempo y ofrecer un producto mejor en general.
 ### Modelado Base del ej 3
-!Imagen del modelado de la mejora continua en el ej 3](../Ejercicio%203%20Modelado%20de%20dos%20elementos/3.2%20Mejora%20continua/Mejora%20continua%20diseño%20a%20mano.pdf)   
+![Imagen del modelado de la mejora continua en el ej 3](../Ejercicio%203%20Modelado%20de%20dos%20elementos/3.2%20Mejora%20continua/Mejora%20continua%20diseño%20a%20mano.pdf)   
 Primera Iteración: Diagrama de clases hecho a mano
 ### Plantuml de dicha iteración
 [📈Mejora Continua📈](../Ejercicio%203%20Modelado%20de%20dos%20elementos/3.2%20Mejora%20continua/MejoraContinua.svg)
