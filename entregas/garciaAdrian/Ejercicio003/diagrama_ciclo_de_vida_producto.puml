@@ -1,0 +1,41 @@
+@startuml
+title Ciclo de Vida de un Producto
+
+class Producto {
+    +Nombre: String
+    +Descripción: String
+}
+
+class Introducción {
+    +Desarrollo del mercado
+    +Costos elevados
+    +Bajas ventas
+}
+
+class Crecimiento {
+    +Aumento de ventas
+    +Competencia creciente
+    +Ganancia creciente
+}
+
+class Madurez {
+    +Ventas estabilizadas
+    +Altos márgenes de beneficio
+    +Competencia intensa
+}
+
+class Declive {
+    +Caída de ventas
+    +Productos alternativos
+    +Reducción de márgenes
+}
+
+Producto -- Introducción : "Primera etapa"
+Producto -- Crecimiento : "Segunda etapa"
+Producto -- Madurez : "Tercera etapa"
+Producto -- Declive : "Última etapa"
+Introducción --> Crecimiento : "Transición"
+Crecimiento --> Madurez : "Transición"
+Madurez --> Declive : "Transición"
+
+@enduml
