@@ -1,0 +1,51 @@
+@startuml
+
+class Persona {
+  - nombre: String
+  - nivelDeMotivacion: int
+  + aumentarMotivacion(): void
+  + reducirMotivacion(): void
+  + evaluarMotivacion(): String
+}
+
+class Objetivo {
+  - descripcion: String
+  - fechaLimite: Date
+  - prioridad: int
+  + establecerPrioridad(): void
+  + completarObjetivo(): void
+  + ajustarFechaLimite(): void
+}
+
+abstract class FactorMotivacional {
+  - tipo: String
+  - impacto: int
+  + aplicarImpacto(Persona): void
+}
+
+class FactorInterno extends FactorMotivacional {
+  - autoEficacia: int
+  - autodisciplina: int
+  + fortalecerInternamente(): void
+}
+
+class FactorExterno extends FactorMotivacional {
+  - reconocimientoSocial: boolean
+  - recompensas: int
+  + incrementarRecompensas(): void
+  + obtenerReconocimiento(): void
+}
+
+class AccionMotivadora {
+  - descripcion: String
+  - duracion: int
+  + ejecutarAccion(): void
+}
+
+Persona "1" -- "*" Objetivo : tiene
+Persona "1" -- "*" FactorMotivacional : es influenciada por
+FactorMotivacional <|-- FactorInterno
+FactorMotivacional <|-- FactorExterno
+AccionMotivadora --> Persona : aplica efecto
+
+@enduml
