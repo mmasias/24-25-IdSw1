@@ -1,0 +1,26 @@
+@startuml
+class Problema {
+}
+
+class Opcion {
+}
+
+class CriterioEvaluacion {
+}
+
+class Analisis {
+}
+
+class Resultado {
+}
+
+class Retroalimentacion {
+}
+
+Problema "1" o-- "1..*" Opcion : evalúa
+Opcion "1" o-- "1..*" CriterioEvaluacion : define
+Analisis "1" --> Opcion : compara
+Analisis "1" --> Resultado : produce
+Resultado "1" o-- "0..*" Retroalimentacion : recibe
+Retroalimentacion "1" o-- "1" Problema : influye
+@enduml

@@ -1,0 +1,47 @@
+@startuml
+object problemaEjemplo {
+  nombre = "Decidir sobre un nuevo producto"
+}
+
+object opcion1 {
+  nombre = "Lanzar Producto A"
+}
+
+object opcion2 {
+  nombre = "Lanzar Producto B"
+}
+
+object criterio1 {
+  nombre = "Costo"
+}
+
+object criterio2 {
+  nombre = "Demanda del mercado"
+}
+
+object analisisEjemplo {
+}
+
+object resultadoEjemplo {
+  decision = "Lanzar Producto A"
+}
+
+object retroalimentacionEjemplo {
+  comentarios = "El producto tuvo buena acogida"
+}
+
+problemaEjemplo "1" o-- "2" opcion1 : evalúa
+problemaEjemplo "1" o-- "2" opcion2 : evalúa
+
+opcion1 "1" o-- "1" criterio1 : define
+opcion1 "1" o-- "1" criterio2 : define
+opcion2 "1" o-- "1" criterio1 : define
+opcion2 "1" o-- "1" criterio2 : define
+
+analisisEjemplo "1" --> opcion1 : compara
+analisisEjemplo "1" --> opcion2 : compara
+analisisEjemplo "1" --> resultadoEjemplo : produce
+
+resultadoEjemplo "1" o-- "1" retroalimentacionEjemplo : recibe
+retroalimentacionEjemplo "1" o-- "1" problemaEjemplo : influye
+@enduml
