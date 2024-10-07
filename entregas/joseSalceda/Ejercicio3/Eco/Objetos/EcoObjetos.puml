@@ -1,0 +1,30 @@
+@startuml
+object FuenteDeSonido {
+    nombre = "Grito"
+    generarSonido() = "Sonido fuerte"
+}
+
+object Medio {
+    tipo = "Viento"
+    propagarSonido() = "330 m/s"
+}
+
+object SuperficieReflectora {
+    material = "Edificio"
+}
+
+object Receptor {
+    percibirEco() = "Eco percibido"
+}
+
+object Eco {
+    duracion = 1.5
+    intensidad = 0.6
+}
+
+FuenteDeSonido --> Medio
+Medio --> SuperficieReflectora
+SuperficieReflectora --> Medio
+Medio --> Receptor
+Receptor --> Eco
+@enduml
