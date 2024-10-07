@@ -1,0 +1,46 @@
+@startuml
+    package "LIGA" {
+    
+        Normas -- Arbitro : "Aplica"
+        
+        Arbitro -- Partido: "Supervisa"
+        
+        Partido -- Estadio : "Donde se compite"
+        
+        Equipo .. Estadio : "Tiene"
+        
+        Equipo -- Alineación : "Elige"
+        
+        Partido -- Alineación: "Compite"
+        
+        Jornada -- Partido : "Contiene"
+        
+        Temporada -- Jornada : "Tiene"
+        
+        Ranking -- Jornada : "Tiene"
+        
+        Ranking -- Equipo : "Se clasifica"
+        
+        Ranking -- Premio : "Tiene"
+        
+        Afición .. Estadio : "lo ven en"
+        
+        Afición -- Equipo : "Apoyan"
+        
+        Jugador -- Equipo : "Contiene"
+        
+        Jugador -- Alineación : "Contiene"
+        
+        Federación -- Requisitos : "Pone"
+        
+        Requisitos -- Equipo : "Cumple"
+        
+        Federación -- Temporada : "Organiza"
+        
+        Federación -- Arbitro : "Asigna"
+        
+        Afición -- Partido : "Asiste a"
+    
+    
+    }
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+[*] --> SinObjetivo
+SinObjetivo : El equipo no tiene un objetivo claro
+
+SinObjetivo --> ObjetivoAsignado : Definir Objetivo
+ObjetivoAsignado : El equipo tiene un objetivo asignado
+
+ObjetivoAsignado --> Motivado : Motivación Proporcionada
+Motivado : El equipo está motivado y trabajando con entusiasmo
+
+Motivado --> Desmotivado : Pérdida de Motivación
+Desmotivado : El equipo está desmotivado y pierde eficiencia
+
+Desmotivado --> Motivado : Reestablecer Motivación
+
+ObjetivoAsignado --> Desmotivado : Pérdida de Motivación
+@enduml
