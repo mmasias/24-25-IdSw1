@@ -1,0 +1,28 @@
+@startuml
+
+class Sombra1{
+}
+
+class Sombra2{
+}
+
+class Foco1{
+}
+
+class Foco2{
+}
+
+class Superficie{
+}
+
+class Objeto{
+}
+
+Foco1 -- Objeto
+Foco2 -- Objeto
+Sombra1 -- Superficie
+Objeto -- Sombra1
+Objeto -- Sombra2
+Sombra2 -- Superficie
+
+@endumlml

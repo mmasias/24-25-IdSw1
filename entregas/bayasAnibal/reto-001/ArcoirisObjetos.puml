@@ -1,0 +1,20 @@
+@startuml
+class LuzSolar{
+}
+
+class Agua{
+}
+
+class Arcoiris{
+}
+
+class Persona{
+}
+
+LuzSolar --> Agua
+Agua --> Arcoiris
+Observador --> Arcoiris
+
+
+
+@enduml
