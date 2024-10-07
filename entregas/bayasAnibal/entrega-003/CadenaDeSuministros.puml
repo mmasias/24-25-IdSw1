@@ -1,21 +1,23 @@
 @startuml
-class Proveedor{
+
+class Proveedor {
 }
 
-class Producto{
+class Fabricante {
 }
 
-class Almacen{
+class Distribuidor {
 }
 
-class Distribuidor{
+class Cliente {
 }
 
-class Cliente{
+class Producto {
 }
 
-Proveedor --> Producto
-Producto --> Almacen
-Almacen --> Distribuidor
-Distribuidor --> Cliente
+Proveedor  --  Fabricante : suministra >
+Fabricante --  Distribuidor : fabrica >
+Distribuidor  --  Cliente : distribuye >
+Cliente  --  Producto : solicita >
+
 @enduml
