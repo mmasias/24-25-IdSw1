@@ -1,0 +1,26 @@
+@startuml
+class Holografía {
+}
+
+class RayoLáser {
+  +potencia: float
+  +longitudDeOnda: float
+}
+
+class PelículaFotosensible {
+  +tipoMaterial: String
+  +sensibilidad: int
+}
+
+class ImagenTridimensional {
+  +resolución: int
+  +colores: String
+}
+
+Holografía --> RayoLáser : usa
+Holografía --> PelículaFotosensible : graba
+Holografía ..> ImagenTridimensional : genera
+
+RayoLáser --> PelículaFotosensible : incide
+PelículaFotosensible ..> ImagenTridimensional : produce
+@enduml

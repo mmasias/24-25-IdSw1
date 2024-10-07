@@ -1,0 +1,30 @@
+@startuml
+package "Liga" {
+    
+    class Equipo {
+    }
+    class Entrenador {
+    }
+    class Jugadores {
+    }
+    class Jornada {
+    }
+    class Árbitro {
+    }
+    class Reglas {
+    }
+    class Estadio {
+    }
+
+    Equipo --> Entrenador
+    Equipo --> Jugadores
+    Equipo --> Jornada 
+    Equipo ..> Estadio 
+    Jornada --> Árbitro
+    Jornada --> Estadio
+    Árbitro --> Reglas
+    Liga --> Equipo
+    Liga --> Reglas
+}
+
+@enduml

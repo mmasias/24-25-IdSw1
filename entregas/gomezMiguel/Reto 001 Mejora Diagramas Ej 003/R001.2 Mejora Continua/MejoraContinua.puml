@@ -1,0 +1,41 @@
+@startuml
+class MejoraContinua {
+}
+
+class Proceso {
+  +nombre: String
+  +descripción: String
+}
+
+class Rendimiento {
+  +métricas: String
+  +resultados: String
+}
+
+class OportunidadesDeMejora {
+  +identificación: String
+  +prioridad: int
+}
+
+class Cambios {
+  +tipoCambio: String
+  +implementación: String
+}
+
+class Producto {
+  +calidad: String
+  +mejoras: String
+}
+
+class Personal {
+  +habilidades: String
+  +capacitación: String
+}
+
+MejoraContinua --> Proceso : aplica
+Proceso --> Rendimiento : mide
+Proceso --> OportunidadesDeMejora : identifica
+OportunidadesDeMejora --> Cambios : realiza
+Cambios --> Producto : afecta
+Cambios --> Personal : capacita
+@enduml
