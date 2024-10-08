@@ -4,8 +4,8 @@
 ## Diagrama de Clases
 ![Diagrama de clases de un arcoiris](../arcoiris/imagenes/diagramaClasesArcoirisIteracion.png)
 
-## Diagrama de Clases
+## Diagrama de Objetos
 ![Diagrama de objetos de un arcoiris](../arcoiris/imagenes/DiagramaObjetosArcoirisIteracion.png)
 
-## Diagrama de Clases
+## Diagrama de Estados
 ![Diagrama de estados de un arcoiris](../arcoiris/imagenes/diagramaEstadosArcoirisIteracion.png)
