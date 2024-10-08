@@ -1,0 +1,43 @@
+@startuml
+class Fuente {
+    - intensidad: float
+    - color: string
+    
+    + encender(): void
+    + apagar(): void
+}
+
+class Objeto {
+    - altura: float
+    - anchura: float
+    - color: string
+    
+    + mover(nuevaPosiciónX: float, nuevaPosiciónY: float): void
+    + rotar(ángulo: float): void
+}
+
+class Superficie {
+    - ancho: float
+    - alto: float
+    - tipoMaterial: string
+    
+    + cambiarMaterial(nuevoMaterial: string): void
+}
+
+class Sombra {
+    - tamaño: float
+    - forma: string
+    - opacidad: float
+    - posiciónX: float
+    - posiciónY: float
+    
+    + cambiarTamaño(nuevoTamaño: float): void
+    + mover(nuevaPosiciónX: float, nuevaPosiciónY: float): void
+    + ajustarOpacidad(nuevaOpacidad: float): void
+    + describir(): string
+}
+
+Fuente --> Objeto : "Proyecta"
+Objeto --> Sombra : "Genera"
+Sombra --> Superficie : "Se proyecta en"
+@enduml

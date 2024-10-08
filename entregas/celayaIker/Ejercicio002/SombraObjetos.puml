@@ -1,0 +1,30 @@
+@startuml
+object Sol {
+    intensidad = 75.0
+    color = "Amarillo"
+}
+
+object objetoCubo {
+    altura = 2.0
+    anchura = 2.0
+    color = "Rojo"
+}
+
+object sombraCubo {
+    tamaño = 3.0
+    forma = "Rectangular"
+    opacidad = 0.5
+    posiciónX = 5.0
+    posiciónY = 10.0
+}
+
+object Suelo {
+    ancho = 10.0
+    alto = 10.0
+    tipoMaterial = "Madera"
+}
+
+Sol --> objetoCubo : "Proyecta luz sobre"
+objetoCubo --> sombraCubo : "Genera"
+sombraCubo --> Suelo : "Se proyecta en"
+@enduml
