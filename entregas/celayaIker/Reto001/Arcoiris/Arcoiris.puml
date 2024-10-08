@@ -12,21 +12,16 @@ Class GotaAgua{
 }
 
 Class LuzReflejada{
-	-color: string
+	-anguloReflexion: float
 	-intensidad: int
 	+refractarLuz(): Luz
 }
 
-Class LuzRefractada{
-	-indiceRefraccion: double
-	+descomponerLuz():
+Class Atmosfera{
+	-humedad: float
+	-temperatura: float
+	+dispersarLuz():
 }
-
-Class EspectroColores{
-	-colores: List<String>
-	+mostrar():
-}
-
 
 Class Arcoiris{
 	+mostrarArcoiris(): void
@@ -34,8 +29,6 @@ Class Arcoiris{
 
 Luz --> GotaAgua : Incide
 GotaAgua --> LuzReflejada : Refleja
-GotaAgua --> LuzRefractada : Refracta
-LuzRefractada --> EspectroColores : Forma
-LuzReflejada --> EspectroColores : Modifica
-EspectroColores --> Arcoiris : Genera
+LuzReflejada --> Atmosfera : Refracta
+Atmosfera --> Arcoiris : Dispersa
 @enduml
