@@ -1,0 +1,108 @@
+@startuml
+
+class Liga {
+  +nombre: String
+  +númeroEquipos: int
+  +país: String
+}
+
+class Reglamento {
+  +tipo: String
+  +descripción: String
+}
+
+class Comité {
+  +nombre: String
+  +funciones: String
+}
+
+class Árbitro {
+  +nombre: String
+  +experiencia: int
+  +nivel: String
+}
+
+class Tarjeta {
+  +tipo: String
+  +motivo: String
+}
+
+class Entrenador {
+  +nombre: String
+  +estrategia: String
+}
+
+class Equipo {
+  +nombre: String
+  +fundación: int
+  +ciudad: String
+}
+
+class Jugador {
+  +nombre: String
+  +posición: String
+  +edad: int
+  +valorMercado: float
+}
+
+class Aficionado {
+  +nombre: String
+  +edad: int
+  +equipoFavorito: Equipo
+}
+
+class Partido {
+  +fecha: Date
+  +resultado: String
+}
+
+class Estadio {
+  +nombre: String
+  +capacidad: int
+  +ubicación: String
+}
+
+class Contrato {
+  +salario: float
+  +duración: int
+}
+
+class Temporada {
+  +añoInicio: int
+  +añoFin: int
+}
+
+class Clasificación {
+  +posición: int
+  +puntos: int
+}
+
+Liga -- Reglamento : "define"
+Liga -- Comité : "controla"
+Comité -- Árbitro : "asigna"
+Comité -- Partido : "organiza"
+Partido -- Equipo : "participa"
+Partido -- Árbitro : "dirige"
+Partido -- Estadio : "se juega en"
+Equipo -- Jugador : "tiene"
+Equipo -- Entrenador : "dirigido por"
+Equipo .. Estadio : "usa"
+Aficionado -- Estadio : "asiste a"
+Aficionado -- Equipo : "apoya"
+Aficionado .. Entrenador : "admira"
+Aficionado .. Jugador : "admira"
+Jugador -- Contrato : "firma"
+Entrenador -- Contrato : "firma"
+Árbitro -- Contrato : "firma"
+Árbitro -- Reglamento : "cumple con"
+Entrenador -- Jugador : "entrena"
+Temporada -- Partido : "compone"
+Temporada -- Clasificación : "genera"
+Partido .. Clasificación : "modifica"
+Equipo -- Clasificación : "aparece en"
+Tarjeta -- Reglamento : "obedece"
+Tarjeta -- Árbitro : "asigna"
+Tarjeta .. Jugador : "recibe"
+Tarjeta .. Entrenador : "recibe"
+
+@enduml
