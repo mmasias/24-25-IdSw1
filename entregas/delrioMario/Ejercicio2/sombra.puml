@@ -1,0 +1,9 @@
+@startuml
+class sombra
+class objeto
+class foco
+
+foco -- objeto : proyecta
+objeto -- sombra : crea
+foco ... sombra
+@enduml
