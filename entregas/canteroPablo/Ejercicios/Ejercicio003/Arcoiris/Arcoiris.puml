@@ -1,0 +1,28 @@
+@startuml
+class Luz {
+    
+}
+
+class Atmosfera {
+
+} 
+
+class GotasDeAgua {
+    
+}
+
+class Arcoiris {
+
+}
+
+class EspectroVisible {
+   
+}
+
+Luz --> Atmosfera : dispersa en
+Atmosfera --> GotasDeAgua : contiene
+GotasDeAgua --> Arcoiris : genera
+Arcoiris --> EspectroVisible : crea
+EspectroVisible <-- Luz : depende de
+
+@enduml

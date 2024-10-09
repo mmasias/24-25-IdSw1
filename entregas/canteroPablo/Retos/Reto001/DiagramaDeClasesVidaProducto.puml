@@ -1,0 +1,48 @@
+@startuml
+class Producto {
+    +nombre: String
+    +precio: Double
+    +fabricante: String
+    +cicloDeVida(): void
+}
+
+class Desarrollo {
+    +investigacion: String
+    +prototipo: Boolean
+    +desarrollar(): void
+}
+
+class Fabricacion {
+    +cantidad: int
+    +costoProduccion: Double
+    +fabricar(): void
+}
+
+class Introduccion {
+    +marketing: String
+    +lanzamiento(): void
+}
+
+class Crecimiento {
+    +expansion: Boolean
+    +crecimientoVentas(): void
+}
+
+class Madurez {
+    +maxVentas: Boolean
+    +madurezMercado(): void
+}
+
+class Declive {
+    +reduccionVentas: Boolean
+    +estrategiaSalida(): void
+}
+
+Producto --> Desarrollo : Comienza con
+Desarrollo --> Fabricacion : Pasa a
+Fabricacion --> Introduccion : Lanza tras producción
+Introduccion --> Crecimiento : Avanza a
+Crecimiento --> Madurez : Alcanza estabilidad
+Madurez --> Declive : Entra en
+Declive --> Producto : Fin del ciclo
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+class FuenteDeLuz
+class Objeto
+class Sombra
+
+FuenteDeLuz --> Objeto : proyecta luz sobre
+Objeto --> Sombra : genera
+Sombra <-- FuenteDeLuz : depende de
+
+@enduml
