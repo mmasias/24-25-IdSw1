@@ -1,7 +1,7 @@
 @startuml Motivacion para dejar de fumar
 
 object persona1 {
-    nombre = Luis
+    Luis
 }
 
 object meta1 {

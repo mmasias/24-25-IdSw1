@@ -6,20 +6,19 @@
 > Un arco iris es un fenómeno óptico que ocurre cuando la luz del sol se descompone en gotas de agua, formando un arco de colores en el cielo.
 
 ### Diagrama de Clases:
-
-
+![alt text](images/ArcoIrisClases.png)
 
 ### Diagrama de Objetos:
+![alt text](images/ArcoIrisObjetos.png)
 
 ## La motivación
 > La motivación es la fuerza interna o el impulso que nos lleva a actuar, tomar decisiones y perseguir objetivos. Es lo que nos inspira a esforzarnos para lograr metas o satisfacer necesidades y deseos.
+
 ### Diagrama de Clases:
 
+### Diagrama de Objetos 1:
 
-    
-
-
-### Diagrama de Objetos:
+### Diagrama de Objetos 2:
 
 
     
