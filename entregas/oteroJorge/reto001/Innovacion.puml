@@ -1,0 +1,15 @@
+@startuml Innovacion
+
+class Idea
+class ProcesoInnovacion
+class Creatividad
+class Resultado
+class Colaboracion
+
+Idea --> ProcesoInnovacion : inicia
+ProcesoInnovacion --> Resultado : produce
+Creatividad --> ProcesoInnovacion : estimula
+ProcesoInnovacion --> Colaboracion : requiere
+Colaboracion --> Idea : nutre
+
+@enduml

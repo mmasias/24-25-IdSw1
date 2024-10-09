@@ -1,0 +1,16 @@
+@startuml Gravedad
+
+class Tierra
+class FuerzaGravedad
+class Distancia 
+class Luna
+
+Tierra --> Distancia : determina
+Luna --> Distancia : determina
+Distancia --> FuerzaGravedad : afecta
+FuerzaGravedad --> Tierra : aplica
+FuerzaGravedad --> Luna : aplica
+
+@enduml
+
+
