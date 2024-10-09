@@ -5,10 +5,11 @@ class FuerzaGravedad
 class Distancia 
 class Objeto2
 
-Objeto1 -- Distancia : determina
-Objeto2 -- Distancia : determina
-Distancia -- FuerzaGravedad : afecta
-FuerzaGravedad -- Objeto1 : aplica
-FuerzaGravedad -- Objeto2 : aplica
+Objeto1 --> Distancia : determina
+Objeto2 --> Distancia : determina
+Distancia --> FuerzaGravedad : afecta
+FuerzaGravedad --> Objeto1 : aplica
+FuerzaGravedad --> Objeto2 : aplica
 
 @enduml
+
