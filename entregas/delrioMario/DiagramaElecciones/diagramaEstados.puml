@@ -1,0 +1,11 @@
+@startuml
+
+[*] --> EsperaVotante
+EsperaVotante : Inicio
+EsperaVotante --> Votando : "Votante emitió su voto"
+Votando --> RecuentoVotos : "Voto depositado"
+RecuentoVotos --> Resultado : "Votos contados"
+Resultado --> Delegado : "Candidatos elegidos"
+Delegado --> [*] : "elegido"
+
+@enduml
