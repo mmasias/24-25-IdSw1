@@ -1,0 +1,23 @@
+@startuml
+object Persona
+Persona : carlos 
+
+object Meta
+Meta : metaProgramar
+
+object Accion 
+Accion : accionEstudiar
+
+object Motivacion
+Motivacion : motivacionAlta
+
+object Recompensa
+Recompensa : recompensaTrabajo 
+
+Persona --> Meta : establecerMeta()
+Persona --> Motivacion : sentirseMotivado()
+Motivacion --> Accion : impulsarAccion()
+Accion --> Meta : ejecutarAccion()
+Meta --> Recompensa : recibirRecompensa()
+
+@enduml
