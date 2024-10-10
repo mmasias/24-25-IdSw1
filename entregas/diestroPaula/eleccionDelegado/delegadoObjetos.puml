@@ -1,0 +1,43 @@
+@startuml
+object EleccionDelegado {
++ Eleccion delegado de clase
+}
+
+object Candidato {
++ Javier Salmeron
++ Diego Garcia
++ Mario del Rio
++ Maura Martinez
++ Elias Alarcon
+}
+
+object Votante{
++ Alumno que no es candidato
+}
+
+object Voto{
++ Papeleta
+}
+
+object Urna {
++ Caja
+}
+
+object Secretario{
++ Alejandro
+}
+
+object Recuento {
++ Cuento de votos
+}
+
+EleccionDelegado --> Candidato : "tiene"
+EleccionDelegado --> Votante : "tiene"
+EleccionDelegado --> Secretario : "tiene"
+Votante --> Voto : "realiza un"
+Votante --> Candidato : "elige a un"
+Voto --> Urna : "se mete en una"
+Secretario --> Recuento : "cuenta los votos"
+Urna --> Recuento : "Se sacan los votos y se hace un"
+
+@enduml
