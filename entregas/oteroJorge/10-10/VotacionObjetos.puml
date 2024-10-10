@@ -1,0 +1,40 @@
+@startuml VotacionObjetos
+
+object EleccionDelegado {
+}
+
+object Diego {
+}
+
+object Alumnos {
+}
+
+object Jorge {
+}
+
+object Papeleta {
+}
+
+object DiegoDelegado {
+}
+
+object Manuel {
+}
+
+object Juan {
+}
+
+EleccionDelegado --> Diego : "contiene"
+EleccionDelegado --> Papeleta : "contiene"
+Diego --> Alumnos : "es un"
+Jorge --> Alumnos : "es un"
+Jorge --> Papeleta : "emite"
+Papeleta --> EleccionDelegado : "pertenece a"
+Papeleta --> Diego : "vota a"
+DiegoDelegado --> EleccionDelegado : "se genera para"
+DiegoDelegado --> Diego : "asigna a"
+Jorge --> EleccionDelegado : "participa en"
+Manuel --> EleccionDelegado : "participa en"
+Juan --> EleccionDelegado : "participa en"
+
+@enduml

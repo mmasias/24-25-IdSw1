@@ -1,0 +1,39 @@
+@startuml Votacion
+class Eleccion {
+}
+
+class Candidato {
+}
+
+class Persona {
+}
+
+class Votante {
+}
+
+class Voto {
+}
+
+class Resultado {
+}
+
+class Secretario {
+}
+
+class PresidenteDeLaMesa {
+}
+
+Eleccion --> Candidato : "contiene"
+Eleccion --> Voto : "contiene"
+Candidato --> Persona : "es un"
+Votante --> Persona : "es un"
+Votante --> Voto : "emite"
+Voto --> Eleccion : "pertenece a"
+Voto --> Candidato : "vota a"
+Resultado --> Eleccion : "se genera para"
+Resultado --> Candidato : "asigna a"
+Votante --> Eleccion : "participa en"
+Secretario --> Eleccion : "participa en"
+PresidenteDeLaMesa --> Eleccion : "participa en"
+
+@enduml
