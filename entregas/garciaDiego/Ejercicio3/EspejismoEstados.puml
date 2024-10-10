@@ -1,0 +1,15 @@
+@startuml
+[*] --> NoVisible
+NoVisible : El espejismo no está presente
+
+NoVisible --> Formación : Condiciones Adecuadas
+Formación : El espejismo comienza a formarse
+
+Formación --> Visible : Luz Reflejada
+Visible : El espejismo es observable
+
+Visible --> Disipación : Condiciones Cambiantes
+Disipación : El espejismo comienza a desaparecer
+
+Disipación --> NoVisible : Condiciones Inadecuadas
+@enduml

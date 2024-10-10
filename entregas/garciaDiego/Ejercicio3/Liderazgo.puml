@@ -1,0 +1,10 @@
+@startuml
+
+    Package "Liderazgo" {
+        Lider -- Equipo : "lidera"
+        Equipo -- Objetivo : "trabaja hacia"
+        Lider -- Motivacion : "proporciona"
+        Motivacion -- Equipo : "influye"
+    }
+
+@enduml
