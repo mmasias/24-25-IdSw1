@@ -21,7 +21,7 @@ voto ->  recuento : se recojen en
 recuento .... candidatos : elegido
 
 @enduml
-
+````
 ## Diagrama de Objetos
 
 Este diagrama describe las relaciones entre los diferentes objetos que forman parte del proceso de votación, como votantes, candidatos, los votos y el recuento de votos.
@@ -42,5 +42,38 @@ Candidatos --> Votantes : "se presentan a"
 Votantes --> Voto : "derecho a votos"
 Voto --> Recuento : "se recogen en"
 Recuento ..> Candidatos : "elegido"
+@enduml
+````
+## Diagrama de estados
+
+Este diagrama descubre paso a paso como se produce la votacion.
+
+## Codigo PUML:
+```puml
+@startuml
+
+object voto{
+    + eleccion
+    + aula
+    * candidato
+}
+object votantes{
+    + estudiantes
+}
+object candidatos{
+    + elegibles
+}
+object recuento{
+    - Urna
+    + Secretario
+    + Presidente
+}
+
+candidatos -> votantes : se presentan a
+votantes -> voto : derecho a votos
+voto ->  recuento : se recojen en
+recuento .... candidatos : elegido
+
+
 @enduml
 
