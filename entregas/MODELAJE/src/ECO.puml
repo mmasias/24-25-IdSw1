@@ -1,0 +1,23 @@
+@startuml
+class FuenteDeSonido {
+
+}
+
+class SuperficieReflectante {
+
+}
+
+class Eco {
+}
+
+class Observador {
+
+}
+
+FuenteDeSonido --> SuperficieReflectante : interactúa
+SuperficieReflectante --> Eco : genera
+Eco --> Observador : escucha o no dependiendo de distancia
+Observador --> FuenteDeSonido : puede ser
+
+
+@enduml
