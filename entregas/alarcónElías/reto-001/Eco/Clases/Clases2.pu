@@ -1,0 +1,30 @@
+@startuml
+package Eco {
+  class "FuenteDeSonido" {
+    +string tipo
+  }
+  class "OndaSonora" {
+    +float frecuencia
+    +float longitudDeOnda
+  }
+  class "MedioDePropagación" {
+    +string tipo
+  }
+  class "SuperficieReflectora" {
+    +float distancia
+  }
+  class "Receptor" {
+    +string tipo
+  }
+  class "Eco" {
+    +float tiempoRetraso
+  }
+
+  FuenteDeSonido -- OndaSonora : "genera"
+  OndaSonora -- MedioDePropagación : "se propaga a través de"
+  MedioDePropagación -- SuperficieReflectora : "impacta en"
+  OndaSonora -- Receptor : "llega a"
+  SuperficieReflectora -- Eco : "refleja la onda causando"
+  Eco -- Receptor : "percibe"
+}
+@enduml

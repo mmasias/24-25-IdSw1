@@ -13,7 +13,9 @@ El eco es un fenómeno consistente en escuchar un sonido después de haberse ext
 - **Superficie Reflectora**: Es la barrera que refleja el sonido, creando el eco.
 - **Receptor**: El receptor que percibe tanto el sonido original como el eco.
 
-![Diagrama de Clases](../../../plantuml_out/entregas/alarcónElías/reto-001/Eco/Clases/Clases.svg)
+| ![Diagrama de Clases](../../../plantuml_out/entregas/alarcónElías/reto-001/Eco/Clases/Clases1/Clases1.svg) | ![Diagrama de Clases](../../../plantuml_out/entregas/alarcónElías/reto-001/Eco/Clases/Clases2/Clases2.svg) |
+| ----------- | ----------- |
+| ![Diagrama de Clases](../../../plantuml_out/entregas/alarcónElías/reto-001/Eco/Clases/Clases3/Clases3.svg) | ![Diagrama de Clases](../../../plantuml_out/entregas/alarcónElías/reto-001/Eco/Clases/Clases4/Clases4.svg) |
 
 ## Diagrama de Objetos
 
