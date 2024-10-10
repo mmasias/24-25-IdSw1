@@ -1,0 +1,21 @@
+@startuml
+class foco {
+
+}
+class objeto {
+
+}
+class sombra {
+
+}
+class superficie {
+
+}
+
+foco -- objeto : ilumina
+foco .. sombra 
+sombra -- superficie : proyecta
+objeto -- superficie : se apoya
+objeto -- sombra : proyecta
+
+@enduml
