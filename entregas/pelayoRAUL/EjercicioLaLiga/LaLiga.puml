@@ -1,0 +1,48 @@
+@startuml
+
+class Equipo {
+}
+
+class Entrenador {
+}
+
+class Jugador {
+}
+
+class Arbitro {
+}
+
+class Reglas {
+}
+
+class Jornada {
+}
+
+class Estadio {
+}
+
+class Partido {
+}
+
+class Temporada {
+}
+
+class Patrocinador {
+}
+
+Equipo  -->  Entrenador
+Equipo  -->  Jugador 
+Equipo  -->  Estadio 
+Arbitro  -->  Reglas 
+Arbitro  -->  Jornada 
+Jornada  -->  Partido  
+Partido  -->  Equipo 
+Jornada  -->  Arbitro 
+Estadio  -->  Partido  
+Temporada  -->  Jornada
+Temporada  -->  Equipo
+Jornada  -->  Temporada
+Partido  -->  Temporada
+Patrocinador --> Equipo
+
+@enduml

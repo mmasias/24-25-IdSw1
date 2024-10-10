@@ -1,0 +1,38 @@
+@startuml
+
+Object Persona {
+-Candidato
+-Votante
+-Supervisores
+}
+
+Object Voto {
+ -Candidato
+}
+
+Object Urna {
+-Aula
+}
+
+Object Elección {
+  -Votante
+}
+
+Object MesaElectoral {
+  -Supervisores
+}
+
+Persona  --  Voto : votante
+Persona  --  Voto : candidato
+Urna  --  Voto
+Elección  --  Urna
+Elección  --  Persona : delegado
+Elección  --  Persona : subdelegado
+Elección  --  MesaElectoral : supervisadaPor
+MesaElectoral --  Persona : miembros
+
+@enduml
+
+
+
+
