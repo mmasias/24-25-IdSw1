@@ -1,1 +1,1 @@
-
+ ### Glosario del Diagrama de Clases 1. **Votante** - **Descripción**: Representa a una persona que tiene derecho a emitir un voto en una votación. - **Atributos**: - `id`: Identificador único del votante. - `nombre`: Nombre del votante. - `haVotado`: Booleano que indica si el votante ha emitido su voto. - **Relaciones**: -
