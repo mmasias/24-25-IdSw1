@@ -1,0 +1,21 @@
+@startuml
+
+class Votante
+class Candidatos
+class Voto
+class MesaDeVotacion
+class Resultado
+class Eleccion
+class Observador
+class Decisión
+
+Votante -- Voto : "emite"
+Voto --> Candidatos : "selecciona"
+Voto --> MesaDeVotacion : "registrado en"
+Resultado -- Eleccion : "tiene un"
+Eleccion --> Observador : "asegura una correcta"
+Decisión -- Voto : "influencia"
+MesaDeVotacion -- Observador : "monitoreada por"
+Candidatos -- Eleccion : "compiten en"
+
+@enduml

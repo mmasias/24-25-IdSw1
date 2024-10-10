@@ -1,0 +1,24 @@
+@startuml
+class Liga
+class Regla
+class Temporada
+class Equipo
+class Entrenador
+class Jugador
+class Jornada
+class Partido
+class Estadio
+class Arbitro
+
+' Relaciones entre entidades
+Liga -- Regla
+Liga -- Equipo
+Liga -- Temporada
+Temporada -- Jornada
+Jornada -- Partido
+Partido -- Equipo
+Partido -- Estadio
+Partido -- Arbitro
+Equipo -- Entrenador
+Equipo -- Jugador
+@enduml

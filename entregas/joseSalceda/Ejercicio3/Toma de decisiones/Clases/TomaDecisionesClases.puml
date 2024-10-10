@@ -1,0 +1,19 @@
+@startuml
+
+class Decisión
+class Alternativa
+class Criterio
+class Información
+class Persona
+class Consecuencia
+class Objetivo
+class Contexto
+
+Decisión -- Alternativa : "influye"
+Decisión -- Criterio
+Decisión -- Información
+Decisión -- Consecuencia
+Persona -- Decisión
+Criterio -- Objetivo
+Decisión -- Contexto
+@enduml
