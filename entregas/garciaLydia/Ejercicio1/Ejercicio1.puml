@@ -1,0 +1,42 @@
+@startuml
+class Liga {
+}
+
+class Equipo {
+}
+
+class Jugador {
+}
+
+class Entrenador {
+}
+
+class Partido {
+}
+
+class Estadio {
+}
+
+class Arbitro {
+}
+
+class Clasificacion {
+}
+
+' Relaciones entre las clases
+
+Liga "1" -- "1..*" Equipo : contiene
+Liga "1" -- "1..*" Partido : organiza
+
+Equipo "1..*" -- "0..*" Jugador : tiene
+Equipo "1" -- "1" Entrenador : es dirigido por
+Equipo "1" -- "1" Estadio : juega en
+Equipo "1..*" -- "1..*" Partido : participa en
+
+Partido "2" -- "1" Estadio : se juega en
+Partido "1" -- "1" Arbitro : es dirigido por
+Partido "1" -- "2" Equipo : se juega entre
+
+Clasificacion "1" -- "1..*" Equipo : ordena
+
+@enduml

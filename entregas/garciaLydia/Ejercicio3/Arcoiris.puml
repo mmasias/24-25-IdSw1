@@ -1,0 +1,26 @@
+@startuml
+class Arcoiris {
+}
+
+class Luz {
+}
+
+class GotaDeAgua {
+}
+
+class Color {
+}
+
+class Observador {
+}
+
+' Relaciones entre las clases
+Arcoiris "1" -- "1..*" Color : está compuesto por
+Arcoiris "1" -- "1" Luz : se forma con
+Arcoiris "1" -- "0..*" GotaDeAgua : se forma a través de
+
+Luz "1" -- "0..*" GotaDeAgua : pasa por
+GotaDeAgua "0..*" -- "0..*" Color : descompone en
+
+Observador "1" -- "1" Arcoiris : observa
+@enduml

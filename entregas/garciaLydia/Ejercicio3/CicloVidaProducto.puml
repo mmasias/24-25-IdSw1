@@ -1,0 +1,32 @@
+@startuml
+class Producto {
+}
+
+class Etapa {
+}
+
+class Requisitos {
+}
+
+class Mercado {
+}
+
+class Competencia {
+}
+
+class Clientes {
+}
+
+' Relaciones entre las clases
+Producto "1" -- "1..*" Etapa : pasa por
+Producto "1" -- "1" Requisitos : tiene
+Producto "1" -- "1" Mercado : se introduce en
+Producto "1" -- "0..*" Competencia : compite con
+Producto "1" -- "0..*" Clientes : es utilizado por
+
+Etapa "1" -- "1" Producto : pertenece a
+Etapa "1" -- "1" Fecha : ocurre en
+
+Clientes "0..*" -- "1" Producto : compran y usan
+
+@enduml

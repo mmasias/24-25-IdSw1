@@ -1,0 +1,22 @@
+@startuml
+class Sombra {
+}
+
+class Objeto {
+}
+
+class FuenteDeLuz {
+}
+
+class Superficie {
+}
+
+' Relaciones entre las clases
+Sombra "1" -- "1" Objeto : es proyectada por
+Sombra "1" -- "1" FuenteDeLuz : depende de
+Sombra "1" -- "1" Superficie : se proyecta sobre
+
+FuenteDeLuz "1" -- "0..*" Objeto : ilumina
+Objeto "0..*" -- "1" Superficie : está sobre
+@enduml
+

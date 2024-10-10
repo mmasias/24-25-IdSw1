@@ -1,0 +1,76 @@
+@startuml
+object acta1 {
+    fecha = "10/10/2024"
+    resultados = "Maura Martínez: 2 votos"
+}
+
+object mesaElectoral1 {
+    ubicacion = "Sala 0.12"
+    horaApertura = "12:15"
+    horaCierre = "12:45"
+}
+
+object presidente1 {
+    nombre = "Manuel"
+    apellido = "Masias"
+    dni = "12345678"
+}
+
+object secretario1 {
+    nombre = "Alejandro"
+    apellido = "Viñas"
+    dni = "87654321"
+}
+
+
+object alumno1 {
+    nombre = "Lydia"
+    apellido = "García"
+    dni = "55555555"
+    curso = "3º"
+}
+
+object alumno2 {
+    nombre = "Daniel"
+    apellido = "Lavín"
+    dni = "66666666"
+    curso = "3º"
+}
+
+
+object candidato1 {
+    nombre = "Maura"
+    apellido = "Martínez"
+    dni = "11223344"
+}
+
+
+object voto1 {
+    tipoVoto = "válido"
+}
+
+object voto2 {
+    tipoVoto = "válido"
+}
+
+
+mesaElectoral1 -- presidente1
+mesaElectoral1 -- secretario1
+mesaElectoral1 -- acta1
+
+presidente1 --> acta1
+secretario1 --> acta1
+
+alumno1 -- voto1
+alumno2 -- voto2
+
+voto1 --> candidato1
+voto2 --> candidato1
+
+acta1 --> candidato1 : "Resultados"
+@enduml
+
+
+
+
+
