@@ -1,0 +1,13 @@
+@startuml
+
+class voto
+class votantes
+class candidatos
+class recuento
+
+candidatos -> votantes : se presentan a
+votantes -> voto : derecho a votos
+voto ->  recuento : se recojen en
+recuento .... candidatos : elegido
+
+@enduml

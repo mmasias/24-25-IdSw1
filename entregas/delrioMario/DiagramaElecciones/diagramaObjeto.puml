@@ -1,0 +1,26 @@
+@startuml
+
+object voto{
+    + eleccion
+    + aula
+    * candidato
+}
+object votantes{
+    + estudiantes
+}
+object candidatos{
+    + elegibles
+}
+object recuento{
+    - Urna
+    + Secretario
+    + Presidente
+}
+
+candidatos -> votantes : se presentan a
+votantes -> voto : derecho a votos
+voto ->  recuento : se recojen en
+recuento .... candidatos : elegido
+
+
+@enduml
