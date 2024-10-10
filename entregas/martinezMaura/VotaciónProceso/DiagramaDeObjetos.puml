@@ -1,0 +1,65 @@
+@startuml
+object Estudiante1 {
+    nombre = "Lidia"
+    esDelegado = false
+    votoDelegado = "Diego"
+}
+
+object Estudiante2 {
+    nombre = "Maura"
+    esDelegado = false
+    votoDelegado = "Diego"
+}
+
+object Estudiante3 {
+    nombre = "Carlos"
+    esDelegado = false
+    votoDelegado = "Maria"
+}
+
+object Profesor {
+    nombre = "Prof. Masias"
+}
+
+object Secretario {
+    nombre = "elias"
+}
+
+object Urna {
+    votos = 3
+}
+
+object CandidatoMaria {
+    nombre = "Maria"
+    esDelegado = true
+}
+
+object CandidatoCarlos {
+    nombre = "Carlos"
+    esDelegado = false
+}
+
+object Voto1 {
+    delegadoVotado = "Diego"
+}
+
+object Voto2 {
+    delegadoVotado = "Diego"
+}
+
+object Voto3 {
+    delegadoVotado = "Maria"
+}
+
+Estudiante1 -- Voto1
+Estudiante2 -- Voto2
+Estudiante3 -- Voto3
+Urna -- Voto1
+Urna -- Voto2
+Urna -- Voto3
+CandidatoMaria -- Voto3
+CandidatoDiego -- Voto2
+CandidatoDiego -- Voto1
+Profesor -- Urna
+Secretario -- Urna
+@enduml

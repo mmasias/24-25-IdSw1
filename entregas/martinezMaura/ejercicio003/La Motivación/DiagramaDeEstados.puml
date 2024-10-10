@@ -1,0 +1,11 @@
+@startuml
+
+[*] --> SinMotivacion
+
+SinMotivacion --> MotivacionBaja : Recibe factor motivacional
+MotivacionBaja --> MotivacionModerada : Aplica acción motivadora
+MotivacionModerada --> MotivacionAlta : Incremento de autoeficacia
+MotivacionAlta --> Satisfaccion : Cumple objetivo importante
+Satisfaccion --> MotivacionBaja : Establece nuevo objetivo
+
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+object planeta {
+    masa = 5.97e24
+    posicion = (0,0,0)
+    velocidad = (0,0,0)
+}
+
+object luna {
+    masa = 7.35e22
+    posicion = (384400,0,0)
+    velocidad = (0,1,0)
+}
+
+object satelite {
+    masa = 1000
+    posicion = (200000,0,0)
+    velocidad = (0,2,0)
+}
+
+SistemaGravitacional : constanteGravitacional = 6.67430e-11
+SistemaGravitacional : objetos = [planeta, luna, satelite]
+
+planeta --> SistemaGravitacional
+luna --> SistemaGravitacional
+satelite --> SistemaGravitacional
+@enduml

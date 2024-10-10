@@ -1,0 +1,51 @@
+@startuml
+class Persona {
+    
+}
+
+class Estudiante extends Persona {
+  
+}
+
+class Profesor extends Persona {
+  
+}
+
+class Secretario extends Persona {
+  
+}
+
+class Delegado extends Estudiante {
+  
+}
+
+class Candidato extends Estudiante {
+  
+}
+
+class Urna {
+  
+}
+
+class Voto {
+  
+}
+
+class Votacion {
+   
+}
+
+Persona <|-- Estudiante
+Persona <|-- Profesor
+Persona <|-- Secretario
+
+Estudiante "1" -- "*" Voto
+Voto "*" -- "1" Candidato
+Urna "1" -- "*" Voto
+Urna "1" -- "1" Votacion
+Votacion "1" -- "1" Profesor
+Votacion "1" -- "1" Secretario
+Votacion "1" -- "*" Estudiante
+Votacion "1" -- "*" Candidato
+
+@enduml
