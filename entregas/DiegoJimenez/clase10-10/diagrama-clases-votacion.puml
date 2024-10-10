@@ -1,0 +1,47 @@
+@startuml
+class Alumno {
+}
+
+class Candidato {
+}
+
+class Votante {
+}
+
+class MesaElectoral {
+}
+
+class Profesor {
+}
+
+class Secretario {
+}
+
+class Presidente {
+}
+
+class Resultado {
+}
+
+class Delegado {
+}
+
+class Subdelegado {
+}
+
+class Voto {
+}
+
+Alumno -- Candidato: se postula >
+Votante .. Alumno: es >
+Secretario .. Alumno: es >
+Delegado .. Alumno: es >
+Subdelegado .. Alumno: es >
+Presidente .. Profesor: es >
+Candidato -- Voto: recibe >
+Presidente -- MesaElectoral: conforma >
+Secretario -- MesaElectoral: conforma  >
+MesaElectoral -- Voto: cuenta >
+MesaElectoral -- Delegado: declara >
+MesaElectoral -- Subdelegado: declara >
+@enduml
