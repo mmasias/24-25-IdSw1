@@ -1,0 +1,49 @@
+@startuml
+class SistemaDeVotacion {
+    +iniciarVotacion()
+    +cerrarVotacion()
+    +anunciarResultados()
+}
+
+class Candidato {
+    +nombre: String
+    +registrarse()
+}
+
+class Votante {
+    +nombre: String
+    +votar(Candidato)
+}
+
+class Voto {
+    +fechaHora: Date
+    +validarVoto(): Boolean
+}
+
+class Urna {
+    +guardarVoto(Voto)
+    +cerrarUrna()
+}
+
+class Secretario {
+    +contarVotos(Urna)
+    +verificarResultados(): Boolean
+}
+
+class ProcesoDeVotacion {
+    +estado: String
+    +abrirRegistroCandidatos()
+    +cerrarRegistroCandidatos()
+    +abrirVotacion()
+    +cerrarVotacion()
+}
+
+SistemaDeVotacion --> ProcesoDeVotacion : "controla"
+ProcesoDeVotacion --> Candidato : "gestiona"
+Votante --> Voto : "emite"
+Voto --> Candidato : "asociado a"
+ProcesoDeVotacion --> Voto : "registra"
+Votante --> Urna : "deposita en"
+Secretario --> Urna : "revisa"
+Secretario --> Voto : "cuenta"
+@enduml
