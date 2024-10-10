@@ -1,0 +1,32 @@
+@startuml
+
+class Persona {
+
+}
+
+class Voto {
+ 
+}
+
+class Urna {
+}
+
+class Elección {
+  
+}
+
+class MesaElectoral {
+  
+}
+
+Persona  --  Voto : votante
+Persona  --  Voto : candidato
+Urna  --  Voto
+Elección  --  Urna
+Elección  --  Persona : delegado
+Elección  --  Persona : subdelegado
+Elección  --  MesaElectoral : supervisadaPor
+MesaElectoral --  Persona : miembros
+
+@enduml
+

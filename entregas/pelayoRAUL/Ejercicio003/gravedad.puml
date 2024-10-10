@@ -1,0 +1,21 @@
+@startuml
+object Objeto1 {
+ 
+}
+
+object Objeto2 {
+ 
+}
+
+object Distancia {
+}
+
+object FuerzaGravitatoria {
+}
+
+Objeto1 -- FuerzaGravitatoria : " afectado por"
+Objeto2 -- FuerzaGravitatoria : " afectado por"
+Objeto1 -- Distancia : " distancia de"
+Objeto2 -- Distancia : " distancia de"
+
+@enduml
