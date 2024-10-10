@@ -1,0 +1,29 @@
+@startuml
+object fuenteSonido1 {
+  posicion = (0, 0, 0)
+  intensidad = 75
+  frecuencia = 440
+}
+
+object ondaSonora1 {
+  frecuencia = 440
+  amplitud = 0.8
+  velocidad = 343
+  distanciaRecorrida = 10
+}
+
+object superficie1 {
+  coeficienteReflexion = 0.9
+  posicion = (10, 0, 0)
+}
+
+object eco1 {
+  retardo = 0.029
+  intensidadPercibida = 65
+}
+
+fuenteSonido1 -- ondaSonora1 : emite
+ondaSonora1 --> superficie1 : impacta
+superficie1 -- ondaSonora1 : refleja
+ondaSonora1 -- eco1 : percibido como
+@enduml
