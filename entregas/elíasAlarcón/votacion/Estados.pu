@@ -1,0 +1,11 @@
+@startuml
+state Abierta
+state Cerrada
+state ResultadosPublicados
+
+
+[*] --> Abierta : Iniciar
+Abierta --> Cerrada : Cerrar votacion
+Cerrada --> ResultadosPublicados : Publicar resultados
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+title Diagrama de Clases Básico: Proceso de Votación
+
+@startuml DiagramaDeClasesBasico
+
+class Candidato
+class Sufragante
+class Secretario
+class Organizador
+class Elección
+
+Candidato "1..*" -- "1..*" Elección : esVotado >
+Sufragante "1..*" -- "1..*" Elección : emite >
+Secretario "1" -- "1" Organizador : reportaA >
+Organizador "1" -- "1..*" Elección : coordina >
+
+
+@enduml
