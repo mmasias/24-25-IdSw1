@@ -1,0 +1,7 @@
+@startuml DiagramaEstadosVotacion
+title diagrama de estados - Decision De Voto
+
+[*] --> IndecisionVoto
+IndecisionVoto -> DecisionVoto
+DecisionVoto --> [*]
+@endumla
