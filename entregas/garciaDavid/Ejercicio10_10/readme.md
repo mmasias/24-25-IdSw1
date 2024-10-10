@@ -22,8 +22,16 @@
   - Cero votos
   - Votos asignados
   - Delegado(Si/No)
+    
+## 4. Mesa Electoral
+- **Definición**: Grupo encargado de supervisar y administrar el proceso de votación.
+- **Rol**: Verifica la validez de los votos, coordina la votación y asegura la transparencia del proceso. Puede estar compuesto por estudiantes o profesores.
+- **Estados**:
+  - Preparación (organizando la votación)
+  - Supervisión (votación en curso)
+  - Conteo (cerrada y en proceso de contar votos)
 
-## 4. Votación
+## 5. Votación
 - **Definición**: Proceso en el que los estudiantes emiten sus votos para elegir a un delegado.
 - **Rol**: Coordina el acto de votar y registra los votos emitidos.
 - **Estados**:
@@ -31,14 +39,15 @@
   - Cerrada (se termina el proceso de emisión de votos)
   - Estado
   - Proceso
-## 5. Voto
+    
+## 6. Voto
 - **Definición**: Acto mediante el cual un estudiante expresa su elección por un candidato.
 - **Rol**: Cada estudiante emite un voto que se suma al candidato seleccionado.
 - **Estados**:
   - No emitido
   - Emitido
 
-## 6. Resultado
+## 7. Resultado
 - **Definición**: Resultado final de la votación que muestra el candidato ganador.
 - **Rol**: Calcula el candidato con mayor número de votos y lo declara como ganador.
 - **Estados**:
