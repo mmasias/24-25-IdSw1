@@ -49,8 +49,8 @@ Si hubiera algún inconveniente con estas fechas, sin ningún problema podemos a
 |Lucía Terán|CWO FUNIBER
 |Susana Gutierrez|Departamento de calidad de UNEATLANTICO
 |David García|Ordenación académica
-|Iván Gonzalez|CAFYD
-|Josep Alemany|CAFYD
+|Iván Gonzalez|SAFD
+|Josep Alemany|SAFD
 |Jesús Peña|Secretaría general UNEATLANTICO
 
 </center>
