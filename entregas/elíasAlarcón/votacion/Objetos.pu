@@ -1,0 +1,67 @@
+@startuml
+title Diagrama de Objetos: Ejemplo de una Eleccion
+
+object eleccion1
+object candidato1
+object candidato2
+object candidato3
+object candidato4
+object candidato5
+object sufragante1
+object sufragante2
+object sufragante3
+object sufragante4
+object sufragante5
+object voto1
+object voto2
+object voto3
+object voto4
+object voto5
+object mesaElectoral1
+
+eleccion1 : nombre = "Elecciones Estudiantiles 2023"
+candidato1 : nombre = "Juan Pérez"
+candidato2 : nombre = "María López"
+candidato3 : nombre = "Pedro Gómez"
+candidato4 : nombre = "Ana Rodríguez"
+candidato5 : nombre = "Carlos Martínez"
+sufragante1 : nombre = "Ana López"
+sufragante2 : nombre = "Pedro Gómez"
+sufragante3 : nombre = "María Sánchez"
+sufragante4 : "Juan García"
+sufragante5 : "Laura Martínez"
+voto1 : candidatoElegido = candidato1
+voto2 : candidatoElegido = candidato3
+voto3 : candidatoElegido = candidato2
+voto4 : candidatoElegido = candidato4
+voto5 : candidatoElegido = candidato5
+mesaElectoral1 : ubicacion = "Gimnasio"
+
+eleccion1 <--> candidato1 : participa
+eleccion1 <--> candidato2 : participa
+eleccion1 <--> candidato3 : participa
+eleccion1 <--> candidato4 : participa
+eleccion1 <--> candidato5 : participa
+sufragante1 --> voto1 : emite
+sufragante2 --> voto2 : emite
+sufragante3 --> voto3 : emite
+sufragante4 --> voto4 : emite
+sufragante5 --> voto5 : emite
+voto1 --> cand
+idato1 : elegido
+voto2 --> candidato3 : elegido
+voto3 --> candidato2 : elegido
+voto4 --> candidato4 : elegido
+voto5 --> candidato5 : elegido
+sufragante1 --> mesaElectoral1 : votaEn
+sufragante2 --> mesaElectoral1 : votaEn
+sufragante3 --> mesaElectoral1 : votaEn
+sufragante4 --> mesaElectoral1 : votaEn
+sufragante5 --> mesaElectoral1 : votaEn
+voto1 --> mesaElectoral1 : emitidoEn
+voto2 --> mesaElectoral1 : emitidoEn
+voto3 --> mesaElectoral1 : emitidoEn
+voto4 --> mesaElectoral1 : emitidoEn
+voto5 --> mesaElectoral1 : emitidoEn
+
+@enduml

@@ -1,0 +1,56 @@
+@startuml
+title Diagrama de Clases Extendido: Sistema de Votación
+
+class Candidato {
+  id: Integer
+  nombre: String
+  partido: String
+  propuestas: List
+}
+class Sufragante {
+  id: Integer
+  dni: String
+  nombre: String
+  edad: Integer
+  mesaElectoral: MesaElectoral
+}
+class Secretario {
+  id: Integer
+  nombre: String
+  verificarVotos()
+  publicarResultados()
+}
+class Organizador {
+  id: Integer
+  nombre: String
+  organizarElecciones()
+}
+class Elección {
+  id: Integer
+  nombre: Strin
+  g
+  fecha: Date
+  estado: Enum {Abierta, Cerrada}
+}
+class Voto {
+  id: Integer
+  candidato: Candidato
+  fechaHora: DateTime
+  mesaElectoral: MesaElectoral
+}
+class MesaElectoral {
+  id: Integer
+  ubicacion: String
+  votosEmitidos: Integer
+}
+
+Candidato "1..*" -- "1..*" Elección : participa >
+Sufragante "1..*" -- "1" MesaElectoral : votaEn >
+Sufragante "1" -- "1" Voto : emite >
+Voto "1" -- "1" Candidato : elegido >
+Voto "1" -- "1" Elección : perteneceA >
+Voto "1" -- "1" MesaElectoral : emitidoEn >
+Secretario "1" -- "1" Organizador : reportaA >
+Organizador "1" -- "1..*" Elección : coordina >
+
+@enduml
