@@ -1,0 +1,14 @@
+@startuml
+[*] --> PrepararVotacion : Profesor Inicia Votación
+
+PrepararVotacion --> VotacionAbierta : Abrir Urna
+VotacionAbierta --> RecibirVotos : Estudiantes Votan
+RecibirVotos --> CerrarVotacion : Urna Llena / Profesor Cierra Votación
+CerrarVotacion --> ConteoVotos : Secretario Cuenta Votos
+ConteoVotos --> AnunciarResultados : Delegado con más votos
+AnunciarResultados --> [*] : Finalizar Votación
+
+RecibirVotos --> VotacionCancelada : Profesor Cancela Votación
+VotacionCancelada --> [*] : Proceso Cancelado
+
+@enduml
