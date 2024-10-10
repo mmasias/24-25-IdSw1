@@ -1,15 +1,16 @@
 @startuml
 
 class Alumno {
-  - nombre
+  - grado
 }
 
 class Candidato {
+  - nombre
   - votosRecibidos
 }
 
 class Voto {
-  - nombreCandidato
+  - candidato
 }
 
 class Urna {
@@ -30,8 +31,7 @@ Voto --> Urna
 SupervisorUrna -- Urna
 Alumno *.. SupervisorUrna : 1
 
-Urna .. Delegado
-Urna .. Subdelegado
+Urna .. Candidato
 
 Alumno -- Candidato
 Candidato *-- Delegado : 1
