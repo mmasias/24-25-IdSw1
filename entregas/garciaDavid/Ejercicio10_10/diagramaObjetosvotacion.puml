@@ -1,0 +1,50 @@
+@startuml
+object clase {
+  nombre: IngenieriaSoftware
+}
+
+object votacion {
+  fecha: 10/10/2024
+  descripcion: Elección de Representantes
+}
+
+object resultado {
+  totalVotos: 33
+  ganador: candidato1
+}
+
+object estudiantes {
+  nombre: David
+}
+
+object candidato {
+  nombre: Diego García
+}
+
+
+object voto {
+  fecha: 10/10/2024
+  emitidoPor: estudiante
+  candidatoElegido: candidato
+}
+
+object mesaElectoral {
+  presidente: Manuel
+  supervisor: Alejandro
+}
+
+clase-- votacion : "contiene"
+clase -- mesaElectoral : "contiene"
+mesaElectoral -- votacion : "supervisa"
+mesaElectoral -- voto : "cuenta"
+mesaElectoral -- resultado : "genera"
+votacion -- candidato : "presenta"
+votacion -- voto : "tiene"
+votacion -- resultado : "tiene un"
+resultado -- candidato : "ganador es"
+estudiante -- voto : "influye en"
+voto -- candidato : "afecta a"
+estudiantes -- candidato : "vota por"
+clase -- estudiante : "contiene"
+estudiante -- votacion : "participa en"
+@enduml
