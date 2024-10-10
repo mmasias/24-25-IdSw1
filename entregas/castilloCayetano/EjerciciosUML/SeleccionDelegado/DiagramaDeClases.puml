@@ -1,0 +1,25 @@
+@startuml
+
+class Personas {
+}
+class Candidatos{
+}
+class Jurado{
+}
+class Secretario{
+}
+class Votantes{
+}
+class Voto{
+}
+Personas --> Candidatos 
+Personas --> Jurado
+Personas --> Secretario
+Personas --> Votantes
+Votantes --> Voto
+Voto --> Secretario
+Secretario --> Jurado
+
+Voto ..> Candidatos
+
+@enduml
