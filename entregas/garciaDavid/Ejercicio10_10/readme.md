@@ -21,6 +21,7 @@
 - **Estados**:
   - Cero votos
   - Votos asignados
+  - Delegado(Si/No)
 
 ## 4. Votación
 - **Definición**: Proceso en el que los estudiantes emiten sus votos para elegir a un delegado.
@@ -28,7 +29,8 @@
 - **Estados**:
   - Abierta (los estudiantes pueden votar)
   - Cerrada (se termina el proceso de emisión de votos)
-
+  - Estado
+  - Proceso
 ## 5. Voto
 - **Definición**: Acto mediante el cual un estudiante expresa su elección por un candidato.
 - **Rol**: Cada estudiante emite un voto que se suma al candidato seleccionado.
@@ -42,34 +44,4 @@
 - **Estados**:
   - En espera (no calculado)
   - Calculado (ganador determinado)
-
-## 7. Estado de la Votación
-- **Definición**: Indica si la votación está en curso o finalizada.
-- **Rol**: Controla el flujo del proceso de votación.
-- **Estados**:
-  - Abierta
-  - Cerrada
-
-## 8. Delegado
-- **Definición**: Estudiante elegido para representar a la clase.
-- **Rol**: El delegado representa a la clase tras haber sido elegido mediante el proceso de votación.
-- **Estados**:
-  - No delegado
-  - Elegido como delegado
-
-## 9. Proceso de Votación
-- **Definición**: El flujo completo desde la apertura de la votación hasta la declaración del resultado.
-- **Rol**: Coordina la participación de los estudiantes en la elección del delegado.
-- **Estados**:
-  - Inicializado
-  - En curso
-  - Finalizado
-
-## 10. Conteo de Votos
-- **Definición**: Proceso que suma los votos recibidos por cada candidato.
-- **Rol**: Determina el número de votos obtenidos por cada candidato y quién es el ganador.
-- **Estados**:
-  - No iniciado
-  - En progreso
-  - Finalizado
 
