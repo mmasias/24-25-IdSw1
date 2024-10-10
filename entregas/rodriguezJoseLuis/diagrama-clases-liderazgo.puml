@@ -1,0 +1,22 @@
+@startuml
+class Lider {
+}
+
+class Seguidor {
+}
+
+class Objetivo {
+}
+
+class Estrategia {
+}
+
+class Comunicacion {
+}
+
+Lider "1" -- "1" Estrategia: define >
+Lider -- "1" Comunicacion: utiliza para guiar >
+Seguidor "1..*" -- "1" Lider: sigue >
+Seguidor -- Objetivo: contribuye a alcanzar >
+Lider -- Objetivo: dirige hacia >
+@enduml
