@@ -18,6 +18,12 @@ object Papeleta {
 object DiegoDelegado {
 }
 
+object Manuel {
+}
+
+object Juan {
+}
+
 EleccionDelegado --> Diego : "contiene"
 EleccionDelegado --> Papeleta : "contiene"
 Diego --> Alumnos : "es un"
@@ -28,5 +34,7 @@ Papeleta --> Diego : "vota a"
 DiegoDelegado --> EleccionDelegado : "se genera para"
 DiegoDelegado --> Diego : "asigna a"
 Jorge --> EleccionDelegado : "participa en"
+Manuel --> EleccionDelegado : "participa en"
+Juan --> EleccionDelegado : "participa en"
 
 @enduml

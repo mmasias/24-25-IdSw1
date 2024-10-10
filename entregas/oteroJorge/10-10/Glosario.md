@@ -19,3 +19,9 @@ Es la acción de elegir a un candidato en una elección. Un voto es emitido por 
 
 ### Resultado
 Es el conteo final que se genera para determinar el ganador o los ganadores de una elección. Este resultado asigna los votos obtenidos por cada candidato y permite conocer quién ha sido elegido como delegado.
+
+### Secretario
+Es la persona encargada de recoger los votos y llevar a cabo el conteo.
+
+### Presidente
+Es la persona que se encarga de dirigir la elección y de que se respeten las normas de la votación
