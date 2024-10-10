@@ -1,0 +1,35 @@
+@startuml
+title Diagrama de Objetos - Dos Personas y Un Foco
+
+object Diego {
+  
+}
+
+object Chema {
+  
+}
+
+object Luz {
+
+}
+
+object sombraLuz1 {
+}
+
+object sombraLuz2 {
+}
+
+object Plaza {
+}
+
+object camara {
+}
+
+Diego -- sombraLuz1 : "Proyecta"
+Chema -- sombraLuz2 : "Proyecta"
+Luz -- Diego : "Da a"
+Luz -- Chema : "Da a"
+sombraLuz1 -- Plaza : "Se proyecta sobre"
+sombraLuz2 -- Plaza : "Se proyecta sobre"
+camara -- Plaza : "Captura"
+@enduml
