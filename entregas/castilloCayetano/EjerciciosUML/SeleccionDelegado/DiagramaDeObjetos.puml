@@ -1,0 +1,32 @@
+@startuml
+
+object Personas
+Personas : Saul, Lisa
+
+object Candidatos
+Candidatos : Saul
+
+object Jurado
+Jurado : Emilio
+
+object Secretario
+Secretario : Daniel
+
+object Votantes
+Votantes : Lisa
+
+object Voto
+Voto : Saul
+
+Personas --> Candidatos : Se postulan
+Personas --> Jurado : Dictamina el ganador
+Personas --> Secretario : Maneja los votos
+Personas --> Votantes : Derecho a votar
+Votantes --> Voto : Eligen su delegado
+Voto --> Secretario : Valido o invalido 
+Secretario --> Jurado : Le pasa los resultados
+
+Voto ..> Candidatos : Reciben los votos
+
+
+@enduml
