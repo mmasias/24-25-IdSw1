@@ -1,0 +1,40 @@
+@startuml
+
+class Alumno {
+  - grado
+}
+
+class Candidato {
+  - nombre
+  - votosRecibidos
+}
+
+class Voto {
+  - candidato
+}
+
+class Urna {
+  - votos
+}
+
+class SupervisorUrna {
+}
+
+class Delegado {
+}
+
+class Subdelegado {
+}
+
+Alumno --> Voto
+Voto --> Urna
+SupervisorUrna -- Urna
+Alumno *.. SupervisorUrna : 1
+
+Urna .. Candidato
+
+Alumno -- Candidato
+Candidato *-- Delegado : 1
+Candidato *-- Subdelegado : 1
+
+@enduml
