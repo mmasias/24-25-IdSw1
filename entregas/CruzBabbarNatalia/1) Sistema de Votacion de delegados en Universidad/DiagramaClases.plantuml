@@ -1,0 +1,15 @@
+@startuml DiagramaClasesVotacion
+title VOTACION
+
+class Elecciones
+class Delegado
+class Subdelegado
+class Estudiante
+class Grupo
+class Grado
+class Voto
+class Papeleta
+class Encargado
+
+
+@enduml
