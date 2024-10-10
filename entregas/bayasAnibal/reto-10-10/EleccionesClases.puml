@@ -1,0 +1,36 @@
+@startuml
+
+class Votante {
+    +id : int
+    +nombre : String
+    +haVotado : Boolean
+}
+
+class Voto {
+    +fecha : Date
+    +candidato : Candidato
+    +registrarVoto()
+}
+
+class Votacion {
+    +fechaInicio : Date
+    +fechaFin : Date
+    +realizarVotacion()
+    +contarVotos()
+}
+
+class Candidato {
+    +id : int
+    +nombre : String
+    +votosObtenidos : int
+    +proponerPlan()
+}
+
+Votante --> Voto : emite
+Voto --> Candidato : para
+Votacion --> Candidato : contiene
+Candidato --> Votacion : participa en
+Candidato ..> Votante
+
+@enduml
+
