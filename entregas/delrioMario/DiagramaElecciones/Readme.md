@@ -1,4 +1,4 @@
-# Proceso de Votación - Diagramas UML
+# Proceso de Votación
 
 Este proyecto contiene representaciones del proceso de votación utilizando diagramas UML, específicamente de objetos y de estados, que ayudan a visualizar los componentes involucrados y su flujo. A continuación se describe cada diagrama y su propósito.
 
