@@ -1,0 +1,52 @@
+@startuml
+object Estudiante1 {
+    nombre = "Lydia"
+}
+
+object Estudiante2 {
+    nombre = "Daniel"
+}
+
+object Diego {
+    nombre = "Diego"
+}
+
+object Maura {
+    nombre = "Maura"
+}
+
+object Profesor {
+    nombre = "Manuel"
+}
+
+object Secretario {
+    nombre = "Alejandro"
+}
+
+object Voto1 {
+    estudiante = Lydia
+    candidato = Diego
+}
+
+object Voto2 {
+    estudiante = Daniel
+    candidato = Maura
+}
+
+Estudiante1 --> Voto1 : vota por
+Estudiante2 --> Voto2 : vota por
+Voto1 --> Diego : candidato
+Voto2 --> Maura : candidata
+
+Profesor --> Estudiante1 : supervisa votación
+Profesor --> Estudiante2 : supervisa votación
+Secretario --> Voto1 : cuenta voto
+Secretario --> Voto2 : cuenta voto
+Secretario --> Profesor : informa resultados
+Secretario --> Diego : anuncia ganador (si es el caso)
+Secretario --> Maura : anuncia ganador (si es el caso)
+@enduml
+
+
+
+

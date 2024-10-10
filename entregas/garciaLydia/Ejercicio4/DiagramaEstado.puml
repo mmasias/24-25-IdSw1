@@ -1,0 +1,8 @@
+@startuml
+[*] --> Inicio
+Inicio --> ProcesoDeCandidatos : Definir candidatos
+ProcesoDeCandidatos --> Votacion : Realizar votación
+Votacion --> ConteoDeVotos : Finaliza votación
+ConteoDeVotos --> AnuncioGanador : Secretario cuenta votos
+AnuncioGanador --> Fin : Ganador anunciado
+@enduml

@@ -1,0 +1,34 @@
+@startuml
+class Estudiante {
+    +nombre: String
+    +votar(candidato: Candidato)
+}
+
+class Candidato {
+    +nombre: String
+    +votos: int
+    +recibirVoto()
+}
+
+class Profesor {
+    +nombre: String
+    +controlarProceso()
+}
+
+class Secretario {
+    +nombre: String
+    +contarVotos()
+    +anunciarGanador()
+}
+
+class Voto {
+    +estudiante: Estudiante
+    +candidato: Candidato
+}
+
+Estudiante --> Voto : realiza
+Voto --> Candidato : se realiza para
+Profesor --> Estudiante : supervisa
+Secretario --> Candidato : cuenta votos
+Secretario --> Profesor : informa ganador
+@enduml
