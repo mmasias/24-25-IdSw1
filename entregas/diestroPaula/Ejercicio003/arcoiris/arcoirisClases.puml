@@ -1,0 +1,22 @@
+@startuml
+class FuenteDeLuz {
+}
+
+class GotaAgua {
+}
+
+class Cristal{
+}
+
+class Superficie {
+}
+
+class Arcoiris {
+}
+
+FuenteDeLuz --> GotaAgua : "incide sobre"
+FuenteDeLuz --> Cristal : "incide sobre"
+GotaAgua --> Superficie : "refracta y refleja"
+Cristal --> Superficie : "refracta y refleja"
+Superficie --> Arcoiris : "refleja colores"
+@enduml

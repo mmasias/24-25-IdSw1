@@ -1,0 +1,22 @@
+@startuml
+class Persona {
+}
+
+class Conflicto {
+}
+
+class Opciones{
+}
+
+class Análisis {
+}
+
+class Decisión {
+}
+
+Persona --> Conflicto : "se le presenta un"
+Conflicto --> Opciones : "con unas"
+Opciones --> Análisis : "realiza un"
+Análisis --> Decisión : "elige la mejor opción y toma una"
+
+@enduml
