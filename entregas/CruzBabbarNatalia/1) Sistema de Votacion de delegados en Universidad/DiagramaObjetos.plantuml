@@ -1,0 +1,35 @@
+@startuml DiagramaObjetosVotacion
+title Diagrama de Objetos 
+
+object Elecciones24_25
+object Diego_Delegado
+object Maura_Subdelegada
+object EstudianteInformatica
+object GradoInformatica
+object Voto
+object Papeleta
+object Pepito_Encargado
+object Mesa
+object CuentoVotos
+
+
+EstudianteInformatica -down- GradoInformatica : es parte de
+
+Diego_Delegado -up-|> EstudianteInformatica 
+Maura_Subdelegada -up-|> EstudianteInformatica
+Pepito_Encargado -up-|> EstudianteInformatica
+
+EstudianteInformatica -- Voto : realiza
+Voto -- Papeleta : en una
+Voto -- Elecciones24_25 : para las
+Papeleta -- Mesa : dentro de 
+Mesa -- Pepito_Encargado: asignado
+Pepito_Encargado -- CuentoVotos: realiza 
+CuentoVotos -- Diego_Delegado: asigna
+CuentoVotos -- Maura_Subdelegada: asigna
+
+
+Maura_Subdelegada -- GradoInformatica: Representa
+Diego_Delegado -- GradoInformatica: Representa
+
+@enduml

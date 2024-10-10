@@ -1,0 +1,13 @@
+@startuml DiagramaEstadosVerificacion
+title Diagrama de Estados - Verificación de Votos
+
+[*] --> VotacionAbierta
+VotacionAbierta --> RecibirVoto
+RecibirVoto --> RecibirVoto
+RecibirVoto --> VotacionCerrada
+VotacionCerrada --> VerificarPapeletas
+VerificarPapeletas --> ContarVotos
+ContarVotos --> ContarVotos
+ContarVotos --> DarResultado
+DarResultado --> [*]
+@enduml

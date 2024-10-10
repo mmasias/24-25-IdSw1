@@ -11,9 +11,27 @@
 
 
 ## Diagrama de clases
+[Codigo plantuml](DiagramaClases.plantuml)
 
-
+![Diagrama de Clases](imgs/DiagramaClasesVotacion.png)
 
 ## Diagrama de Objetos
+[Codigo plantuml](DiagramaObjetos.plantuml)
+
+![Diagrama de Objetos](imgs/DiagramaObjetosVotacion.png)
+
 
 ## Diagrama de estados
+### Diagrama de estados de proceso de decision de voto
+
+[Codigo plantuml](DiagramaEstados1.plantuml)
+
+![Diagrama de Objetos](imgs/DiagramaEstados1Votacion.png)
+
+
+### Diagraa de estados de proceso de Contrar votos
+
+[Codigo plantuml](DiagramaEstados2.plantuml)
+
+![Diagrama de Objetos](imgs/DiagramaEstados2Votacion.png)
+

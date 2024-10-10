@@ -1,15 +1,35 @@
 @startuml DiagramaClasesVotacion
-title VOTACION
+title Votacion dentro del Dominio Universidad
 
 class Elecciones
 class Delegado
 class Subdelegado
-class Estudiante
-class Grupo
-class Grado
+class Estudiantes
+class Grados
 class Voto
 class Papeleta
 class Encargado
+class Mesa
+class verificación
 
+
+Estudiantes -down- Grados : es parte de
+
+Delegado -up-|> Estudiantes 
+Subdelegado -up-|> Estudiantes
+Encargado -up-|> Estudiantes
+
+Estudiantes -- Voto : realiza
+Voto -- Papeleta : en una
+Voto -- Elecciones : para unas
+Papeleta -- Mesa : dentro de 
+Mesa -- Encargado: asignado
+Encargado -- verificación: realiza 
+verificación -- Delegado: asigna
+verificación -- Subdelegado: asigna
+
+
+Subdelegado -- Grados: Representa
+Delegado -- Grados: Representa
 
 @enduml
