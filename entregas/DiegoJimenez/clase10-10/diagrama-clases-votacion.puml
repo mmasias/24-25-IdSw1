@@ -1,0 +1,21 @@
+@startuml{
+    @startuml
+class Votante {
+}
+
+class Candidato {
+}
+
+class Eleccion {
+}
+
+class Resultado {
+}
+
+Votante -- Voto: emite >
+Candidato -- Voto: recibe >
+Eleccion -- Candidato: incluye >
+Eleccion -- Resultado: genera >
+@enduml
+
+}
