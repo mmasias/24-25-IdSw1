@@ -1,0 +1,9 @@
+@startuml
+title Diagrama de Estados - Espejismo
+
+[*] --> Calentamiento
+Calentamiento --> DiferenciaDeTemperatura
+DiferenciaDeTemperatura --> RefracciónDeLuz
+RefracciónDeLuz --> PercepciónDistorsionada
+PercepciónDistorsionada --> [*]
+@enduml

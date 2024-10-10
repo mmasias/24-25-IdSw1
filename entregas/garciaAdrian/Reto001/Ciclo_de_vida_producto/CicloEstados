@@ -1,0 +1,9 @@
+@startuml
+title Diagrama de Estados - Ciclo de Vida de un Producto
+
+[*] --> Introducción
+Introducción --> Crecimiento
+Crecimiento --> Madurez
+Madurez --> Declive
+Declive --> [*]
+@enduml

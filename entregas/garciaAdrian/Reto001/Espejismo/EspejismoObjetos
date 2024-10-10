@@ -1,0 +1,37 @@
+@startuml
+title Diagrama de Objetos - Espejismo Completo
+
+object EspejismoInferior {
+    Tipo = "Inferior"
+    Apariencia = "Agua en el horizonte"
+    CondicionesClimáticas = "Desierto"
+    AlturaAireCaliente = "0.5 metros"
+    Intensidad = "Alta"
+}
+
+object Luz {
+    Refracción = "Fuerte"
+    ÁnguloDeDesviación = "7 grados"
+    Reflexión = "Moderada"
+}
+
+object Calor {
+    DiferenciaTemperatura = "20°C"
+    Suelo = "Caliente"
+    TemperaturaAireSuperior = "40°C"
+    TemperaturaAireInferior = "60°C"
+}
+
+object Aire {
+    DensidadAireInferior = "Baja"
+    DensidadAireSuperior = "Alta"
+    CapasDeAire = "Desiguales"
+    Movimiento = "Lento"
+}
+
+EspejismoInferior -- Luz : "Modifica"
+EspejismoInferior -- Calor : "Depende de"
+EspejismoInferior -- Aire : "Afectado por"
+Luz -- Aire : "Refractado por"
+Calor -- Aire : "Genera capas desiguales"
+@enduml

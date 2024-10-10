@@ -1,0 +1,34 @@
+@startuml
+title Diagrama de Clases - Ciclo de Vida de un Producto
+
+class Producto {
+    +Nombre: String
+    +Descripción: String
+    +Precio: Float
+}
+
+class Introducción {
+    +Altos costos
+    +Poca competencia
+}
+
+class Crecimiento {
+    +Ventas crecientes
+    +Competencia en aumento
+}
+
+class Madurez {
+    +Ventas estabilizadas
+    +Alta competencia
+}
+
+class Declive {
+    +Caída de ventas
+    +Menor rentabilidad
+}
+
+Producto -- Introducción : "Primera etapa"
+Producto -- Crecimiento : "Segunda etapa"
+Producto -- Madurez : "Tercera etapa"
+Producto -- Declive : "Última etapa"
+@enduml

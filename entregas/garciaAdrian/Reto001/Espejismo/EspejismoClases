@@ -1,0 +1,27 @@
+@startuml
+title Diagrama de Clases - Espejismo
+
+class Espejismo {
+    +Tipo: String
+    +Aparece como: Agua o Cielo
+}
+
+class Luz {
+    +Desviación
+    +Refracción
+}
+
+class Calor {
+    +Diferencia de temperatura
+}
+
+class Aire {
+    +Capas de diferentes temperaturas
+    +Densidad variable
+}
+
+Espejismo -- Luz : "Causado por"
+Espejismo -- Calor : "Depende de"
+Espejismo -- Aire : "Modificado por"
+Luz -- Aire : "Refracción"
+@enduml
