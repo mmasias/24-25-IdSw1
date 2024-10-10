@@ -1,0 +1,18 @@
+@startuml
+[*] --> Inicio : El profesor da instrucciones
+
+Inicio --> SeleccionDeCandidatos : Se eligen candidatos
+
+SeleccionDeCandidatos --> Votacion : Comienza la votación
+Votacion --> LecturaDeVotos : Todos han votado
+
+LecturaDeVotos --> ConteoDeVotos : Se leen los votos
+ConteoDeVotos --> DeclaracionDeResultados : Se cuentan los votos
+
+DeclaracionDeResultados --> Delegado : Se declara al delegado
+DeclaracionDeResultados --> Subdelegado : Se declara al subdelegado
+
+Delegado --> [*]
+Subdelegado --> [*]
+
+@enduml
