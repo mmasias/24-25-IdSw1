@@ -1,27 +1,23 @@
-# Sistema de Votación - Modelo de Dominio
+# Votación de Delegado en Clase de Estudiantes - Modelo de Dominio
+
+## Descripción
+
+Este proyecto modela el proceso de **votación de delegado** en una **clase de estudiantes**. Los estudiantes pueden postularse como candidatos y votar por el delegado de la clase. El profesor organiza y supervisa el proceso de votación.
 
 ### Diagrama de Clases
 
-El diagrama de clases muestra las principales entidades del sistema y sus relaciones. Las entidades incluyen:
+El diagrama de clases muestra las principales entidades del sistema:
 
-- **Votante**: Persona que emite un voto.
-- **Candidato**: Persona que puede ser votada en la elección.
-- **Elección**: Proceso de votación que agrupa votantes y candidatos.
-- **Distrito**: Área geográfica que contiene varias mesas de votación.
-- **Mesa**: Lugar donde votan los votantes y se deposita el voto en una urna.
-- **Urna**: Contenedor de votos.
-- **Voto**: Representación del acto de votar.
-- **Resultado**: Contabiliza los votos de los candidatos.
+- **Alumno**: Estudiante que puede votar y ser candidato.
+- **Profesor**: Persona que organiza la votación.
+- **Candidato**: Alumnos que se postulan como delegado.
+- **Elección**: Proceso de votación donde se selecciona un delegado.
+- **Voto**: Representa un voto de un alumno a un candidato.
 
 ### Diagrama de Estados
 
-El diagrama de estados muestra cómo cambia el estado de una elección:
-
-- **Configurando**: Inicialmente, la elección está en configuración, donde se agregan candidatos y votantes.
-- **En Progreso**: Una vez iniciada la votación, la elección entra en este estado.
-- **Cerrada**: Cuando se cierra la votación, el estado cambia a "Cerrada".
-- **Mostrando Resultados**: Después de cerrar, los resultados se calculan y muestran.
+El diagrama de estados muestra cómo progresa la elección de delegado desde la configuración inicial hasta la votación y la presentación de los resultados.
 
 ### Diagrama de Objetos
 
-El diagrama de objetos muestra una instancia específica de las clases. En este caso, representa una votación en curso con un votante, un candidato, una urna y un voto.
+Este diagrama representa una instancia específica de la elección de delegado, mostrando la interacción entre una clase de estudiantes, el profesor y los candidatos.
