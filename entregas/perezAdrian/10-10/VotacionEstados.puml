@@ -1,0 +1,13 @@
+@startuml
+[*] --> Creada
+
+Creada : Inicializar Votación
+Creada --> Abierta : Iniciar Votación
+Abierta --> Cerrada : Finalizar Votación
+Abierta --> Pausada : Pausar Votación
+Pausada --> Abierta : Reanudar Votación
+Cerrada --> CalculandoResultados : Calcular Resultado
+CalculandoResultados --> Finalizada : Delega a Resultado
+Finalizada --> [*]
+
+@enduml
