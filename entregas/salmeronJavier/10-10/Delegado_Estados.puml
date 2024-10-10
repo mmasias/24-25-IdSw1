@@ -1,0 +1,20 @@
+@startuml
+
+[*] --> ProcesoVotacion
+
+state "Votación" as ProcesoVotacion {
+    AlumnosVotan --> DepositarVotos : Los votos se depositan en la urna
+    DepositarVotos --> FinVotacion : Todos los alumnos han votado
+}
+
+ProcesoVotacion --> Recuento
+
+state "Recuento" as Recuento {
+    RecuentoVotos --> IdentificarGanador : Supervisor de Urna cuenta los votos
+    IdentificarGanador --> DelegadoElecto : Se elige al delegado
+    IdentificarGanador --> SubdelegadoElecto : Se elige al subdelegado
+}
+
+Recuento --> [*]
+
+@enduml
