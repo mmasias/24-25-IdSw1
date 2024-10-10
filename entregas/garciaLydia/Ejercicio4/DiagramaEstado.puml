@@ -1,8 +1,28 @@
 @startuml
-[*] --> Inicio
-Inicio --> ProcesoDeCandidatos : Definir candidatos
-ProcesoDeCandidatos --> Votacion : Realizar votación
-Votacion --> ConteoDeVotos : Finaliza votación
-ConteoDeVotos --> AnuncioGanador : Secretario cuenta votos
-AnuncioGanador --> Fin : Ganador anunciado
+[*] --> PreparacionEleccion
+
+state PreparacionEleccion {
+    PrepararEleccion: "Organizar candidatos y mesa electoral"
+}
+
+PreparacionEleccion --> VotacionAbierta: "Iniciar votación"
+
+state VotacionAbierta {
+    EmitirVoto: "Los alumnos emiten su voto"
+}
+
+VotacionAbierta --> CierreVotacion: "Todos los votos emitidos"
+CierreVotacion --> ConteoVotos: "Cerrar proceso de votación"
+
+state ConteoVotos {
+    ContarVotos: "Se cuentan los votos"
+}
+
+ConteoVotos --> GeneracionActa: "Resultados listos"
+
+state GeneracionActa {
+    GenerarActa: "Generar el acta de elección"
+}
+
+GeneracionActa --> [*]
 @enduml

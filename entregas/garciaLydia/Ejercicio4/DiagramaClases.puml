@@ -1,34 +1,64 @@
 @startuml
-class Estudiante {
-    +nombre: String
-    +votar(candidato: Candidato)
+class ActaDeEleccion {
+    +fecha: Date
+    +resultados: String
+    +generarActa(): void
 }
 
-class Candidato {
+class MesaElectoral {
+    +ubicacion: String
+    +horaApertura: Time
+    +horaCierre: Time
+    +iniciarProceso(): void
+    +cerrarProceso(): void
+}
+
+class Persona {
     +nombre: String
-    +votos: int
-    +recibirVoto()
+    +apellido: String
+    +dni: String
+    +identificarse(): void
 }
 
 class Profesor {
-    +nombre: String
-    +controlarProceso()
+    +asignatura: String
+    +enseñar(): void
+}
+
+class Alumno {
+    +curso: String
+    +estudiar(): void
+    +votar(): void
+}
+
+class Candidato {
+    +propuestas: String
+    +presentarPropuestas(): void
 }
 
 class Secretario {
-    +nombre: String
-    +contarVotos()
-    +anunciarGanador()
+    +registrarActa(): void
+}
+
+class Presidente {
+    +dirigirVotacion(): void
 }
 
 class Voto {
-    +estudiante: Estudiante
-    +candidato: Candidato
+    +tipoVoto: String
+    +emitirVoto(): void
 }
 
-Estudiante --> Voto : realiza
-Voto --> Candidato : se realiza para
-Profesor --> Estudiante : supervisa
-Secretario --> Candidato : cuenta votos
-Secretario --> Profesor : informa ganador
+Persona <|-- Profesor
+Persona <|-- Alumno
+Persona <|-- Candidato
+Persona <|-- Secretario
+Persona <|-- Presidente
+
+MesaElectoral o-- Presidente
+MesaElectoral o-- Secretario
+MesaElectoral -- ActaDeEleccion
+Alumno --> Voto
+Voto --> Candidato
 @enduml
+
