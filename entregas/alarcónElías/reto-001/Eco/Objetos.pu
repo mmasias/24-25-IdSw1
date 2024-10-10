@@ -1,0 +1,29 @@
+@startuml
+
+object "cañón : FuenteDeSonido" as cañón {
+}
+
+object "onda : OndaSonora" as onda {
+}
+
+object "aire : MedioDePropagación" as aire {
+}
+
+object "montaña : SuperficieReflectora" as montaña {
+}
+
+object "oídoHumano : Receptor" as oídoHumano {
+}
+
+object "eco : Eco" as eco {
+}
+
+cañón --- onda : "genera >"
+onda --- aire : "viaja a través de >"
+aire --- montaña : "impacta en >"
+onda --- oídoHumano : "llega a >"
+eco --- oídoHumano : "llega a >"
+montaña --- eco : "refleja y causa >"
+
+
+@enduml

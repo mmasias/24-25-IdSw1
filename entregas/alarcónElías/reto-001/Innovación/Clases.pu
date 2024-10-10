@@ -1,0 +1,19 @@
+@startuml
+package Innovación {
+
+    class "Inventor" as Inventor
+    class "Idea" as Idea
+    class "Tecnologia" as Tecnologia
+    class "Prototipo" as Prototipo
+    class "Mercado" as Mercado
+    class "Innovación" as Innovación
+
+    Inventor --> Idea : "crea / genera >"
+    Inventor --> Tecnologia : "utiliza >"
+    Tecnologia --> Idea : "desarrolla >"
+    Idea --> Prototipo : "crea >"
+    Prototipo --> Mercado : "presenta a >"
+    Mercado --> Prototipo : "evalúa >"
+    Mercado --> Innovación : "genera >"
+}
+@enduml
