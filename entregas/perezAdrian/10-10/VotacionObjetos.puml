@@ -1,0 +1,48 @@
+@startuml
+object votante1 {
+  nombre = "Juan Pérez"
+  identidad = "12345678A"
+}
+
+object votante2 {
+  nombre = "Ana Gómez"
+  identidad = "87654321B"
+}
+
+object candidato1 {
+  nombre = "Carlos López"
+}
+
+object candidato2 {
+  nombre = "Luis Fernández"
+}
+
+object votacion {
+  fechaInicio = "2024-10-01"
+  fechaFin = "2024-10-31"
+}
+
+object voto1 {
+  votante = votante1
+  candidato = candidato1
+}
+
+object voto2 {
+  votante = votante2
+  candidato = candidato2
+}
+
+object resultado {
+  Elegido = "Carlos López"
+}
+
+votante1 -- voto1
+votante2 -- voto2
+voto1 -- candidato1
+voto2 -- candidato2
+voto1 -- votacion
+voto2 -- votacion
+votacion -- candidato1
+votacion -- candidato2
+votacion -- resultado
+@enduml

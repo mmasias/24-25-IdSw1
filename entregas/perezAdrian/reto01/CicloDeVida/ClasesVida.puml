@@ -1,0 +1,17 @@
+@startuml
+title Modelo de Ciclo de Vida de un Producto
+
+class Producto 
+
+class Comprador
+
+class Mercado
+
+class Fabricante 
+
+Producto --> Comprador: "es comprado por"
+Mercado --> Producto: "vende"
+Fabricante --> Producto: "fabrica"
+Producto --> Mercado: "es listado en"
+
+@enduml

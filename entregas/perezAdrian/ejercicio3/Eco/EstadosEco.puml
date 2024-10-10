@@ -1,0 +1,13 @@
+@startuml
+title Diagrama de Estados del Eco (sonido)
+
+[*] --> EstadoSilencio : Inicia
+EstadoSilencio --> SonidoGenerado : Fuente de sonido activa
+SonidoGenerado --> ViajeMedioTransmision : Sonido viaja por el medio
+ViajeMedioTransmision --> ReboteSuperficie : Sonido se encuentra con una superficie
+ReboteSuperficie --> EcoGenerado : Superficie produce un eco
+EcoGenerado --> EstadoSilencio : Sonido y eco finalizan
+EcoGenerado --> ViajeMedioTransmision : El eco viaja de vuelta por el medio
+ViajeMedioTransmision --> EstadoSilencio : Eco finaliza
+
+@enduml
