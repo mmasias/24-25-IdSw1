@@ -1,0 +1,26 @@
+@startuml
+
+[*] --> ClaseIniciada
+
+state ClaseIniciada {
+    [*] --> NoVotacion
+    NoVotacion --> VotacionAbierta : "Iniciar Votación"
+    VotacionAbierta --> VotacionCerrada : "Cerrar Votación"
+    VotacionAbierta --> VotoEmitido : "Emitir Voto"
+    VotoEmitido --> VotacionAbierta : "Registrar Voto"
+    VotacionCerrada --> ResultadoGenerado : "Generar Resultado"
+    ResultadoGenerado --> [*] : "Finalizar Proceso"
+}
+
+state VotacionAbierta {
+    [*] --> CandidatoPresentado
+    CandidatoPresentado --> CandidatoElegido : "Estudiante vota"
+    CandidatoElegido --> CandidatoPresentado : "Cambiar voto"
+}
+
+state ResultadoGenerado {
+    [*] --> CandidatoSeleccionado
+    CandidatoSeleccionado --> [*] : "Mostrar Resultados"
+}
+
+@enduml
