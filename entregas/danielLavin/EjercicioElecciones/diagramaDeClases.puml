@@ -1,0 +1,34 @@
+@startuml
+class Candidato {
+    +nombre: String
+    +presentarCandidatura(): void
+    +obtenerVotos(): int
+}
+
+class Voto {
+    +emitidoPor: Estudiante
+    +destinadoA: Candidato
+}
+
+class Estudiante {
+    +nombre: String
+    +votar(candidato: Candidato): Voto
+}
+
+class Secretario {
+    +recogerVotos(votos: List<Voto>): void
+    +contarVotos(votos: List<Voto>): Map<Candidato, int>
+}
+
+class Profesor {
+    +supervisarElección(): void
+    +anunciarGanador(ganador: Candidato): void
+}
+
+Estudiante --> Voto : emite
+Voto --> Candidato : asignado a
+Profesor --> Secretario : supervisa
+Secretario --> Voto : recoge
+Secretario --> Candidato : cuenta votos para
+Profesor --> Candidato : anuncia ganador
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+[*] --> InscripciónCandidatos
+InscripciónCandidatos --> Votación : Candidatos registrados
+Votación --> ConteoVotos : Fin de la votación
+ConteoVotos --> AnuncioGanador : Votos contados
+AnuncioGanador --> [*] : Ganador anunciado
+@enduml
