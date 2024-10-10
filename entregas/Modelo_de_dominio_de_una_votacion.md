@@ -48,4 +48,4 @@ Es un elemento clave de la eleccion:
 
 Es quien anuncia el ganador y consulta los votos emitidos por los votantes y leidos por el secretario, a su vez es quien dirige el proceso  
 
-![Elección de delegado](https://github.com/AlejandroVinas/24-25-IdSw1/blob/main/entregas/Modelo_de_dominio_de_una_votacion.md)
+![Elección de delegado](https://raw.githubusercontent.com/AlejandroVinas/24-25-IdSw1/blob/main/entregas/MODELAJE/src/ejercicio3/VOTACION-Modelo_del_Dominio__Elección_de_Delegado.png)
