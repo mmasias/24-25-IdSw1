@@ -63,8 +63,8 @@ Como ingenieros de requisitos esta es una dinámica con la que se encontrarán e
 |Lucía Terán|CWO FUNIBER
 |Susana Gutierrez|Departamento de calidad de UNEATLANTICO
 |David García|Ordenación académica
-|Iván Gonzalez|CAFYD
-|Josep Alemany|CAFYD
+|Iván Gonzalez|SAFD
+|Josep Alemany|SAFD
 |Jesús Peña|Secretaría general UNEATLANTICO
 
 </div>

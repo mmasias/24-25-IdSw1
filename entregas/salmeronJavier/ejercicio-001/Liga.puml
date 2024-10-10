@@ -1,0 +1,19 @@
+@startuml
+
+package "Liga" {
+  Estadio -- Jornada
+  Jornada -- Arbitro
+  Arbitro -- Reglas
+  Equipo -- Entrenador
+  Equipo -- Jugador
+  Equipo -- Jornada
+  Reglas .. Equipo
+  Jornada -- Partido
+  Partido -- Equipo
+  Partido -- Gol
+  Jugador -- Tarjeta
+  Reglas .. Tarjeta
+  Temporada -- Jornada
+}
+
+@enduml

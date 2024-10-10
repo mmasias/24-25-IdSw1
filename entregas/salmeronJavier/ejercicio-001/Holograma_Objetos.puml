@@ -1,0 +1,26 @@
+@startuml
+object Holograma
+Holograma : Virtual
+
+object Proyeccion
+Proyeccion : Mapeo tridimensional
+
+object Luz
+Luz : Fuente de luz coherente
+
+object Superficie
+Superficie : Pantalla reflectiva
+
+object Interferencia
+Interferencia : Patrón de onda
+
+object Imagen
+Imagen : Representación visual
+
+Holograma -- Proyeccion
+Proyeccion -- Luz
+Luz -- Interferencia
+Interferencia -- Imagen
+Superficie -- Holograma
+Imagen .. Holograma
+@enduml
