@@ -1,0 +1,30 @@
+@startuml
+package Aula{
+  
+  class Alumno {}
+  class Candidato {}
+  class Profesor {}
+  class Presidente {}
+  class Secretario {}
+  class MesaElectoral {}
+  class Voto {}
+  class MesaElectoral {}
+  class ActaDeEleccion {}
+  
+}
+
+Alumno <|-- Candidato
+Alumno o.. Secretario
+Alumno .. Voto
+Voto -- MesaElectoral
+Voto .. ActaDeEleccion
+
+Profesor ..o Presidente
+Presidente -- MesaElectoral
+Secretario -- MesaElectoral
+ActaDeEleccion -- MesaElectoral
+ActaDeEleccion .. Secretario
+
+Candidato .. ActaDeEleccion
+
+@enduml
