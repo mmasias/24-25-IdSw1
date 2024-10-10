@@ -46,4 +46,6 @@ Es un elemento clave de la eleccion:
  -ID
  - Nombre y apellido  
 
-Es quien anuncia el ganador y consulta los votos emitidos por los votantes y leidos por el secretario, a su vez es quien dirige el proceso
+Es quien anuncia el ganador y consulta los votos emitidos por los votantes y leidos por el secretario, a su vez es quien dirige el proceso  
+
+(entregas/MODELAJE/src/ejercicio3/VOTACION-Modelo_del_Dominio__Elección_de_Delegado.png)
