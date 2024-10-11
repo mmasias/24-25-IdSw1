@@ -1,0 +1,64 @@
+@startuml
+
+object AlumnosII3 {
+  grado = "3 Ing. Informatica""
+}
+
+object Votos {
+}
+
+object CandidatoJavier {
+  votosRecibidos = 3
+}
+
+object CandidatoMario {
+  votosRecibidos = 6
+}
+
+object CandidatoElias {
+  votosRecibidos = 3
+}
+
+object CandidatoDiego {
+  votosRecibidos = 9
+}
+
+object CandidatoMaura {
+  votosRecibidos = 7
+}
+
+object DelegadoDiego {
+}
+
+object SubdelegadoMaura {
+}
+
+object SupervisorUrna {
+}
+
+object Urna {
+  votos = 28
+}
+
+AlumnosII3 -- CandidatoJavier
+AlumnosII3 -- CandidatoMario
+AlumnosII3 -- CandidatoElias
+AlumnosII3 -- CandidatoDiego
+AlumnosII3 -- CandidatoMaura
+
+AlumnosII3 .. SupervisorUrna
+SupervisorUrna -- Urna
+
+AlumnosII3 -- Votos
+Votos -- Urna
+
+Urna .. CandidatoJavier
+Urna .. CandidatoMario
+Urna .. CandidatoElias
+Urna .. CandidatoDiego
+Urna .. CandidatoMaura
+
+CandidatoDiego -- DelegadoDiego
+CandidatoMaura -- SubdelegadoMaura
+
+@enduml

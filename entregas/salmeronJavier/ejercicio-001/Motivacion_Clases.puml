@@ -1,0 +1,18 @@
+@startuml
+class Meta
+
+class Motivacion
+
+class Accion
+
+class Obstaculo
+
+class Recompensa
+
+Motivacion -- Meta
+Meta -- Accion
+Accion -- Recompensa
+Recompensa .. Motivacion
+Meta -- Obstaculo
+Obstaculo -- Recompensa
+@enduml
