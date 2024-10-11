@@ -1,0 +1,45 @@
+@startuml Motivacion para dejar de fumar
+
+object persona1 {
+    nombre = Luis
+}
+
+object meta1 {
+    Dejar de fumar en 3 meses
+}
+
+object accion1 {
+    Reducir cigarrillos a la mitad
+}
+
+object ganas1 {
+    Dejar de Fumar
+}
+
+object razon1 {
+    Mejorar la salud
+}
+
+object resultado1 {
+    Se siente mas sano
+}
+
+object resultado2 {
+    Mejora su piel
+}
+
+object motivacion1 {
+}
+
+persona1 --> ganas1 
+ganas1 --> meta1  
+ganas1 --> razon1  
+persona1 -[dashed]- accion1
+accion1 --> resultado1 
+accion1 --> resultado2
+resultado1 --> motivacion1 
+resultado2 --> motivacion1 
+meta1 --> accion1 
+razon1 -[dashed]- accion1
+
+@enduml

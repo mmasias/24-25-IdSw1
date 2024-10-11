@@ -1,0 +1,45 @@
+@startuml Motivacion para corrrer un maraton
+
+object persona1 {
+    Luis
+}
+
+object meta1 {
+    Aprender a correr de la manera correcta
+}
+
+object meta2 {
+    Correr sin cansarse tanto
+}
+
+object accion1 {
+    Entrenar todos los dias
+}
+
+object ganas1 {
+    Correr un maraton
+}
+
+object razon1 {
+    Mejora personal
+}
+
+object resultado1 {
+    Correr empieza a ser mas facil
+}
+
+object motivacion1 {
+}
+
+persona1 --> ganas1 
+ganas1 --> meta1  
+ganas1 --> meta2 
+ganas1 --> razon1  
+persona1 -[dashed]-> accion1
+accion1 --> resultado1 
+resultado1 --> motivacion1 
+meta1 --> accion1 
+meta2 --> accion1
+razon1 -[dashed]-> accion1
+
+@enduml

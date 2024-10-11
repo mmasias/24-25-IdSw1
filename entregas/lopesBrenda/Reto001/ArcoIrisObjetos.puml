@@ -1,0 +1,24 @@
+@startuml
+object Sol {
+    + emiteLuz()
+}
+
+object Lluvia {
+    + gotas : int
+    + refractarLuz(luz: Luz)
+}
+
+object ArcoIris {
+    + colores : List<String>
+    + formarColores(luzRefractada: Luz)
+}
+
+object Observador {
+    + nombre : String
+    + observarArcoIris(arcoIris: ArcoIris)
+}
+
+Sol --> Lluvia 
+Lluvia --> ArcoIris 
+ArcoIris <-- Observador 
+@enduml
