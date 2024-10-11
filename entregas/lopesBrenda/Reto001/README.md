@@ -15,13 +15,10 @@
 > La motivación es la fuerza interna o el impulso que nos lleva a actuar, tomar decisiones y perseguir objetivos. Es lo que nos inspira a esforzarnos para lograr metas o satisfacer necesidades y deseos.
 
 ### Diagrama de Clases:
+![alt text](images/MotivacionClases.png)
 
 ### Diagrama de Objetos 1:
+![alt text](images/MotivacionObjetos1.png)
 
 ### Diagrama de Objetos 2:
-
-
-    
-
-
-    
+![alt text](images/MotivacionObjetos2.png)
