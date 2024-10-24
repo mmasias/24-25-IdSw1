@@ -60,11 +60,11 @@ Como ingenieros de requisitos esta es una dinámica con la que se encontrarán e
 |-|:-:|:-:
 |Jorge Crespo|Director del grado en IOI|16 Oct / 10:20h / (-1.14)
 |Alicia Bustamante|CFO de UNEATLANTICO|16 Oct / 10:10h / (-1.7)
-|Lucía Terán|CWO FUNIBER|
+|Lucía Terán|CWO FUNIBER|16 Oct
 |Susana Gutierrez|Departamento de calidad de UNEATLANTICO|16 Oct / 10:00h / (0.12)
 |David García|Ordenación académica|16 Oct / 10:40h / (-1.15)
-|Iván Gonzalez|SAFD|
-|Josep Alemany|SAFD|
+|Iván Gonzalez|SAFD|17 Oct
+|Josep Alemany|SAFD|18 Oct
 |Jesús Peña|Secretaría general UNEATLANTICO|16 Oct / 10:30h / (-1.13)
 
 </div>
