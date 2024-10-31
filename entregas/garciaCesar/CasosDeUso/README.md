@@ -1,15 +1,15 @@
 # Casos de Uso de Visual Studio Code
 
-## 1. Editar código en varios lenguajes
+## 1. Configurar lenguaje
 - **Descripción**: Si quiero escribir en un lenguaje específico, primero abro el archivo en VS Code; segundo, selecciono el lenguaje en el editor o confío en la detección automática; tercero, empiezo a escribir, y VS Code resalta la sintaxis automáticamente.
 
-## 2. Depurar código
-- **Descripción**: Si quiero depurar, primero abro el archivo del código que quiero analizar; segundo, establezco puntos de interrupción haciendo clic en la línea donde deseo pausar la ejecución; tercero, ejecuto el programa en modo depuración, y VS Code detiene la ejecución en los puntos seleccionados para que pueda revisar variables y resultados.
+## 2. Crear archivo
+- **Descripción**: Para crear un archivo en Visual Studio, primero hay que abrir el Explorador de soluciones, despues hacer clic derecho en el proyecto o carpeta donde quieres crear el archivo, despues seleccionar agregar y elige el tipo de archivo y por ultimo ponerle nombre. 
 
-## 3. Control de versiones con Git
+## 3. Control de versiones con Git (commit)
 - **Descripción**: Si quiero hacer un commit, primero abro el panel de control de Git en VS Code; segundo, selecciono los archivos que he cambiado y agrego una descripción para el commit; tercero, hago clic en "Commit" y el cambio queda guardado en el repositorio local.
 
-## 4. Instalar y gestionar extensiones
+## 4. Instalar extensiones
 - **Descripción**: Si quiero agregar una extensión, primero abro la sección de extensiones en VS Code; segundo, busco la extensión por nombre o funcionalidad; tercero, hago clic en "Instalar" y, al activarse, la extensión se integra en mi editor.
 
 ## 5. Manejar contenedores Docker
