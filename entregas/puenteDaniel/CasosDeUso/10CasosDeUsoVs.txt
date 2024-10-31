@@ -1,0 +1,83 @@
+Abrir un archivo
+@startuml
+actor Usuario
+Usuario -> VSCode : Abre archivo
+VSCode -> Usuario : Muestra contenido
+Usuario -> VSCode : Lee o edita el contenido
+@enduml
+
+Guardar un archivo
+@startuml
+actor Usuario
+Usuario -> VSCode : Realiza cambios en archivo
+Usuario -> VSCode : Guarda archivo
+VSCode -> Usuario : Confirmación de guardado
+@enduml
+
+Buscar y reemplazar texto
+@startuml
+actor Usuario
+Usuario -> VSCode : Abre función de búsqueda
+Usuario -> VSCode : Escribe texto a buscar
+VSCode -> Usuario : Muestra coincidencias
+Usuario -> VSCode : Escribe texto de reemplazo
+Usuario -> VSCode : Aplica cambios
+@enduml
+
+Copiar y pegar texto
+@startuml
+actor Usuario
+Usuario -> VSCode : Selecciona texto
+Usuario -> VSCode : Copia texto
+Usuario -> VSCode : Pega texto
+@enduml
+
+Deshacer y rehacer cambios
+@startuml
+actor Usuario
+Usuario -> VSCode : Realiza modificación
+Usuario -> VSCode : Deshacer cambio
+Usuario -> VSCode : Rehacer cambio
+@enduml
+
+Ejecutar archivo de codigo
+@startuml
+actor Usuario
+Usuario -> VSCode : Abre archivo de código
+Usuario -> VSCode : Ejecuta código
+VSCode -> Usuario : Muestra resultados
+@enduml
+
+
+Abrir terminal integrada
+@startuml
+actor Usuario
+Usuario -> VSCode : Abre terminal integrada
+Usuario -> VSCode : Escribe comandos
+VSCode -> Usuario : Muestra salida de comandos
+@enduml
+
+Instalar una extension 
+@startuml
+actor Usuario
+Usuario -> VSCode : Abre panel de extensiones
+Usuario -> VSCode : Busca extensión
+Usuario -> VSCode : Instala extensión
+VSCode -> Usuario : Extensión instalada y activa
+@enduml
+
+Cerrar un archivo
+@startuml
+actor Usuario
+Usuario -> VSCode : Selecciona archivo abierto
+Usuario -> VSCode : Cierra archivo
+VSCode -> Usuario : Confirma guardar cambios
+@enduml
+
+Renombrar un archivo
+@startuml
+actor Usuario
+Usuario -> VSCode : Selecciona archivo en explorador
+Usuario -> VSCode : Renombra archivo
+VSCode -> Usuario : Confirma cambio de nombre
+@enduml
