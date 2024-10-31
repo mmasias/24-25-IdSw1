@@ -1,0 +1,6 @@
+@startuml
+title Formateo automático de código
+:Usuario: -> (Escribir y modificar código)
+:Usuario: -> (Guardar archivo)
+(Guardar archivo) -> (VS Code aplica formato automáticamente)
+@enduml

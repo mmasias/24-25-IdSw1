@@ -1,0 +1,6 @@
+@startuml
+:Usuario: -> (Escribir código)
+(Escribir código) -> (VS Code muestra sugerencias de autocompletado)
+:Usuario: -> (Seleccionar sugerencia)
+(Seleccionar sugerencia) -> (VS Code completa la palabra)
+@enduml
