@@ -1,0 +1,8 @@
+@startuml
+title Detección de errores de sintaxis
+:Usuario: -> (Escribir código)
+(Escribir código) -> (VS Code detecta errores de sintaxis)
+(VS Code detecta errores de sintaxis) -> (Subraya error en rojo)
+:Usuario: -> (Colocar cursor sobre el error)
+(Colocar cursor sobre el error) -> (Ver descripción del error)
+@enduml

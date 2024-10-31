@@ -1,0 +1,7 @@
+@startuml
+title Búsqueda y reemplazo en todo el proyecto
+:Usuario: -> (Buscar término en proyecto)
+(Buscar término en proyecto) -> (VS Code muestra coincidencias)
+:Usuario: -> (Seleccionar reemplazo)
+(Seleccionar reemplazo) -> (VS Code reemplaza en los archivos seleccionados)
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+title Refactorización de código
+:Usuario: -> (Seleccionar variable o función)
+(Seleccionar variable o función) -> (Ver opciones de refactorización)
+:Usuario: -> (Elegir opción de refactorización)
+(Elegir opción de refactorización) -> (VS Code aplica cambios en el código)
+@enduml

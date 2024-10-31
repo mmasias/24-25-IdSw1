@@ -1,0 +1,6 @@
+@startuml
+title Despliegue en la nube desde el editor
+:Usuario: -> (Configurar credenciales de nube)
+:Usuario: -> (Seleccionar entorno de despliegue)
+(Seleccionar entorno de despliegue) -> (Ejecutar despliegue desde VS Code)
+@enduml
