@@ -1,0 +1,19 @@
+@startuml
+
+actor "Desarrollador de la aplicacion" as DevApp
+actor "Administrador de la aplicacion" as AdminApp
+actor "Usuario" as User
+
+rectangle "Visual Studio Code" {
+    DevApp --> [Escritura y edicion de codigo de la aplicacion]
+    DevApp --> [Pruebas y depuracion de funcionalidades]
+
+    AdminApp --> [Configuracion de permisos y accesos]
+    AdminApp --> [Gestion de configuraciones y extensiones]
+
+    User --> [Creacion y edicion de su propio codigo]
+    User --> [Ejecucion y depuracion de su codigo]
+    User --> [Control de versiones para su proyecto]
+}
+
+@enduml
