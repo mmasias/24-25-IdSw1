@@ -1,0 +1,38 @@
+@startuml
+class Persona {
+  + nombre
+  + motivacion
+}
+
+class Meta {
+  + objetivo
+}
+
+class Motivo {
+  + tipo
+  + descripcion
+}
+
+class Accion {
+  + tipoAccion
+  + ejecutar
+}
+
+class Emocion {
+  + tipoEmocion
+}
+
+class Resultado {
+  + descripcion
+}
+
+Persona  -- Motivo : "impulsado por"
+Motivo  --  Meta : "enfocado en"
+Persona  --  Accion : "realiza"
+Accion  --  Meta : "dirigida a"
+Emocion  --  Persona : "influye a"
+Accion  --  Resultado : "produce"
+Persona  --  Resultado : "experimenta"
+Resultado  --  Emocion : "provoca"
+
+@enduml
