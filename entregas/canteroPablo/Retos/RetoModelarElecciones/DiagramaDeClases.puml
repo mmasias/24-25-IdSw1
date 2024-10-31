@@ -1,0 +1,61 @@
+@startuml
+class Profesor {
+    - nombre: String
+    - materia: String
+    + iniciarVotacion(): void
+    + finalizarVotacion(): void
+}
+
+class Estudiante {
+    - nombre: String
+    - id: int
+    + votar(candidato: Candidato): void
+}
+
+class Secretario {
+    + contarVotos(votos: List<Voto>): void
+    - listaVotos: List<Voto>
+    + declararGanador(): void
+    + declararSubdelegado(): void
+}
+
+class Candidato {
+    - nombre: String
+    - votos: int
+    + recibirVoto(): void
+}
+
+class Voto {
+    - nombreCandidato: String
+    + registrarVoto(): void
+}
+
+class Votacion {
+    - listaCandidatos: List<Candidato>
+    
+   
+}
+
+class Delegado {
+    - rol: String = "Delegado"
+}
+
+class Subdelegado {
+    - rol: String = "Subdelegado"
+}
+
+Estudiante --> Candidato : "Puede ser"
+Profesor --> Votacion : "Inicia"
+Estudiante --> Voto : "Emite"
+Votacion --> Secretario : "Contar votos"
+Voto--> Secretario: "Recibe lista de votos"
+Delegado <-- Candidato
+Subdelegado <-- Candidato
+Secretario --> Candidato: "Elige"
+Estudiante --> Secretario: "Puede ser"
+
+
+@enduml
+
+
+
