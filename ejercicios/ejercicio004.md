@@ -6,7 +6,7 @@
 
 2. **Depurar codigo**: Te ayuda a detectar errores en tu programa al ejecutarlo paso a paso, y puedes detenerte en partes específicas del código para revisarlo mejor.
 
-3. **Control de versiones**: Se integra con Git para guardar diferentes versiones del código, hacer cambios y volver a versiones anteriores.
+3. **Hacer una comit**: Se integra con Git para guardar diferentes versiones del código, hacer cambios y volver a versiones anteriores.
 
 4. **Crear Tests**: Permite crear y ejecutar pruebas para verificar que el programa funcione como esperas.
 
