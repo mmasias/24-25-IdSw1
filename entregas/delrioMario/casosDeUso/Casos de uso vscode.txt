@@ -1,2 +1,10 @@
-1.breakingdance
-2.cruzaito
+1. Clonar repositorio
+2. Abrir un proyecto
+3. Hacer un "pull"
+4. Cambiar rama de git
+5. Instalar exensiones de un lenguaje
+6. Depurar un codigo
+7. Crear un proyecto
+8. Activar Compilot
+9. Crear una carpeta
+10. Buscar y reemplazar el proyecto
