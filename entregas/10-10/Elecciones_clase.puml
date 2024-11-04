@@ -1,0 +1,32 @@
+@startuml Elecciones
+
+
+package Aula{
+
+    class Candidato{
+        +Delegado
+        +Subdelegado
+    }
+
+    Class Voto{
+        +EsValido?
+    }
+
+Mesa_electoral .- Presidente 
+Mesa_electoral .- Secretario
+Mesa_electoral .- Voto
+
+
+Votante -- Voto
+Presidente -- Candidato
+Profesor <.- Presidente
+Secretario -- Voto
+
+Alumno <.- Candidato
+Alumno <.- Votante
+Alumno <.- Secretario
+
+}
+
+
+@enduml

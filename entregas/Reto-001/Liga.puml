@@ -1,0 +1,16 @@
+@startuml Liga
+
+Jugador -- Equipo : pertenece a
+Entrenador -- Equipo : entrena a
+Jugador - Entrenador : es entrenado por
+Equipo - Encuentro : participa en
+Equipo .- Estadio : tiene sede en
+Encuentro -- Estadio : se da en
+Encuentro -- Jornada : forma parte de
+Jornada -- Ranking : afecta a
+Arbitro -- Encuentro : hace cumplir las normas
+Arbitro -- Federacion : pertenece a
+Jornada -- Federacion : organizada por
+Federacion -- FIFA : está afiliada a
+Federacion -- Normas : establece las
+@enduml
