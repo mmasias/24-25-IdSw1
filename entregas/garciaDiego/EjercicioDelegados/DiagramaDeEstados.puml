@@ -1,0 +1,29 @@
+
+@startuml
+
+[*] --> Formacion
+
+state "Formacion" as Formacion {
+    [*] --> SeleccionPresidente : Mesa Creada
+    SeleccionPresidente --> SeleccionSecretario : Presidente Seleccionado
+    SeleccionSecretario --> PreparacionMesa : Secretario Seleccionado
+    PreparacionMesa --> ListoParaVotacion : Mesa Preparada
+}
+
+ListoParaVotacion --> VotacionEnCurso : Inicio Votacion
+VotacionEnCurso --> CierreVotacion : Votacion Finalizada
+
+CierreVotacion --> ConteoVotos : Comienza Conteo
+ConteoVotos --> VerificacionVotos : Votos Contados
+
+state "Verificacion Votos" as VerificacionVotos {
+    [*] --> ComprobacionCorrecta : Votos Verificados
+    ComprobacionCorrecta --> PublicacionActa : Votos Correctos
+    ComprobacionCorrecta --> RecuentoVotos : Votos Incorrectos
+    RecuentoVotos --> ConteoVotos : Recuento Finalizado
+}
+
+PublicacionActa --> [*] : Acta Publicada
+
+@enduml
+

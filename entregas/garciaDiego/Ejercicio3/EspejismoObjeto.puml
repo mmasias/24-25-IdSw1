@@ -1,0 +1,31 @@
+@startuml
+
+    object Ilusión1 {
+    tipo = "Ilusión de Agua"
+    duracion = 30
+    }
+
+    object CondicionesClimaticas1 {
+    temperatura = 40
+    clima = "Despejado"
+    humedad = 20
+    viento = 5
+    }
+
+    object Observador1 {
+    nombre = "Manuel"
+    posicion = "Desierto"
+    }
+
+    object Luz1 {
+    intensidad = 90
+    angulo = 45
+    }
+
+    Ilusión1 -- CondicionesClimaticas1 : "es generado por"
+    Ilusión1 -- Observador1 : "es observado por"
+    Ilusión1 -- Luz1 : "refleja la luz"
+    CondicionesClimaticas1 .. Luz1 : "afecta"
+    CondicionesClimaticas1 .. Observador1 : "afecta"
+
+@enduml
