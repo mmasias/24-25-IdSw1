@@ -1,0 +1,12 @@
+@startuml
+class sonido
+class ondas
+class obstaculo
+class reflexion
+
+sonido -- ondas : produce
+ondas -- obstaculo : rebotan
+obstaculo -- reflexion : genera
+reflexion .... sonido
+
+@enduml
