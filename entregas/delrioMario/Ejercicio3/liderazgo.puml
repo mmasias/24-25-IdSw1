@@ -1,0 +1,15 @@
+@startuml
+
+class lider
+class personasLideradas
+class tareas
+class decisiones
+class objetivos
+
+lider --- tareas : tiene
+lider -- personasLideradas : mandan
+tareas --- personasLideradas : recibidas por
+lider --- decisiones : toma
+decisiones -- personasLideradas : repercuten
+decisiones -- objetivos : cumplir
+@enduml
