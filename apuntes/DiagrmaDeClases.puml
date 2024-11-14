@@ -1,0 +1,35 @@
+@startuml
+
+'Clase principal del juego
+class JuegoPoker {
+ iniciarJuego
+}
+
+'Clase que representa un jugador
+class Jugador {
+    nombre="Raul"
+    nombre ="Juan"
+}
+
+'Clase que representa el mazo de cartas
+class Mazo {
+    Baraja ="Poker"
+}
+
+'Clase que representa una carta
+class Carta {
+    2 por persona
+}
+
+'Clase que representa la mano del jugador
+class Mano {
+    Croupier
+}
+
+
+JuegoPoker  --> Jugador : tiene 
+JuegoPoker  --> Mazo : usa 
+Jugador  --> Mano : posee 
+Mazo  -->  Carta : contiene 
+
+@enduml
