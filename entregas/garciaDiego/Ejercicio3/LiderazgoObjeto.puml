@@ -1,0 +1,26 @@
+@startuml
+
+    object Lider1 {
+    nombre = "Diego"
+    }
+
+    object Equipo1 {
+    nombre = "Equipo de Desarrollo"
+    tamaño = 5
+    }
+
+    object Objetivo1 {
+    descripcion = "Desarrollar una nueva aplicación móvil"
+    plazo = "2024-12-31"
+    }
+
+    object Motivacion1 {
+    tipo = "Reconocimiento y Recompensas"
+    }
+
+    Lider1 -- Equipo1 : "lidera"
+    Equipo1 -- Objetivo1 : "trabaja hacia"
+    Lider1 -- Motivacion1 : "proporciona"
+    Motivacion1 -- Equipo1 : "influye"
+
+@enduml

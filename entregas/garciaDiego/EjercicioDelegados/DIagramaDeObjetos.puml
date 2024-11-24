@@ -1,0 +1,100 @@
+@startuml
+
+object MesaElectoral1 {
+}
+
+object Presidente1 {
+    nombre = "Manuel Masias"
+}
+
+object Secretario1 {
+    nombre = "Alejandro"
+}
+
+object Acta1 {
+    fecha = "2024-10-10"
+}
+
+object Voto1 {
+    esValido = true
+}
+
+object Voto2 {
+    esValido = true
+}
+
+object Voto3 {
+    esValido = true
+}
+
+object Voto4 {
+    esValido = true
+}
+
+object CandidatoDiego {
+    nombre = "Diego"
+    esDelegado = true
+    esSubdelegado = false
+}
+
+object CandidatoMaura {
+    nombre = "Maura"
+    esDelegado = false
+    esSubdelegado = true
+}
+
+object CandidatoJavier {
+    nombre = "Javier"
+    esDelegado = false
+    esSubdelegado = false
+}
+
+object CandidatoElias {
+    nombre = "Elias"
+    esDelegado = false
+    esSubdelegado = false
+}
+
+object CandidatoMario {
+    nombre = "Mario"
+    esDelegado = false
+    esSubdelegado = false
+}
+
+object Alumnos {
+    nombre = "Juan"
+}
+
+MesaElectoral1 *-- Presidente1
+MesaElectoral1 *-- Secretario1
+MesaElectoral1 -- Acta1
+
+MesaElectoral1 -- Voto1
+MesaElectoral1 -- Voto2
+MesaElectoral1 -- Voto3
+MesaElectoral1 -- Voto4
+
+CandidatoDiego --|> Alumnos
+CandidatoMaura --|> Alumnos
+CandidatoJavier --|> Alumnos
+CandidatoElias --|> Alumnos
+CandidatoMario --|> Alumnos
+
+Alumnos -- Voto1
+Alumnos -- Voto2
+Alumnos -- Voto3
+Alumnos -- Voto4
+
+Acta1 *-- Presidente1
+Acta1 *-- Secretario1
+Acta1 *-- Voto1
+Acta1 *-- Voto2
+Acta1 *-- Voto3
+Acta1 *-- Voto4
+Acta1 *-- CandidatoDiego
+Acta1 *-- CandidatoMaura
+Acta1 *-- CandidatoJavier
+Acta1 *-- CandidatoElias
+Acta1 *-- CandidatoMario
+
+@enduml
