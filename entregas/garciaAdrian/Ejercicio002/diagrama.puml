@@ -1,0 +1,34 @@
+@startuml
+title Diagrama de objetos de la relación de una sombra
+
+skinparam linetype ortho
+
+object objMesa {
+  Posición = "X: 10, Y: 5"
+  Dimensiones = "Largo: 1.5m, Alto: 0.75m"
+  Material = "Madera"
+}
+
+object luzLampara {
+  Intensidad = "800 lumens"
+  Ángulo = "45°"
+  Distancia = "2m"
+}
+
+object sombraMesa {
+  Longitud = "1.2m"
+  Intensidad = "Media"
+  Forma = "Rectangular con bordes difusos"
+}
+
+object superficiePiso {
+  Superficie = "Piso liso"
+  Distancia al Objeto = "0.5m"
+}
+
+objMesa -- sombraMesa : "proyecta"
+luzLampara -- sombraMesa : "crea"
+superficiePiso -- sombraMesa : "modifica"
+objMesa -- luzLampara : "bloquea parcialmente"
+
+@enduml
