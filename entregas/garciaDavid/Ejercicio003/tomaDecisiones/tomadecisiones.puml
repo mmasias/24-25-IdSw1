@@ -1,0 +1,21 @@
+@startuml
+
+class Decisor{
+
+}
+class Decision{
+
+}
+
+class Opciones{
+
+}
+class ProcesoCognitivo{
+
+}
+
+Decisor -- ProcesoCognitivo : evalúa
+ProcesoCognitivo -- Opciones : "que hacer"
+Opciones -- Decision : hacen
+ProcesoCognitivo -- Decision
+@enduml
