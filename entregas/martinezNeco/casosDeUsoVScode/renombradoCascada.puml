@@ -1,0 +1,6 @@
+@startuml
+title Renombrado en cascada de archivos y sus referencias
+:Usuario: -> (Renombrar archivo)
+(Renombrar archivo) -> (VS Code detecta referencias)
+(VS Code detecta referencias) -> (Actualiza referencias en todo el proyecto)
+@enduml
