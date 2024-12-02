@@ -14,7 +14,8 @@ Repo de materiales y proyectos de la asignatura **Ingeniería de software I** de
     - [Planteamiento](temario/sesionesRequisitado/infoEquipos.md)
     - [Repo de trabajo](https://github.com/mmasias/24-25-IdSw1-SDR)
   - Exámenes
-    - Parcial: [Enunciado](evaluaciones/examenes/examenParcial/README.md) | Repositorio de trabajo y entrega.
+    - Parcial: [Enunciado](evaluaciones/examenes/examenParcial/README.md)
+      - [Actividad](evaluaciones/retos/app.md) post parcial: [Repositorio de trabajo y entrega](https://classroom.github.com/a/GYdZjuJz).
 
 > ***NOTA:*** Los repositorios de entrega de exámenes estarán disponible días antes del examen. El repositorio con el enunciado del examen se activa al inicio del examen y permitirá entregas hasta la finalización del mismo.
 

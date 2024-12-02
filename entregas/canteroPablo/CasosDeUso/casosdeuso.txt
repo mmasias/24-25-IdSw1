@@ -1,0 +1,12 @@
+10 casos de uso que encontre en vsCode:
+
+Abrir archivo/carpeta
+Crear archivo nuevo
+Buscar y reemplazar
+Ejecutar terminal
+Depurar código
+Control de versiones con Git
+Configurar Emmet
+Vista dividida
+Instalar extensiones
+Usar paleta de comandos
