@@ -1,0 +1,7 @@
+@startuml
+[*] --> Registrado : Nuevo votante
+Registrado --> EnMesaDeVotacion : Se registra en la mesa
+EnMesaDeVotacion --> EmitiendoVoto : Votante recibe boleta
+EmitiendoVoto --> VotoEmitido : Votante emite su voto
+VotoEmitido --> [*] : Fin del proceso de votación
+@enduml
