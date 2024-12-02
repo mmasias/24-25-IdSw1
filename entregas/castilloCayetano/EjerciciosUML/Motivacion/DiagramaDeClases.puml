@@ -1,0 +1,15 @@
+@startuml
+
+class Persona 
+class Objetivo 
+class Accion 
+class Motivacion 
+class Recompensa 
+
+Persona --> Objetivo
+Persona --> Motivacion
+Motivacion --> Accion
+Accion --> Objetivo
+Objetivo --> Recompensa
+
+@enduml
