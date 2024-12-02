@@ -1,0 +1,6 @@
+@startuml
+title Vista previa de archivos Markdown
+:Usuario: -> (Abrir archivo Markdown)
+:Usuario: -> (Activar vista previa)
+(Activar vista previa) -> (VS Code muestra vista en tiempo real)
+@enduml

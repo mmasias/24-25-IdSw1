@@ -1,0 +1,9 @@
+@startuml
+title Subrayado de errores ortográficos
+:Usuario: -> (Escribir texto o código)
+(Escribir texto o código) -> (VS Code detecta errores ortográficos)
+(VS Code detecta errores ortográficos) -> (Subraya palabras incorrectas)
+:Usuario: -> (Clic derecho en palabra subrayada)
+(Clic derecho en palabra subrayada) -> (Ver sugerencias de corrección)
+:Usuario: -> (Seleccionar corrección)
+@enduml

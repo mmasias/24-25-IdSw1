@@ -1,0 +1,6 @@
+@startuml
+title Navegación rápida entre métodos y clases
+:Usuario: -> (Abrir barra de navegación de símbolos)
+(Abrir barra de navegación de símbolos) -> (Seleccionar método o clase)
+(Seleccionar método o clase) -> (VS Code dirige al código seleccionado)
+@enduml
