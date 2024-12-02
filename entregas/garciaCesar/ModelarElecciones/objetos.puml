@@ -1,0 +1,103 @@
+@startuml
+object estudiante1 {
+  DNI = "123451249O"
+  nombre = "Carlos"
+  apellido = "García"
+  correo = "carlos@universidad.com"
+  carrera = "Ingeniería de Sistemas"
+  facultad = "Ingeniería"
+}
+
+object estudiante2 {
+  DNI = "123451249O"
+  nombre = "Lucia"
+  apellido = "Martínez"
+  correo = "lucia@universidad.com"
+  carrera = "Ingeniería de Sistemas"
+  facultad = "Ingeniería"
+}
+
+object candidato1 {
+  DNI = "123461231K"
+  nombre = "Laura"
+  apellido = "Martínez"
+  correo = "laura@universidad.com"
+  carrera = "Ingeniería Eléctrica"
+  facultad = "Ingeniería"
+  propuestas = "Más horas de tutorías y mejorar infraestructuras"
+}
+
+object candidato2 {
+  DNI = "123479876Q"
+  nombre = "Pedro"
+  apellido = "Fernández"
+  correo = "pedro@universidad.com"
+  carrera = "Ingeniería Mecánica"
+  facultad = "Ingeniería"
+  propuestas = "Mayor tiempo de consulta y nuevas herramientas tecnológicas"
+}
+
+object delegado1 {
+  DNI = "123461231K"
+  nombre = "Laura"
+  apellido = "Martínez"
+  correo = "laura@universidad.com"
+  carrera = "Ingeniería Eléctrica"
+  facultad = "Ingeniería"
+  propuestas = "Más horas de tutorías y mejorar infraestructuras"
+}
+
+object subdelegado1 {
+  DNI = "123479876Q"
+  nombre = "Pedro"
+  apellido = "Fernández"
+  correo = "pedro@universidad.com"
+  carrera = "Ingeniería Mecánica"
+  facultad = "Ingeniería"
+  propuestas = "Mayor tiempo de consulta y nuevas herramientas tecnológicas"
+}
+
+object votacion1 {
+  id = "V001"
+  fechaInicio = "2024-10-01"
+  fechaFin = "2024-10-03"
+  estado = "activa"
+}
+
+object voto1 {
+  id = "VOT001"
+  fecha = "2024-10-01"
+  estudiante = estudiante1
+  candidato = delegado1
+}
+
+object voto2 {
+  id = "VOT002"
+  fecha = "2024-10-01"
+  estudiante = estudiante2
+  candidato = subdelegado1
+}
+
+object resultado1 {
+  id = "R001"
+  votacion = votacion1
+  candidatoGanador = delegado1
+  candidatoSegundoLugar = subdelegado1
+  votosPorCandidato = "{ delegado1: 50 subdelegado1: 40 }"
+}
+
+'establecemos las relaciones entre objetos
+estudiante1 --> voto1 : vota
+estudiante2 --> voto2 : vota
+candidato1 --> voto1 : recibe votos
+candidato2 --> voto2 : recibe votos
+votacion1 --> voto1 : contiene
+votacion1 --> voto2 : contiene
+votacion1 --> resultado1 : genera
+resultado1 --> candidato1 : ganador
+resultado1 --> candidato2 : segundo lugar
+delegado1 --> candidato1 : es
+resultado1 --> delegado1 : ganador
+subdelegado1 --> candidato2 : es
+resultado1 --> subdelegado1 : segundo lugar
+@enduml

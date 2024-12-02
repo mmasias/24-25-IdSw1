@@ -1,0 +1,88 @@
+@startuml
+class "Foco" {
+  intensidad : Double
+  posicion : (x, y, z) : Tuple
+}
+
+class "Objeto" {
+  forma : String
+  tamaño : Double
+  posicion : (x, y, z) : Tuple
+}
+
+class "Sombra" {
+  tamaño : Double
+  posicion : (x, y) : Tuple
+}
+
+class "Superficie" {
+  textura : String
+  color : String
+}
+' Relaciones entre clases
+Foco -- Objeto : ilumina
+Foco -- Sombra
+Objeto -- Sombra : proyecta
+Sombra -- Superficie : proyecta
+Objeto -- Superficie : se apoya
+' Instancias de las clases
+class "foco1 : Foco" as foco1{
+  intensidad : 100
+  posicion : (0, 0, 0)
+}
+class "foco2 : Foco" as foco2{
+  intensidad : 50
+  posicion : (10, 10, 10)
+}
+class "objeto1 : Objeto" as objeto1{
+  forma : "cubo"
+  tamaño : 10
+  posicion : (0, 0, 0)
+}
+class "objeto2 : Objeto" as objeto2{
+  forma : "esfera"
+  tamaño : 5
+  posicion : (10, 10, 10)
+}
+class "sombra1 : Sombra" as sombra1{
+  tamaño : 10
+  posicion : (0, 0)
+}
+class "sombra2 : Sombra" as sombra2{
+  tamaño : 5
+  posicion : (10, 10)
+}
+class "sombra3 : Sombra" as sombra3{
+  tamaño : 10
+  posicion : (0, 0)
+}
+class "sombra4 : Sombra" as sombra4{
+  tamaño : 5
+  posicion : (10, 10)
+}
+class "suelo : Superficie" as suelo{
+  textura : "madera"
+  color : "cafe"
+}
+
+foco1 -- objeto1 : ilumina
+foco1 -- objeto2 : ilumina
+foco2 -- objeto2 : ilumina
+foco2 -- objeto1 : ilumina
+foco1 .. sombra1
+foco1 .. sombra2
+foco2 .. sombra3
+foco2 .. sombra4
+sombra1 -- sombra2 : superpone
+sombra3 -- sombra4 : superpone
+sombra1 -- suelo : proyecta
+sombra2 -- suelo : proyecta
+sombra3 -- suelo : proyecta
+sombra4 -- suelo : proyecta
+objeto1 -- suelo : se apoya
+objeto2 -- suelo : se apoya
+objeto1 -- sombra1 : proyecta
+objeto1 -- sombra2 : proyecta
+objeto2 -- sombra3 : proyecta
+objeto2 -- sombra4 : proyecta
+@enduml
