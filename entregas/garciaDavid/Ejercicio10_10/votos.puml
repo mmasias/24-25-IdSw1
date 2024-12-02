@@ -1,0 +1,46 @@
+@startuml
+
+class Clase {
+  
+}
+
+class Votacion {
+
+}
+
+class Resultado {
+}
+
+class Estudiante {
+
+}
+
+class Candidato {
+  
+}
+
+class Voto {
+}
+
+class MesaElectoral{
+
+}
+
+Clase -- Votacion : "hay"
+Clase -- MesaElectoral : "hay"
+MesaElectoral --Votacion:"supervisa"
+MesaElectoral -- Voto:"Cuenta"
+MesaElectoral -- Resultado:"dice"
+MesaElectoral .. Estudiante: "puede ser"
+Votacion -- Candidato :"presenta"
+Votacion -- Voto:"hay"
+Votacion -- Resultado:"hay un"
+Resultado -- Candidato:"hay un"
+Estudiante -- Voto:"influye"
+Voto -- Candidato:"afecta"
+Estudiante -- Candidato:"vota por"
+Clase .. Resultado:"influye"
+Clase--Estudiante:"hay"
+Estudiante..Votacion:"vota"
+
+@enduml
