@@ -5,3 +5,4 @@ Los retos se irán proponiendo, habitualmente luego de una disertación teórica
 |Retos|Fecha de entrega|Rama de entrega
 |-|:-:|:-:|
 |[Reto 001](/evaluaciones/retos/reto001.md)|07/oct 23:59:59|reto-001
+|[Actividad post parcial](app.md)|15/nov|[Classroom](https://classroom.github.com/a/GYdZjuJz)
