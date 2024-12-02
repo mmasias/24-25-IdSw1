@@ -1,0 +1,62 @@
+@startuml
+object profesor {
+    nombre : "Juan Pérez"
+    materia : "Matemáticas"
+}
+
+object estudiante1 {
+    nombre : "Ana López"
+    id : 101
+}
+
+object estudiante2 {
+    nombre : "Luis García"
+    id : 102
+}
+
+object candidato1 {
+    nombre : "María Rodríguez"
+    votos : 0
+}
+
+object candidato2 {
+    nombre : "Carlos Fernández"
+    votos : 0
+}
+
+object voto1 {
+    nombreCandidato : "María Rodríguez"
+}
+
+object voto2 {
+    nombreCandidato : "Carlos Fernández"
+}
+
+object secretario {
+    listaVotos : [voto1, voto2]
+}
+
+object votacion {
+    listaCandidatos : [candidato1, candidato2]
+}
+
+object delegado {
+    rol : "Delegado"
+}
+
+object subdelegado {
+    rol : "Subdelegado"
+}
+
+profesor --> votacion : "Inicia"
+estudiante1 --> voto1 : "Emite"
+estudiante2 --> voto2 : "Emite"
+votacion --> secretario : "Contar votos"
+voto1 --> secretario : "Recibe lista de votos"
+voto2 --> secretario : "Recibe lista de votos"
+delegado <-- candidato1 : "Es"
+subdelegado <-- candidato2 : "Es"
+secretario --> candidato1 : "Elige"
+secretario --> candidato2 : "Elige"
+
+@enduml
