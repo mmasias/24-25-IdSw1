@@ -1,0 +1,20 @@
+@startuml
+class Inicio
+
+class SelecciónCandidatos
+
+class Votación
+
+class ConteoVotos
+
+class VerificaciónResultados
+
+class Resultados
+
+Inicio --> SelecciónCandidatos
+SelecciónCandidatos --> Votación
+Votación --> ConteoVotos
+ConteoVotos --> VerificaciónResultados
+VerificaciónResultados --> Votación
+VerificaciónResultados --> Resultados
+@enduml
