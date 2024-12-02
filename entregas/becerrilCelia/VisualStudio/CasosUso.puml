@@ -1,0 +1,39 @@
+@startuml
+
+actor "Desarrollador de la aplicacion" as DevApp
+actor "Administrador de la aplicacion" as AdminApp
+actor "Usuario" as User
+
+usecase "Escribir codigo" as UC1
+usecase "Ejecucion de comandos en el terminal" as UC2
+usecase "Previsualizacion del contenido" as UC3
+usecase "Creacion de proyectos" as UC4
+usecase "Explorador de proyectos/archivos" as UC5
+usecase "Descarga de extensiones" as UC6
+usecase "Conexion Git" as UC7
+usecase "Depuracion de codigo" as UC8
+usecase "Configuracion de testing" as UC9
+usecase "Correccion de errores de sintaxis" as UC10
+
+DevApp --> UC1 : realiza
+DevApp --> UC4 : desarrolla
+DevApp --> UC7 : implementa
+DevApp --> UC8 : realiza
+DevApp --> UC9 : configura
+DevApp --> UC10 : ajusta
+
+AdminApp --> UC6 : administra
+AdminApp --> UC4 : configura
+AdminApp --> UC5 : organiza
+
+User --> UC1 : emplea
+User --> UC2 : ejecuta
+User --> UC3 : consulta
+User --> UC4 : utiliza
+User --> UC5 : navega
+User --> UC7 : sincroniza
+User --> UC8 : ejecuta
+User --> UC10 : corrige
+
+@enduml
+
