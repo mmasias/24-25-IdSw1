@@ -1,0 +1,18 @@
+@startuml
+[*] --> Inicio
+
+Inicio --> PrepararUrna : Iniciar elección
+PrepararUrna --> UrnaAbierta : Urna lista para recibir votos
+
+UrnaAbierta --> VotaciónEnProceso : Estudiantes votando
+VotaciónEnProceso --> VerificarVotos : 32 votos emitidos
+VerificarVotos --> CerrarUrna : Todos los votos han sido emitidos
+
+CerrarUrna --> ContarVotos : Urna cerrada
+ContarVotos --> DeterminarGanador : Recuento de votos finalizado
+DeterminarGanador --> AnunciarGanadores : Ganadores determinados (Delegado y Subdelegado)
+AnunciarGanadores --> [*] : Elección completada
+
+@enduml
+
+
