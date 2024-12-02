@@ -1,0 +1,64 @@
+@startuml
+class ActaDeEleccion {
+    +fecha: Date
+    +resultados: String
+    +generarActa(): void
+}
+
+class MesaElectoral {
+    +ubicacion: String
+    +horaApertura: Time
+    +horaCierre: Time
+    +iniciarProceso(): void
+    +cerrarProceso(): void
+}
+
+class Persona {
+    +nombre: String
+    +apellido: String
+    +dni: String
+    +identificarse(): void
+}
+
+class Profesor {
+    +asignatura: String
+    +enseñar(): void
+}
+
+class Alumno {
+    +curso: String
+    +estudiar(): void
+    +votar(): void
+}
+
+class Candidato {
+    +propuestas: String
+    +presentarPropuestas(): void
+}
+
+class Secretario {
+    +registrarActa(): void
+}
+
+class Presidente {
+    +dirigirVotacion(): void
+}
+
+class Voto {
+    +tipoVoto: String
+    +emitirVoto(): void
+}
+
+Persona <|-- Profesor
+Persona <|-- Alumno
+Persona <|-- Candidato
+Persona <|-- Secretario
+Persona <|-- Presidente
+
+MesaElectoral o-- Presidente
+MesaElectoral o-- Secretario
+MesaElectoral -- ActaDeEleccion
+Alumno --> Voto
+Voto --> Candidato
+@enduml
+
