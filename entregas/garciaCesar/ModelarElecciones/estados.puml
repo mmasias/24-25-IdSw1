@@ -1,0 +1,16 @@
+@startuml
+[*] --> Preparación : Crear Votación
+
+Preparación --> InscripciónCandidatos : Iniciar inscripción
+
+InscripciónCandidatos --> CampañaElectoral : Finalizar inscripción
+
+CampañaElectoral --> VotaciónActiva : Iniciar Votación
+
+VotaciónActiva --> ConteoVotos : Cerrar Votación
+
+ConteoVotos --> ResultadosPublicados : Publicar Resultados
+
+ResultadosPublicados --> [*] : Finalización de la votación
+
+@enduml
