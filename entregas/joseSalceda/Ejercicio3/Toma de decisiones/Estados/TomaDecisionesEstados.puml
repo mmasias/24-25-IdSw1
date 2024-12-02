@@ -1,0 +1,9 @@
+@startuml
+[*] --> Identificacion_de_Alternativas : Inicia
+Identificacion_de_Alternativas --> Evaluacion_de_Criterios : Alternativas Definidas
+Evaluacion_de_Criterios --> Analisis_de_Consecuencias : Criterios Evaluados
+Analisis_de_Consecuencias --> Toma_de_Decision : Consecuencias Analizadas
+Toma_de_Decision --> Implementacion : Decisión Tomada
+Implementacion --> Evaluacion : Decisión Implementada
+Evaluacion --> [*] : Proceso Finalizado
+@enduml

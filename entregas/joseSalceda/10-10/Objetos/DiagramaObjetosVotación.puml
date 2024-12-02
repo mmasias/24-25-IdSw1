@@ -1,0 +1,35 @@
+@startuml
+object votante1 {
+  nombre = "Carlos"
+}
+object candidato1 {
+  nombre = "Juan Pérez"
+}
+object candidato2 {
+  nombre = "María Gómez"
+}
+object voto1 {
+  seleccion = "Juan Pérez"
+}
+object mesa1 {
+  id = "Mesa 10"
+}
+object eleccion1 {
+  nombre = "Elecciones Generales 2024"
+}
+object resultado1 {
+  totalVotos = 1200
+}
+object observador1 {
+  nombre = "Observador Internacional"
+}
+
+votante1 -- voto1 : emite
+voto1 -- candidato1 : selecciona
+voto1 -- mesa1 : registrado en
+eleccion1 -- resultado1 : tiene
+eleccion1 -- observador1 : asegurado por
+mesa1 -- observador1 : monitoreada por
+candidato1 -- eleccion1 : compite
+candidato2 -- eleccion1 : compite
+@enduml
