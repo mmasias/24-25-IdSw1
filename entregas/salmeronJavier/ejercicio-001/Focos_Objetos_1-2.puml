@@ -1,0 +1,14 @@
+@startuml
+object Foco1
+object Persona1
+object Persona2
+object Sombra1
+object Sombra2
+
+Foco1 -- Persona1
+Foco1 -- Persona2
+Persona1 -- Sombra1
+Persona2 -- Sombra2
+Foco1 .. Sombra1
+Foco1 .. Sombra2
+@enduml

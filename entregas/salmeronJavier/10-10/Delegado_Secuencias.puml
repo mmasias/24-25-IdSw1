@@ -1,0 +1,32 @@
+@startuml
+
+actor Alumnos
+participant Urna
+participant SupervisorUrna
+participant CandidatoJavier
+participant CandidatoMario
+participant CandidatoElias
+participant CandidatoDiego
+participant CandidatoMaura
+
+Alumnos -> Urna: Voto candidatos
+
+SupervisorUrna -> Urna: Recuento de votos
+
+Urna -> CandidatoJavier: Votos recibidos = 3
+Urna -> CandidatoMario: Votos recibidos = 6
+Urna -> CandidatoElias: Votos recibidos = 3
+Urna -> CandidatoDiego: Votos recibidos = 9
+Urna -> CandidatoMaura: Votos recibidos = 7
+
+SupervisorUrna -> CandidatoDiego: Más votos
+
+create DelegadoDiego
+CandidatoDiego -> DelegadoDiego: Delegado de grado
+
+SupervisorUrna -> CandidatoMaura: Segundo más votos
+
+create SubdelegadoMaura
+CandidatoMaura -> SubdelegadoMaura: Subdelegada de grado
+
+@enduml

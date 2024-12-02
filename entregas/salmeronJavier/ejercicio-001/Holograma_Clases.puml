@@ -1,0 +1,20 @@
+@startuml
+class Holograma
+
+class Proyeccion
+
+class Luz
+
+class Superficie
+
+class Interferencia
+
+class Imagen
+
+Holograma -- Proyeccion
+Proyeccion -- Luz
+Luz -- Interferencia
+Interferencia -- Imagen
+Superficie -- Holograma
+Imagen .. Holograma
+@enduml

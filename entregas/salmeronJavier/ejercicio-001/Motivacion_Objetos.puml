@@ -1,0 +1,23 @@
+@startuml
+object Meta
+Meta : Aprender
+
+object Motivacion
+Motivacion : Dopamina
+
+object Accion
+Accion : Estudiar
+
+object Obstaculo
+Obstaculo : Descansar
+
+object Recompensa
+Recompensa : Conocimiento
+
+Motivacion -- Meta
+Meta -- Accion
+Accion -- Recompensa
+Recompensa .. Motivacion
+Meta -- Obstaculo
+Obstaculo -- Recompensa
+@enduml

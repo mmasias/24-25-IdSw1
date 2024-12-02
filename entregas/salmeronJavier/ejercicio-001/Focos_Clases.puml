@@ -1,0 +1,9 @@
+@startuml
+class FuenteLuz
+class Objeto
+class Sombra
+
+FuenteLuz -- Objeto
+Objeto -- Sombra
+Sombra .. FuenteLuz
+@enduml
