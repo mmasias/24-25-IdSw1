@@ -1,0 +1,24 @@
+@startuml
+class Decisión
+class Alternativa
+class Criterio
+class Información
+class Persona
+class Consecuencia
+class Objetivo
+class Contexto
+class Restricción
+class Evaluación
+
+Decisión -- Alternativa : "influye"
+Decisión -- Criterio
+Decisión -- Información
+Decisión -- Consecuencia
+Decisión -- Contexto
+Persona -- Decisión
+Criterio -- Objetivo
+Criterio -- Restricción : "considera"
+Alternativa -- Evaluación : "se somete a"
+Evaluación -- Criterio : "utiliza"
+Restricción --> Alternativa : "limita"
+@enduml
