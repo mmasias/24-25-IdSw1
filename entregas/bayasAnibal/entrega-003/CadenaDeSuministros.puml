@@ -1,0 +1,23 @@
+@startuml
+
+class Proveedor {
+}
+
+class Fabricante {
+}
+
+class Distribuidor {
+}
+
+class Cliente {
+}
+
+class Producto {
+}
+
+Proveedor  --  Fabricante : suministra >
+Fabricante --  Distribuidor : fabrica >
+Distribuidor  --  Cliente : distribuye >
+Cliente  --  Producto : solicita >
+
+@enduml
