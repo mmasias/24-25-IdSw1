@@ -1,0 +1,38 @@
+@startuml
+
+object persona {
+  nombre = "Maura"
+  nivelDeMotivacion = 70
+}
+
+object objetivo1 {
+  descripcion = "Hacer la tarea de IS"
+  fechaLimite = "2024-10-03"
+  prioridad = 4
+}
+
+object factorInterno1 {
+  tipo = "Autoeficacia"
+  impacto = 10
+  autoEficacia = 85
+  autodisciplina = 90
+}
+
+object factorExterno1 {
+  tipo = "Reconocimiento social"
+  impacto = 15
+  reconocimientoSocial = true
+  recompensas = 100
+}
+
+object accionMotivadora1 {
+  descripcion = "Masias me riñe"
+  duracion = 120
+}
+
+persona --> objetivo1 : tiene
+factorInterno1 --> persona : influye en
+factorExterno1 --> persona : influye en
+accionMotivadora1 --> persona : aplica efecto
+
+@enduml

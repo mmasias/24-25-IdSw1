@@ -1,0 +1,22 @@
+@startuml
+[*] --> EstadoInicial
+
+EstadoInicial : El objeto está en reposo o en movimiento
+
+EstadoInicial --> FuerzaGravitatoriaAplicada : Gravedad detectada
+FuerzaGravitatoriaAplicada : Calculando fuerza gravitatoria
+
+FuerzaGravitatoriaAplicada --> CambioDeMovimiento : Fuerza aplicada
+CambioDeMovimiento : El objeto cambia de velocidad
+
+CambioDeMovimiento --> Colision : Distancia mínima alcanzada
+Colision : Los objetos colisionan
+
+CambioDeMovimiento --> OrbitaEstablecida : Órbita calculada
+OrbitaEstablecida : El objeto entra en órbita
+
+CambioDeMovimiento --> MovimientoLibre : No hay interacción cercana
+MovimientoLibre : El objeto sigue su trayectoria
+
+MovimientoLibre --> [*]
+@enduml

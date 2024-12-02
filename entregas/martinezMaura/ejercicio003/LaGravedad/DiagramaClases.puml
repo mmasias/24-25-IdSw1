@@ -1,0 +1,21 @@
+@startuml
+class ObjetoFisico {
+    Float masa
+    Vector3D posicion
+    Vector3D velocidad
+    Vector3D fuerzaGravitatoria
+    aplicarGravedad(objeto: ObjetoFisico)
+    mover(deltaTiempo: Float)
+    calcularDistancia(objeto: ObjetoFisico): Float
+    calcularFuerzaGravitatoria(objeto: ObjetoFisico): Vector3D
+}
+
+class SistemaGravitacional {
+    Float constanteGravitacional
+    List[ObjetoFisico] objetos
+    calcularInteraccionesGravitacionales()
+    actualizar(deltaTiempo: Float)
+}
+
+ObjetoFisico --> SistemaGravitacional : "es parte de"
+@enduml
