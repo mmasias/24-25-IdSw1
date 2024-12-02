@@ -1,0 +1,17 @@
+@startuml
+
+[*] --> EmisionSonido : Inicia el sonido
+
+state "Emisión del Sonido" as EmisionSonido {
+  [*] --> GenerandoSonido
+  GenerandoSonido --> MovimientoSonido : Sonido se propaga
+}
+
+EmisionSonido --> RebotandoSuperficie : Sonido alcanza una superficie
+RebotandoSuperficie --> RetornoSonido : Sonido rebota
+
+RetornoSonido --> PercibiendoSonido : Sonido regresa al oído
+PercibiendoSonido --> Fin : Oído percibe el eco
+
+[*] --> Fin : Sin eco percibido
+@enduml

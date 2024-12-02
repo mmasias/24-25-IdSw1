@@ -1,0 +1,11 @@
+@startuml
+[*] --> Definicion_del_Contexto : Inicia
+Definicion_del_Contexto --> Identificacion_de_Alternativas : Contexto Definido
+Identificacion_de_Alternativas --> Evaluacion_de_Criterios : Alternativas Definidas
+Evaluacion_de_Criterios --> Analisis_de_Consecuencias : Criterios Evaluados
+Analisis_de_Consecuencias --> Toma_de_Decision : Consecuencias Analizadas
+Toma_de_Decision --> Implementacion : Decisión Tomada
+Implementacion --> Evaluacion : Decisión Implementada
+Evaluacion --> Revision_de_Resultados : Proceso Evaluado
+Revision_de_Resultados --> [*] : Proceso Finalizado
+@enduml
