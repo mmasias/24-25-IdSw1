@@ -1,0 +1,48 @@
+@startuml
+object Estudiante1 {
+    nombre = "Ana"
+}
+
+object Estudiante2 {
+    nombre = "Carlos"
+}
+
+object Candidato1 {
+    nombre = "Marta"
+    votosRecibidos = 1
+}
+
+object Candidato2 {
+    nombre = "Pedro"
+    votosRecibidos = 1
+}
+
+object Voto1 {
+    emitidoPor = Estudiante1
+    destinadoA = Candidato1
+}
+
+object Voto2 {
+    emitidoPor = Estudiante2
+    destinadoA = Candidato2
+}
+
+object Secretario {
+    nombre = "Alejandro"
+    rol = "Recoge y cuenta votos"
+}
+
+object Profesor {
+    nombre = "Sr. Masias"
+    rol = "Supervisa y anuncia el ganador"
+}
+
+Estudiante1 --> Voto1
+Estudiante2 --> Voto2
+Voto1 --> Candidato1
+Voto2 --> Candidato2
+Secretario --> Voto1 : recoge
+Secretario --> Voto2 : recoge
+Profesor --> Candidato1 : supervisa conteo
+Profesor --> Candidato2 : supervisa conteo
+@enduml
