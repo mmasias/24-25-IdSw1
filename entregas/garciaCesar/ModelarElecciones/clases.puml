@@ -1,0 +1,49 @@
+@startuml
+class Estudiante {
+  +DNI: String
+  +nombre: String
+  +apellido: String
+  +correo: String
+  +carrera: String
+  +facultad: String
+}
+
+class Candidato {
+  +propuestas: String
+}
+
+class Delegado extends Candidato {
+  +facultad: String
+}
+
+class Subdelegado extends Candidato {
+  +facultad: String
+}
+
+class Votación {
+  +fechaInicio: Date
+  +fechaFin: Date
+  +estado: String
+}
+
+class Voto {
+  +fecha: Date
+  +estudiante: Estudiante
+  +candidato: Candidato
+}
+
+class Resultado {
+  +votacion: Votación
+  +candidatoGanador: Candidato
+  +candidatoSegundoLugar: Candidato
+  +votosPorCandidato: Map<Candidato, Integer>
+}
+
+Estudiante <|-- Candidato
+Estudiante --> Voto
+Candidato --> Voto
+Votación --> Voto
+Votación --> Resultado
+Resultado --> Candidato
+
+@enduml
