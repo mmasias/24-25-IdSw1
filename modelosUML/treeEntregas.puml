@@ -1,9 +1,12 @@
 @startwbs
 
-+ **PRG1**
++ **ASIGNATURA**
  + Repo
-  + documentos
-  + **entregas**
+  + **temario**
+   + casosDeUso
+   + ejercicios
+   + <i>otrasCarpetas...</i>
+  + <b>entregas</b>
    + apellidoNombre
     +_ archivo
     +_ archivo
@@ -11,7 +14,6 @@
   + evaluaciones
   + images
   + modelosUML
-  + temario
 
 
 @endwbs

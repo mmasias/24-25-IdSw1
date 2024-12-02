@@ -1,0 +1,35 @@
+@startuml
+title Diagrama de Objetos - Una Persona y Dos Focos
+
+object Raul {
+  
+}
+
+object Luz1 {
+ 
+}
+
+object Luz2 {
+ 
+}
+
+object sombraLuz1 {
+}
+
+object sombraLuz2 {
+}
+
+object Mesa {
+}
+
+object camara {
+}
+
+Raul -- sombraLuz1 : "Proyecta"
+Raul -- sombraLuz2 : "Proyecta"
+Luz1 -- Raul : "Da luz a"
+Luz2 -- Raul : "Da luz a"
+sombraLuz1 -- Mesa : "Se proyecta sobre"
+sombraLuz2 -- Mesa : "Se proyecta sobre"
+camara -- Mesa : "Captura"
+@enduml

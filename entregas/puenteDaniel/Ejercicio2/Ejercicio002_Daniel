@@ -1,0 +1,21 @@
+@startuml
+class Persona {
+}
+
+class Foco {
+}
+
+class Sombra {
+}
+
+class Superficie {
+}
+
+class Camara {
+}
+
+Persona -- Sombra : "Proyecta"
+Foco -- Persona : "Genera luz a"
+Sombra -- Superficie : "Se proyecta sobre"
+Camara -- Superficie : "Captura"
+@enduml
