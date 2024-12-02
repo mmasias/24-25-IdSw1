@@ -1,0 +1,17 @@
+@startuml
+class Arcoiris{
+}
+
+class FuenteDeLuz{
+}
+
+class SuperficieRefractante{
+}
+
+class Color {
+}
+
+Arcoiris"1" *-- "7" Color
+FuenteDeLuz--> SuperficieRefractante: interactúa
+SuperficieRefractante--> Arcoiris: forma
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+[*] --> SinArcoiris
+
+state SinArcoiris {
+}
+
+state Formacion {
+}
+
+state ArcoirisVisible {
+}
+
+state Desvaneciendo {
+}
+
+SinArcoiris --> Formacion : Luz solar incide en gotas de agua
+
+Formacion --> ArcoirisVisible : Refracción y dispersión de luz
+
+ArcoirisVisible --> Desvaneciendo : Disminuye la luz o desaparecen las gotas
+
+Desvaneciendo --> SinArcoiris : El arcoíris desaparece
+
+[*] --> SinArcoiris
+
+@enduml
