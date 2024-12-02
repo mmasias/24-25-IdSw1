@@ -1,0 +1,52 @@
+@startuml
+title Diagrama de Objetos - Ciclo de Vida Completo de un Producto
+
+object ProductoX {
+    Nombre = "Producto X"
+    Descripción = "Innovador, primera versión"
+    Precio = 120.0
+    MercadoObjetivo = "Tecnología"
+    Lanzamiento = "2024-01-15"
+}
+
+object FaseIntroducción {
+    Costos = "Altos"
+    Ventas = "Bajas"
+    Competencia = "Poca"
+    Marketing = "Campañas intensivas"
+    Duración = "6 meses"
+    Ganancias = "Negativas"
+}
+
+object FaseCrecimiento {
+    Costos = "Moderados"
+    Ventas = "En aumento"
+    Competencia = "Media"
+    Marketing = "Publicidad digital"
+    Duración = "1 año"
+    Ganancias = "Positivas"
+}
+
+object FaseMadurez {
+    Costos = "Bajos"
+    Ventas = "Estabilizadas"
+    Competencia = "Alta"
+    Marketing = "Mantenimiento de marca"
+    Duración = "2 años"
+    Ganancias = "Altas"
+}
+
+object FaseDeclive {
+    Costos = "Reducidos"
+    Ventas = "En descenso"
+    Competencia = "Muy baja"
+    Marketing = "Descontinuado"
+    Duración = "Indefinida"
+    Ganancias = "Declinando"
+}
+
+ProductoX -- FaseIntroducción : "Comienza en"
+FaseIntroducción --> FaseCrecimiento : "Transición a"
+FaseCrecimiento --> FaseMadurez : "Transición a"
+FaseMadurez --> FaseDeclive : "Transición a"
+@enduml
