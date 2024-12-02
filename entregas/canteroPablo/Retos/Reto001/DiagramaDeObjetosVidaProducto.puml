@@ -1,0 +1,42 @@
+@startuml
+object producto1 {
+    nombre = "Producto XYZ"
+    precio = 150.00
+    fabricante = "Empresa ABC"
+}
+
+object desarrollo1 {
+    investigacion = "Estudio de mercado"
+    prototipo = true
+}
+
+object fabricacion1 {
+    cantidad = 5000
+    costoProduccion = 10000.00
+}
+
+object introduccion1 {
+    marketing = "Campaña en redes sociales"
+}
+
+object crecimiento1 {
+    expansion = true
+}
+
+object madurez1 {
+    maxVentas = true
+}
+
+object declive1 {
+    reduccionVentas = true
+    estrategiaSalida = "Descuento final"
+}
+
+producto1 --> desarrollo1 : Comienza con
+desarrollo1 --> fabricacion1 : Pasa a
+fabricacion1 --> introduccion1 : Lanza tras producción
+introduccion1 --> crecimiento1 : Avanza a
+crecimiento1 --> madurez1 : Alcanza estabilidad
+madurez1 --> declive1 : Entra en
+declive1 --> producto1 : Fin del ciclo
+@enduml
