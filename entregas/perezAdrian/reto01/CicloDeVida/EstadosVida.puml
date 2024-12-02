@@ -1,0 +1,18 @@
+@startuml
+[*] --> Concepto
+Concepto --> Diseño : "Aprobación de la idea"
+Diseño --> Producción : "Finalización del diseño"
+Producción --> Distribucion : "Fabricación completada"
+Distribucion --> EnVenta : "Distribución al mercado"
+EnVenta --> Obsoleto : "Fin del ciclo de venta"
+Obsoleto --> [*]
+
+EnVenta --> Retirado : "Decisión de retiro"
+Retirado --> [*]
+
+EnVenta --> Actualización : "Nueva versión disponible"
+Actualización --> EnVenta : "Actualización completada"
+
+EnVenta --> Mantenimiento : "Requiere reparación"
+Mantenimiento --> EnVenta : "Reparación completada"
+@enduml

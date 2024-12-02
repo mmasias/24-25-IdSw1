@@ -1,0 +1,33 @@
+@startuml
+class Votante {
+  +nombre
+  +identidad
+}
+
+class Votacion {
+  +fechaInicio: Date
+  +fechaFin: Date
+  +candidatos
+  +votos
+}
+
+class Candidato {
+  +nombre
+}
+
+class Voto {
+  +votante
+  +candidato
+}
+
+class Resultado {
+  +Elegido/s
+}
+
+
+Votante --> Voto: "Tiene"
+Voto --> Candidato: "Vota a"
+Voto --> Votacion: "Forma parte de"
+Candidato --> Votacion: "Forma parte de"
+Votacion --> Resultado: "Delega"
+@enduml

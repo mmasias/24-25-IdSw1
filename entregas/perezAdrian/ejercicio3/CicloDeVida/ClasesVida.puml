@@ -1,0 +1,14 @@
+@startuml
+class Producto 
+
+class Comprador
+
+class Mercado 
+
+class Fabricante
+
+Producto --> Comprador: es comprado por
+Mercado -->  Producto : vende
+Fabricante --> Producto : fabrica
+
+@enduml

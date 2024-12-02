@@ -1,0 +1,38 @@
+@startuml
+object Producto1 {
+  id = 101
+  nombre = "Teléfono Móvil"
+  estado = "En Producción"
+  precio = 800 USD
+}
+
+object Producto2 {
+  id = 102
+  nombre = "Portátil"
+  estado = "En Venta"
+  precio = 1200 USD
+}
+
+object Producto3 {
+  id = 103
+  nombre = "Televisor"
+  estado = "Obsoleto"
+  precio = 400 USD
+}
+
+object Mercado {
+  nombre = "Mercado Electrónico"
+  productosDisponibles = Producto1, Producto2, Producto3
+}
+
+object Fabricante {
+  nombre = "Fabrica Tech"
+}
+
+Mercado --> Producto1
+Mercado --> Producto2
+Fabricante --> Producto1
+Fabricante --> Producto2
+Fabricante --> Producto3
+
+@enduml
