@@ -1,0 +1,32 @@
+@startuml
+class EleccionDelegado {
+}
+
+class Candidato {
+}
+
+class Votante{
+}
+
+class Voto{
+}
+
+class Urna {
+}
+
+class Secretario{
+}
+
+class Recuento {
+}
+
+EleccionDelegado --> Candidato : "tiene"
+EleccionDelegado --> Votante : "tiene"
+EleccionDelegado --> Secretario : "tiene"
+Votante --> Voto : "realiza un"
+Votante --> Candidato : "elige a un"
+Voto --> Urna : "se mete en una"
+Secretario --> Recuento : "cuenta los votos"
+Urna --> Recuento : "Se sacan los votos y se hace un"
+
+@enduml
