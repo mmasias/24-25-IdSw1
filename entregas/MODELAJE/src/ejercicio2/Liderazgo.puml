@@ -1,0 +1,20 @@
+@startuml
+
+
+class Lider_original
+class lider_Nuevo
+class Seguidores
+class carisma
+
+Lider_original --> Lider_original : se auto impone
+Lider_original --> Seguidores : da ordenes
+Seguidores --> Lider_original : obedecen sistematicamente
+lider_Nuevo --> Seguidores : pertenece a
+Seguidores --> carisma : admiran a miembro con carisma
+carisma --> lider_Nuevo : admiran a miembro con carisma
+Seguidores --> lider_Nuevo : obedecen con gusto
+lider_Nuevo --> Lider_original : se impone
+Lider_original --> Seguidores : pasan a ser seguidores
+
+
+@enduml
