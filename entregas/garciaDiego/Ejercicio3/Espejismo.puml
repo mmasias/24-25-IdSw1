@@ -1,0 +1,16 @@
+@startuml
+
+    Package "Espejismo"{
+
+        Ilusión -- "Condiciones climaticas" : "es generada por"
+        Ilusión -- Observador : "es observada por"
+        Ilusión -- Luz : "refleleja"
+        "Condiciones climaticas" .. Luz : "afecta"
+        "Condiciones climaticas" .. Observador : "afecta"
+        
+    }
+     
+@enduml
+
+
+
